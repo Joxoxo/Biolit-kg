@@ -1,0 +1,7 @@
+# 第 1–2 天需要的依赖；后面每用到新库再往下加
+google-genai        # 调用 Gemini
+python-dotenv       # 从 .env 读取 API Key
+requests            # 调用 PubMed 接口
+pydantic            # 定义并校验抽取结果的格式
+pandas              # 表格数据处理
+pyyaml              # 读取 configs/ 里的配置文件

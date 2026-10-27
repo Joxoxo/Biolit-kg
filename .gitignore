@@ -1,0 +1,20 @@
+# 密钥：绝不上传
+.env
+
+# Python 运行时文件
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 数据：只保留文件夹结构，不上传数据本身
+data/raw/*
+data/processed/*
+!data/**/.gitkeep
+*.db
+chroma/
+
+# 编辑器 / 系统
+.vscode/
+.DS_Store
+Thumbs.db
