@@ -1,0 +1,13 @@
+# 让 src/biolit 成为一个可导入的 Python 包
+# 安装一次即可：pip install -e .
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "biolit"
+version = "0.1.0"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["src"]

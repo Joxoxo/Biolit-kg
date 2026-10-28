@@ -1,19 +1,19 @@
-# 数据源配置：抗凝 / 抗血栓药物的不良反应与相互作用（PubMed 文献）
+# 数据源配置：口服抗栓药物的不良反应与相互作用（PubMed 文献）
 source: pubmed
 max_papers: 1000
 
-# 药物范围：抗凝药 + 抗血小板药
+# 药物范围：重点是新型口服抗凝药（DOAC），华法林作为对照，加两种口服抗血小板药
 drugs:
-  - warfarin
+  # 新型口服抗凝药（DOAC）
   - apixaban
   - rivaroxaban
   - dabigatran
   - edoxaban
-  - heparin
-  - enoxaparin
+  # 传统口服抗凝药（对照）
+  - warfarin
+  # 口服抗血小板药
   - clopidogrel
   - ticagrelor
-  - aspirin
 
 # 关注的问题：不良反应、药物相互作用、药物代谢
 topics:
@@ -24,5 +24,5 @@ topics:
   - CYP2C9
   - CYP3A4
 
-# 检索式 = (任一药物) AND (任一主题)，并只保留近 10 年、有摘要的英文文献
-years: 10
+# 检索式 = (任一药物) AND (任一主题)，并只保留近 5 年、有摘要的英文文献
+years: 5
