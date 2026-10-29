@@ -1,0 +1,94 @@
+# M3 同义词表：标准名 → 各种写法（写法要先经过 basic_clean，即小写、美式拼写）
+# 修改方法：发现新的同义写法，加到对应标准名下面即可；新增一组就新写一个标准名
+# 原则：只合并"完全同义"的写法；包含关系（如出血性卒中属于颅内出血）写在下面的 hierarchy 里
+
+synonyms:
+  # ---------- 药物 ----------
+  doac: [doacs, noac, noacs, direct oral anticoagulants, direct oral anticoagulant,
+         non-vitamin k antagonist oral anticoagulants, non-vitamin k antagonist oral anticoagulant,
+         non-vitamin k oral anticoagulants, non-vitamin k oral anticoagulant,
+         direct-acting oral anticoagulants, direct-acting oral anticoagulant,
+         novel oral anticoagulants, novel oral anticoagulant, new oral anticoagulants]
+  vitamin k antagonist: [vka, vkas, vitamin k antagonists, vitamin-k antagonists, vitamin-k antagonist]
+  oral anticoagulant: [oral anticoagulants, oac, oacs]
+  apixaban: [eliquis]
+  rivaroxaban: [xarelto]
+  dabigatran: [dabigatran etexilate, pradaxa]
+  edoxaban: [savaysa, lixiana]
+  warfarin: [coumadin]
+  clopidogrel: [plavix]
+  ticagrelor: [brilinta, brilique]
+  aspirin: [acetylsalicylic acid, asa]
+  low-molecular-weight heparin: [lmwh, lmwhs, low molecular weight heparin]
+  p2y12 inhibitor: [p2y12 inhibitors]
+  antiplatelet agent: [antiplatelet, antiplatelet agents, antiplatelet drugs, antiplatelets]
+  anticoagulant: [anticoagulants]
+  proton pump inhibitor: [proton pump inhibitors, ppi, ppis]
+  factor xa inhibitor: [factor xa inhibitors]
+
+  # ---------- 不良事件（出血） ----------
+  bleeding: [bleeding events, bleeding event, bleeding complications, any bleeding, total bleeding,
+             hemorrhage, bleeding risk, bleedings, hemorrhagic complications]
+  major bleeding: [major bleeding events, major bleeding event, major bleedings, mb, major hemorrhage]
+  gastrointestinal bleeding: [gib, gi bleeding, gastrointestinal (gi) bleeding, gastrointestinal hemorrhage,
+                              gastrointestinal bleeding events]
+  major gastrointestinal bleeding: [major gib, major gi bleeding]
+  intracranial hemorrhage: [ich, intracranial bleeding, intracranial hemorrhages]
+  crnm bleeding: [clinically relevant non-major bleeding, clinically relevant nonmajor bleeding, crnmb,
+                  clinically relevant non-major bleeding events]
+
+  # ---------- 临床结局 ----------
+  stroke: [strokes]
+  stroke or systemic embolism: [stroke/systemic embolism, stroke/se, stroke and systemic embolism,
+                                stroke or se, s/se, sse]
+  systemic embolism: [se]
+  all-cause mortality: [all-cause death, death, mortality, overall mortality, death from any cause]
+  cardiovascular death: [cardiovascular mortality, cardiac death]
+  mace: [maces, major adverse cardiovascular events, major adverse cardiovascular event,
+         major adverse cardiac events, major adverse cardiac event]
+  myocardial infarction: [mi]
+  thromboembolism: [thromboembolic events, thromboembolic event, thromboembolic]
+  thrombotic event: [thrombotic events]
+  recurrent vte: [vte recurrence, recurrent venous thromboembolism]
+
+  # ---------- 代谢酶 / 转运体 ----------
+  p-gp: [p-glycoprotein, abcb1, p-glycoprotein (p-gp)]
+  bcrp: [abcg2, breast cancer resistance protein]
+  cyp3a4: [cytochrome p450 3a4, cytochrome p450 (cyp) 3a4]
+  cyp2c9: [cytochrome p450 2c9, cytochrome p450 (cyp) 2c9]
+  cyp2c19: [cytochrome p450 2c19, cytochrome p450 (cyp) 2c19]
+
+  # ---------- 疾病 ----------
+  atrial fibrillation: [af]
+  nonvalvular atrial fibrillation: [non-valvular atrial fibrillation, nvaf, non-valvular af, nonvalvular af]
+  venous thromboembolism: [vte]
+  deep vein thrombosis: [deep venous thrombosis, dvt]
+  pulmonary embolism: [pe]
+  acute coronary syndrome: [acute coronary syndromes, acs]
+  chronic kidney disease: [ckd]
+  end-stage renal disease: [end-stage kidney disease, esrd, eskd]
+  st-elevation myocardial infarction: [st-segment elevation myocardial infarction, stemi]
+  antiphospholipid syndrome: [aps]
+  diabetes mellitus: [diabetes]
+
+# 上下级关系（子类 → 父类）：不合并，但建图谱时查父类会自动包含子类
+hierarchy:
+  hemorrhagic stroke: [intracranial hemorrhage, stroke]
+  ischemic stroke: [stroke]
+  intracranial hemorrhage: [major bleeding]
+  major gastrointestinal bleeding: [gastrointestinal bleeding, major bleeding]
+  gastrointestinal bleeding: [bleeding]
+  major bleeding: [bleeding]
+  crnm bleeding: [bleeding]
+  nonvalvular atrial fibrillation: [atrial fibrillation]
+  deep vein thrombosis: [venous thromboembolism]
+  pulmonary embolism: [venous thromboembolism]
+  apixaban: [doac]
+  rivaroxaban: [doac]
+  edoxaban: [doac]
+  dabigatran: [doac]
+  warfarin: [vitamin k antagonist]
+  acenocoumarol: [vitamin k antagonist]
+  clopidogrel: [p2y12 inhibitor]
+  ticagrelor: [p2y12 inhibitor]
+  prasugrel: [p2y12 inhibitor]
