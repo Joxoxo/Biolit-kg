@@ -23,6 +23,46 @@ CREATE TABLE IF NOT EXISTS papers (
     source    TEXT DEFAULT 'pubmed',  -- 数据来源，以后还会有 'fda_label'
     added_at  TEXT DEFAULT CURRENT_TIMESTAMP  -- 入库时间，自动填写
 );
+
+-- 抽取记录：每篇文献 × 每个提示词版本 × 每个模型，一行
+-- 同一篇文献可以用不同版本 / 不同模型各抽一次，方便第 8 天做对比
+CREATE TABLE IF NOT EXISTS extractions (
+    pmid            INTEGER,
+    prompt_version  TEXT,
+    model           TEXT,
+    status          TEXT,     -- 'ok' 成功 / 'failed' 失败
+    study_type      TEXT,
+    input_tokens    INTEGER,
+    output_tokens   INTEGER,
+    seconds         REAL,
+    raw_json        TEXT,     -- 模型返回的完整 JSON，留底备查
+    error           TEXT,
+    created_at      TEXT DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (pmid, prompt_version, model)   -- 联合主键：三者组合不能重复
+);
+
+CREATE TABLE IF NOT EXISTS entities (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    pmid            INTEGER,
+    prompt_version  TEXT,
+    model           TEXT,
+    name            TEXT,
+    type            TEXT
+);
+
+CREATE TABLE IF NOT EXISTS relations (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    pmid            INTEGER,
+    prompt_version  TEXT,
+    model           TEXT,
+    subject         TEXT,
+    relation        TEXT,
+    object          TEXT,
+    comparator      TEXT,
+    effect          TEXT,
+    population      TEXT,
+    evidence        TEXT
+);
 """
 
 
