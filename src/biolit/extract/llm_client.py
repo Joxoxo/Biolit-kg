@@ -49,11 +49,11 @@ class GeminiClient:
         self.client = genai.Client(api_key=api_key)
         self.model = model or os.getenv("GEMINI_MODEL", "gemini-3.8-flash")
 
-    def extract(self, title: str, abstract: str) -> LLMResponse:
-        """调用模型抽取；遇到临时错误自动重试，等待时间逐次翻倍（5、10、20、40 秒）。"""
+    def _retry(self, fn):
+        """执行一次模型调用；遇到临时错误自动重试，等待时间逐次翻倍（5、10、20、40 秒）。"""
         for attempt in range(1, MAX_RETRIES + 1):
             try:
-                return self._call(title, abstract)
+                return fn()
             except errors.APIError as e:
                 # 429 有两种：每分钟超限（等一会儿就好）和每日超限（今天不会好了）
                 # 每日超限的错误信息里会带 "PerDay"
@@ -64,6 +64,24 @@ class GeminiClient:
                 wait = 5 * 2 ** (attempt - 1)
                 print(f"  [{e.code}] 服务器暂时不可用，{wait} 秒后第 {attempt + 1} 次尝试…")
                 time.sleep(wait)
+
+    def extract(self, title: str, abstract: str) -> LLMResponse:
+        """从一篇摘要中抽取实体和关系。"""
+        return self._retry(lambda: self._call(title, abstract))
+
+    def generate(self, contents: str, system: str, schema=None):
+        """通用调用：给定系统提示词和内容，返回文本；若给了 schema（Pydantic 类），返回校验后的对象。
+        RAG 的"理解问题"和"生成回答"都用这个方法。"""
+        def call():
+            config = types.GenerateContentConfig(system_instruction=system)
+            if schema is not None:
+                config.response_mime_type = "application/json"
+                config.response_schema = schema
+            response = self.client.models.generate_content(model=self.model, contents=contents, config=config)
+            if schema is None:
+                return response.text
+            return response.parsed or schema.model_validate_json(response.text)
+        return self._retry(call)
 
     def _call(self, title: str, abstract: str) -> LLMResponse:
         """真正发出一次请求（不含重试）。"""
