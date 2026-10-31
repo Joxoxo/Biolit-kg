@@ -5,3 +5,5 @@ requests            # 调用 PubMed 接口
 pydantic            # 定义并校验抽取结果的格式
 pandas              # 表格数据处理
 pyyaml              # 读取 configs/ 里的配置文件
+networkx            # 构建和分析知识图谱
+scipy               # networkx 计算 PageRank 时需要
