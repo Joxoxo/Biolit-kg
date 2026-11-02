@@ -21,3 +21,7 @@ Thumbs.db
 
 # pip install -e . 自动生成
 *.egg-info/
+
+# 临时备份
+*_backup.xlsx
+~$*

@@ -7,3 +7,4 @@ pandas              # 表格数据处理
 pyyaml              # 读取 configs/ 里的配置文件
 networkx            # 构建和分析知识图谱
 scipy               # networkx 计算 PageRank 时需要
+openpyxl            # 生成 / 读取 Excel 标注表

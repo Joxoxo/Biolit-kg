@@ -20,7 +20,7 @@ from collections import Counter, defaultdict
 
 import networkx as nx
 
-from biolit.db import ROOT, get_connection
+from biolit.db import ACTIVE_VERSION, ROOT, get_connection
 
 GRAPH_PATH = ROOT / "data" / "processed" / "graph.json"
 
@@ -32,7 +32,8 @@ EVIDENCE_LEVEL = {"meta_analysis": 5, "rct": 4, "observational": 3, "clinical_pk
 def build_graph(conn, include_unverified: bool = False) -> nx.DiGraph:
     # 1. 节点类型：同一个实体在不同文献里可能被标成不同类型，取出现最多的那个
     type_votes = defaultdict(Counter)
-    for row in conn.execute("SELECT name_norm, type FROM entities WHERE name_norm IS NOT NULL"):
+    for row in conn.execute("SELECT name_norm, type FROM entities WHERE name_norm IS NOT NULL "
+                            "AND prompt_version = ?", (ACTIVE_VERSION,)):
         type_votes[row["name_norm"]][row["type"]] += 1
 
     # 2. 取关系，并带上所在文献的研究类型
@@ -41,13 +42,14 @@ def build_graph(conn, include_unverified: bool = False) -> nx.DiGraph:
              FROM relations r
              JOIN extractions e ON e.pmid = r.pmid AND e.prompt_version = r.prompt_version
                                AND e.model = r.model AND e.status = 'ok'
-             WHERE r.subject_norm IS NOT NULL AND r.object_norm IS NOT NULL"""
+             WHERE r.subject_norm IS NOT NULL AND r.object_norm IS NOT NULL
+               AND r.prompt_version = ?"""
     if not include_unverified:
         sql += " AND r.evidence_status != 'unverified'"   # 证据找不到原文的，默认不进图谱
 
     # 3. 按 (主体, 关系, 客体, 对照药) 合并
     edges = defaultdict(lambda: {"pmids": set(), "study_types": Counter(), "evidence": None})
-    for r in conn.execute(sql):
+    for r in conn.execute(sql, (ACTIVE_VERSION,)):
         e = edges[(r["s"], r["rel"], r["o"], r["cmp"])]
         if r["pmid"] in e["pmids"]:
             continue                                     # 同一篇文献重复报道同一关系，只算一次

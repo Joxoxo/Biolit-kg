@@ -22,7 +22,7 @@ from dataclasses import dataclass, field
 import numpy as np
 from pydantic import BaseModel, Field
 
-from biolit.db import get_connection
+from biolit.db import ACTIVE_VERSION, get_connection
 from biolit.extract.llm_client import GeminiClient
 from biolit.graph.build import GRAPH_PATH, load_graph
 from biolit.normalize.synonyms import Normalizer
@@ -83,9 +83,11 @@ class Retriever:
 
         # 每篇文献里出现过哪些（标准化后的）实体，事先读进内存
         self.paper_entities = defaultdict(set)
-        for r in self.conn.execute("SELECT pmid, name_norm FROM entities WHERE name_norm IS NOT NULL"):
+        for r in self.conn.execute("SELECT pmid, name_norm FROM entities WHERE name_norm IS NOT NULL "
+                                   "AND prompt_version = ?", (ACTIVE_VERSION,)):
             self.paper_entities[r["pmid"]].add(r["name_norm"])
-        for r in self.conn.execute("SELECT pmid, subject_norm, object_norm FROM relations"):
+        for r in self.conn.execute("SELECT pmid, subject_norm, object_norm FROM relations "
+                                   "WHERE prompt_version = ?", (ACTIVE_VERSION,)):
             self.paper_entities[r["pmid"]].update(x for x in (r["subject_norm"], r["object_norm"]) if x)
 
         # 上下级关系反过来查："doac" 的子类有 apixaban、rivaroxaban……
@@ -122,8 +124,8 @@ class Retriever:
             matched = [e for e in ents if self._expand(e) & have]
             row = self.conn.execute(
                 "SELECT p.title, p.abstract, p.year, p.journal, e.study_type FROM papers p "
-                "LEFT JOIN extractions e ON e.pmid = p.pmid AND e.status = 'ok' WHERE p.pmid = ?",
-                (pmid,)).fetchone()
+                "LEFT JOIN extractions e ON e.pmid = p.pmid AND e.status = 'ok' AND e.prompt_version = ? "
+                "WHERE p.pmid = ?", (ACTIVE_VERSION, pmid)).fetchone()
             ent_score = len(matched) / len(ents) if ents else 0.0
             papers.append(Paper(pmid, row["title"], row["abstract"], row["year"], row["journal"],
                                 row["study_type"], float(sims[i]), ent_score, matched,

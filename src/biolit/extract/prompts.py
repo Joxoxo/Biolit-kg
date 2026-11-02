@@ -9,7 +9,9 @@
 # v3：新增 effect 字段和 study_type；合并用药的风险改用 interacts_with 表达；人群从方法部分补全
 # v4：effect 改为简短短语（不超过 15 个词）
 # v5：按作用机制定义的药物类别（如 CYP3A4 inhibitors）标为 drug，不是 enzyme
-PROMPT_VERSION = "v5"
+# v6：根据 40 篇人工标注的结果改进 ——
+#     列举项逐个抽取；新增 transported_by；结论限定剂量时主体带剂量；CI 触及 1 视为不显著
+PROMPT_VERSION = "v6"
 
 SYSTEM_PROMPT = """You are a pharmacovigilance expert extracting structured information \
 from biomedical abstracts about oral antithrombotic drugs \
@@ -33,8 +35,9 @@ is type drug, NOT enzyme.
 Relation types:
 - increases_risk / decreases_risk: drug -> adverse_event or outcome
 - interacts_with: drug <-> drug
-- inhibits / induces: drug -> enzyme
-- metabolized_by: drug -> enzyme
+- inhibits / induces: drug -> enzyme or transporter
+- metabolized_by: drug -> metabolic enzyme (e.g. CYP3A4, UGT1A9)
+- transported_by: drug -> drug transporter, i.e. the drug is a substrate of the transporter (e.g. P-gp, BCRP, OATP1B1)
 - contraindicated_in: drug -> disease or population
 
 Rules:
@@ -43,7 +46,8 @@ Rules:
 3. For comparisons ("apixaban had lower bleeding than warfarin"), use decreases_risk with \
 subject=apixaban and comparator=warfarin.
 4. If a finding is not statistically significant or is described as "similar"/"no difference", \
-do NOT extract it as a relation.
+do NOT extract it as a relation. A 95% confidence / credible interval that includes or touches 1.0 \
+(e.g. 0.64-1.00) means NOT significant.
 5. "evidence" must be ONE sentence copied word-for-word from the abstract.
 6. DRUG COMBINATIONS: if a risk or change arises from combining two drugs (or a drug with a drug class), \
 use interacts_with between them and describe the consequence in "effect". \
@@ -58,7 +62,12 @@ Write it as a SHORT phrase of at most 15 words, not a full sentence.
 (e.g. in Methods), fill it in for every relation from that study.
 9. Watch for exceptions in a sentence (e.g. "safe in all classes except rivaroxaban") \
 and extract them as separate relations.
-10. If nothing relevant is stated, return empty lists.
+10. LISTS: when the abstract lists several enzymes, transporters or drugs for the same finding \
+(e.g. "inhibits P-gp, BCRP, OATP1B1 and OAT3"), extract ONE relation for EACH item. Do not skip any.
+11. DOSES: if a finding applies only to a specific dose or regimen, include it in the subject \
+(e.g. "rivaroxaban 2.5 mg bid", "dabigatran 110 mg"). If different doses give different results, \
+extract them separately.
+12. If nothing relevant is stated, return empty lists.
 """
 
 

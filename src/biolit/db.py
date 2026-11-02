@@ -12,6 +12,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 DB_PATH = ROOT / "data" / "biolit.db"
 
+# 知识图谱和 RAG 正式使用哪一版提示词的抽取结果。
+# 数据库里可能同时存着多个版本（如 v5 全量 + v6 只跑了评估用的 40 篇），不能混用，否则同一关系会被重复计数。
+# 新版本经评估确认更好、并跑完全量后，在 .env 里改 ACTIVE_PROMPT_VERSION 即可切换。
+import os
+from dotenv import load_dotenv
+load_dotenv(ROOT / ".env")
+ACTIVE_VERSION = os.getenv("ACTIVE_PROMPT_VERSION", "v5")
+
 # 建表语句。IF NOT EXISTS：表已存在就跳过，所以可以放心重复运行
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS papers (

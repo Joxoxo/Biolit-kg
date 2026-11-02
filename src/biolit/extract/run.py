@@ -58,6 +58,7 @@ def save_failure(conn, pmid, model, error):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--limit", type=int, default=None, help="最多处理多少篇")
+    parser.add_argument("--pmids-file", default=None, help="只处理文件里列出的 PMID（每行一个），如评估用的 40 篇")
     args = parser.parse_args()
 
     conn = get_connection()
@@ -72,6 +73,9 @@ def main():
            ORDER BY p.pmid""",
         (PROMPT_VERSION, client.model),
     ).fetchall()
+    if args.pmids_file:
+        wanted = {int(x) for x in open(args.pmids_file, encoding="utf-8").read().split()}
+        todo = [p for p in todo if p["pmid"] in wanted]
     if args.limit:
         todo = todo[:args.limit]
 

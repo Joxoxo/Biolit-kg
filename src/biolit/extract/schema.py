@@ -30,6 +30,7 @@ RelationType = Literal[
     "inhibits",            # 抑制：ketoconazole → CYP3A4
     "induces",             # 诱导：rifampin → CYP3A4
     "metabolized_by",      # 被代谢：rivaroxaban → CYP3A4
+    "transported_by",      # 被转运（转运体底物）：rivaroxaban → P-gp（v6 新增）
     "contraindicated_in",  # 禁用：dabigatran → severe renal impairment
 ]
 
