@@ -1,0 +1,269 @@
+# M6 问答评估题库（30 题，5 类 × 6 题）
+# source：用户 = 项目作者凭药学经验出题（未看图谱数据）；图谱 = 从知识图谱中挑选补充
+# scope：in = 语料中有相关文献；out = 语料中查不到（测试系统是否会拒答，而不是用自身知识编造）
+#
+# filters 只用来生成"候选证据"供人工审核，不参与系统回答。每个 filter 块内各字段是"且"，多个块之间是"或"。
+#   subject / object / comparator：关系字段的子串匹配（任一命中即可）
+#   relation：关系类型
+#   population：人群描述的子串匹配
+#   swap: comparator → 主体和对照药互换也算（A 比 B 和 B 比 A 是同一件事）
+#   swap: object     → 主体和客体互换也算（用于相互作用：A 与 B 相互作用 = B 与 A 相互作用）
+# keywords：摘要中必须同时出现的词，用于补充"抽取漏掉但文献其实相关"的候选，降低只依赖抽取结果带来的偏差
+
+- id: Q01
+  category: 药物比较
+  source: 用户
+  scope: in
+  question: 房颤患者用阿哌沙班和华法林，哪种药的大出血风险更低？颅内出血风险呢？
+  filters:
+    - {subject: [apixaban], comparator: [warfarin, vitamin k antagonist], object: [major bleeding, intracranial], swap: comparator}
+  keywords: [apixaban, warfarin, intracranial]
+
+- id: Q02
+  category: 药物比较
+  source: 用户
+  scope: in
+  question: 阿哌沙班和利伐沙班直接比较时，消化道出血和缺血性卒中的风险有没有差别？
+  filters:
+    - {subject: [apixaban], comparator: [rivaroxaban], object: [gastrointestinal, ischemic stroke], swap: comparator}
+  keywords: [apixaban, rivaroxaban, gastrointestinal]
+
+- id: Q03
+  category: 相互作用与药代
+  source: 用户
+  scope: in
+  question: 华法林和氟康唑合用，为什么可能增加出血风险？这和 CYP2C9 抑制有关系吗？
+  filters:
+    - {subject: [fluconazole], object: [warfarin, cyp2c9], swap: object}
+  keywords: [warfarin, fluconazole]
+
+- id: Q04
+  category: 相互作用与药代
+  source: 用户
+  scope: in
+  question: 利伐沙班与胺碘酮合用时，出血风险会不会升高？摘要里有没有提到 P-gp 或 CYP3A4 相关的机制？
+  filters:
+    - {subject: [amiodarone, antiarrhythmic], object: [rivaroxaban, doac, factor xa], swap: object}
+    - {subject: [amiodarone, antiarrhythmic], relation: [increases_risk]}
+  keywords: [rivaroxaban, amiodarone]
+
+- id: Q05
+  category: 特殊人群
+  source: 用户
+  scope: in
+  question: 老年房颤患者合并肾功能不全时，DOAC 和华法林相比，大出血与卒中风险分别怎么样？
+  filters:
+    - {subject: [doac, apixaban, rivaroxaban, dabigatran, edoxaban], comparator: [warfarin, vitamin k antagonist], population: [renal, kidney, ckd], swap: comparator}
+  keywords: [renal, warfarin, elderly]
+
+- id: Q06
+  category: 特殊人群
+  source: 用户
+  scope: in
+  question: 正在接受透析的房颤患者，使用阿哌沙班或华法林时，出血、卒中和死亡风险有什么差异？
+  filters:
+    - {subject: [apixaban], comparator: [warfarin, vitamin k antagonist], population: [dialysis, end-stage, eskd, esrd], swap: comparator}
+  keywords: [apixaban, dialysis]
+
+- id: Q07
+  category: 汇总
+  source: 用户
+  scope: in
+  question: 不同 DOAC 的消化道出血风险一样吗？阿哌沙班、利伐沙班和达比加群之间有什么差别？
+  filters:
+    - {subject: [apixaban, rivaroxaban, dabigatran, edoxaban], comparator: [apixaban, rivaroxaban, dabigatran, edoxaban], object: [gastrointestinal]}
+  keywords: [gastrointestinal, dabigatran, rivaroxaban, apixaban]
+
+- id: Q08
+  category: 汇总
+  source: 用户
+  scope: in
+  question: DOAC 相比华法林是否都能降低颅内出血风险？这种获益在不同 DOAC 之间一致吗？
+  filters:
+    - {subject: [doac, apixaban, rivaroxaban, dabigatran, edoxaban], comparator: [warfarin, vitamin k antagonist], object: [intracranial], swap: comparator}
+  keywords: [intracranial, warfarin]
+
+- id: Q09
+  category: 药物比较
+  source: 用户
+  scope: in
+  question: 肝素和阿哌沙班相比，哪种药的出血风险更低？
+  note: 原为范围外题，查库发现有阿哌沙班对比低分子肝素的文献，改为正常题
+  filters:
+    - {subject: [apixaban], comparator: [heparin, dalteparin, enoxaparin, lmwh], swap: comparator}
+  keywords: [apixaban, heparin, bleeding]
+
+- id: Q10
+  category: 药物比较
+  source: 用户
+  scope: in
+  question: 阿司匹林单药和氯吡格雷单药相比，哪种药引起的消化道出血更少？
+  note: 原为范围外题，查库发现有相关文献，改为正常题
+  filters:
+    - {subject: [clopidogrel], comparator: [aspirin], object: [bleeding], swap: comparator}
+  keywords: [clopidogrel, aspirin monotherapy]
+
+- id: Q11
+  category: 药物比较
+  source: 图谱
+  scope: in
+  question: 达比加群和华法林相比，大出血和全因死亡风险分别如何？
+  filters:
+    - {subject: [dabigatran], comparator: [warfarin, vitamin k antagonist], object: [major bleeding, mortality], swap: comparator}
+  keywords: [dabigatran, warfarin, mortality]
+
+- id: Q12
+  category: 药物比较
+  source: 图谱
+  scope: in
+  question: 替格瑞洛和氯吡格雷相比，出血风险和主要不良心血管事件（MACE）有什么差别？
+  filters:
+    - {subject: [ticagrelor], comparator: [clopidogrel], object: [bleeding, mace], swap: comparator}
+  keywords: [ticagrelor, clopidogrel, bleeding]
+
+- id: Q13
+  category: 相互作用与药代
+  source: 图谱
+  scope: in
+  question: 利伐沙班主要经过哪些代谢酶和转运体清除？
+  filters:
+    - {subject: [rivaroxaban], relation: [metabolized_by, transported_by]}
+  keywords: [rivaroxaban, CYP3A4, P-gp]
+
+- id: Q14
+  category: 相互作用与药代
+  source: 图谱
+  scope: in
+  question: 克拉霉素和 DOAC 合用有什么风险？涉及哪些 DOAC？
+  filters:
+    - {subject: [clarithromycin], object: [apixaban, rivaroxaban, dabigatran, edoxaban, doac], swap: object}
+  keywords: [clarithromycin]
+
+- id: Q15
+  category: 相互作用与药代
+  source: 图谱
+  scope: in
+  question: 恩扎卢胺与阿哌沙班或利伐沙班合用有什么风险？机制是什么？
+  filters:
+    - {subject: [enzalutamide], object: [apixaban, rivaroxaban, cyp3a4, p-gp], swap: object}
+  keywords: [enzalutamide]
+
+- id: Q16
+  category: 相互作用与药代
+  source: 图谱
+  scope: in
+  question: 非甾体抗炎药（NSAID）与口服抗凝药合用，出血风险会增加吗？
+  filters:
+    - {subject: [nsaid, non-steroidal anti-inflammatory], swap: object}
+  keywords: [NSAID, bleeding]
+
+- id: Q17
+  category: 特殊人群
+  source: 图谱
+  scope: in
+  question: 肥胖或高体重患者使用阿哌沙班、利伐沙班，疗效和安全性如何？
+  filters:
+    - {subject: [apixaban, rivaroxaban, doac], population: [obes, weight, bmi]}
+  keywords: [obes, apixaban]
+
+- id: Q18
+  category: 特殊人群
+  source: 图谱
+  scope: in
+  question: 肝硬化或慢性肝病患者使用 DOAC，出血风险和华法林相比怎么样？
+  filters:
+    - {subject: [doac, apixaban, rivaroxaban, dabigatran, edoxaban, warfarin], population: [cirrhosis, liver, hepatic]}
+  keywords: [cirrhosis, anticoagulant]
+
+- id: Q19
+  category: 特殊人群
+  source: 图谱
+  scope: in
+  question: 衰弱的老年患者使用口服抗凝药，DOAC 和华法林相比出血风险如何？
+  filters:
+    - {subject: [doac, apixaban, rivaroxaban, dabigatran, edoxaban, warfarin], population: [frail]}
+  keywords: [frail, bleeding]
+
+- id: Q20
+  category: 特殊人群
+  source: 图谱
+  scope: in
+  question: 携带 CYP2C19 功能缺失等位基因的患者使用氯吡格雷，会有什么问题？
+  filters:
+    - {subject: [clopidogrel], object: [cyp2c19]}
+    - {subject: [clopidogrel, ticagrelor], population: [cyp2c19, lof, poor metabolizer]}
+  keywords: [CYP2C19, clopidogrel]
+
+- id: Q21
+  category: 汇总
+  source: 图谱
+  scope: in
+  question: 与华法林相比，哪些 DOAC 能降低全因死亡率？
+  filters:
+    - {subject: [doac, apixaban, rivaroxaban, dabigatran, edoxaban], comparator: [warfarin, vitamin k antagonist], object: [all-cause mortality], swap: comparator}
+  keywords: [all-cause mortality, warfarin]
+
+- id: Q22
+  category: 汇总
+  source: 图谱
+  scope: in
+  question: 与华法林相比，哪些 DOAC 能降低卒中或体循环栓塞风险？
+  filters:
+    - {subject: [doac, apixaban, rivaroxaban, dabigatran, edoxaban], comparator: [warfarin, vitamin k antagonist], object: [stroke or systemic embolism, systemic embolism], swap: comparator}
+  keywords: [systemic embolism, warfarin]
+
+- id: Q23
+  category: 汇总
+  source: 图谱
+  scope: in
+  question: 哪些合用药物会通过抑制 CYP3A4 或 P-gp 增加 DOAC 的出血风险？
+  filters:
+    - {relation: [inhibits], object: [cyp3a4, cyp3a, p-gp]}
+    - {relation: [interacts_with], object: [apixaban, rivaroxaban, dabigatran, edoxaban, doac], swap: object}
+  keywords: [P-gp, CYP3A4, bleeding]
+
+- id: Q24
+  category: 汇总
+  source: 图谱
+  scope: in
+  question: 四种 DOAC 之间相比，哪一种的大出血风险最低？
+  filters:
+    - {subject: [apixaban, rivaroxaban, dabigatran, edoxaban], comparator: [apixaban, rivaroxaban, dabigatran, edoxaban], object: [major bleeding]}
+  keywords: [major bleeding, apixaban, rivaroxaban, dabigatran]
+
+# ---------- 范围外（语料中 0 篇相关文献，已用关键词检索确认）----------
+- id: Q25
+  category: 范围外
+  source: 用户
+  scope: out
+  question: 利伐沙班和圣约翰草（贯叶连翘）合用，会降低抗凝效果吗？
+
+- id: Q26
+  category: 范围外
+  source: 用户
+  scope: out
+  question: 银杏叶提取物和华法林合用，会增加出血风险吗？
+
+- id: Q27
+  category: 范围外
+  source: 图谱
+  scope: out
+  question: 丹参制剂和华法林合用，会增加出血风险吗？
+
+- id: Q28
+  category: 范围外
+  source: 图谱
+  scope: out
+  question: 沃拉帕沙（vorapaxar）和氯吡格雷合用，出血风险如何？
+
+- id: Q29
+  category: 范围外
+  source: 图谱
+  scope: out
+  question: 鱼油（omega-3 脂肪酸）会增加阿哌沙班的出血风险吗？
+
+- id: Q30
+  category: 范围外
+  source: 图谱
+  scope: out
+  question: 姜黄素和利伐沙班合用安全吗？

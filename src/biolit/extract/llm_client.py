@@ -1,12 +1,13 @@
 """M2 模型调用：把"调用大模型"封装成统一接口。
 
 为什么要封装：
-抽取代码只调用 client.extract(...)，不关心背后是 Gemini 还是 DeepSeek。
-以后换模型只需要改 .env，不用改抽取代码（第 8 天做模型对比时就靠这个）。
+抽取代码只调用 client.extract(...)，不关心背后用的是哪个模型。
+换模型只需要改 .env 里的 GEMINI_MODEL，不用改抽取代码。
 
 自测方法（在 biolit-kg 文件夹下）：
     python -m biolit.extract.llm_client
 """
+import json
 import os
 import time
 from dataclasses import dataclass
@@ -16,6 +17,7 @@ from google import genai
 from google.genai import errors, types
 
 from biolit.db import ROOT
+from biolit.extract.cache import LLMCache
 from biolit.extract.prompts import SYSTEM_PROMPT, build_user_prompt
 from biolit.extract.schema import ExtractionResult
 
@@ -48,6 +50,9 @@ class GeminiClient:
             raise RuntimeError("没有找到 GEMINI_API_KEY，请检查 .env 文件")
         self.client = genai.Client(api_key=api_key)
         self.model = model or os.getenv("GEMINI_MODEL", "gemini-3.8-flash")
+        self.cache = LLMCache()
+        self.calls = 0          # 真正发给模型的次数（消耗额度）
+        self.cache_hits = 0     # 命中缓存的次数（不消耗额度）
 
     def _retry(self, fn):
         """执行一次模型调用；遇到临时错误自动重试，等待时间逐次翻倍（5、10、20、40 秒）。"""
@@ -69,9 +74,18 @@ class GeminiClient:
         """从一篇摘要中抽取实体和关系。"""
         return self._retry(lambda: self._call(title, abstract))
 
-    def generate(self, contents: str, system: str, schema=None):
+    def generate(self, contents: str, system: str, schema=None, use_cache: bool = True):
         """通用调用：给定系统提示词和内容，返回文本；若给了 schema（Pydantic 类），返回校验后的对象。
-        RAG 的"理解问题"和"生成回答"都用这个方法。"""
+        RAG 的"理解问题"和"生成回答"都用这个方法。
+        相同输入优先读缓存；use_cache=False 时强制重新调用（比如想看模型回答的随机波动）。"""
+        schema_sig = json.dumps(schema.model_json_schema(), sort_keys=True) if schema else "text"
+        key = LLMCache.make_key(self.model, system, contents, schema_sig)
+        if use_cache:
+            hit = self.cache.get(key)
+            if hit is not None:
+                self.cache_hits += 1
+                return schema.model_validate_json(hit) if schema else hit
+
         def call():
             config = types.GenerateContentConfig(system_instruction=system)
             if schema is not None:
@@ -81,7 +95,11 @@ class GeminiClient:
             if schema is None:
                 return response.text
             return response.parsed or schema.model_validate_json(response.text)
-        return self._retry(call)
+
+        out = self._retry(call)
+        self.calls += 1
+        self.cache.set(key, self.model, out.model_dump_json() if schema else out)
+        return out
 
     def _call(self, title: str, abstract: str) -> LLMResponse:
         """真正发出一次请求（不含重试）。"""

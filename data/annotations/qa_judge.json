@@ -1,0 +1,2476 @@
+{
+ "Q01": {
+  "scope": "in",
+  "n_points": 3,
+  "results": {
+   "vector": {
+    "answer": 1,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "未覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 35807073,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 36134060,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 39077138,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 40286370,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 42415975,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   },
+   "llm_only": {
+    "answer": 2,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "未覆盖"
+     }
+    ],
+    "citations": [],
+    "contradictions": 0
+   },
+   "hybrid": {
+    "answer": 3,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "未覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 35807073,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 36134060,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 40286370,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 42238268,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   }
+  }
+ },
+ "Q02": {
+  "scope": "in",
+  "n_points": 2,
+  "results": {
+   "hybrid": {
+    "answer": 1,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 36341531,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 36315950,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 34949473,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 39546473,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 34462932,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   },
+   "llm_only": {
+    "answer": 2,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     }
+    ],
+    "citations": [],
+    "contradictions": 0
+   },
+   "vector": {
+    "answer": 3,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 34949473,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 36341531,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 36315950,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 39546473,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 34633836,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   }
+  }
+ },
+ "Q03": {
+  "scope": "in",
+  "n_points": 2,
+  "results": {
+   "vector": {
+    "answer": 1,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 38487942,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 35798369,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 35798368,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 35622425,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 38487942,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 35622425,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 35798369,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 35798368,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 35798369,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 35798368,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 38487942,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 35798369,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   },
+   "llm_only": {
+    "answer": 2,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "部分覆盖"
+     }
+    ],
+    "citations": [],
+    "contradictions": 0
+   },
+   "hybrid": {
+    "answer": 3,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 35798369,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 35798368,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 35622425,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 38487942,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 35622425,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 35798369,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 35798368,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 35622425,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 37093458,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 38487942,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 35798369,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 35798368,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   }
+  }
+ },
+ "Q04": {
+  "scope": "in",
+  "n_points": 3,
+  "results": {
+   "vector": {
+    "answer": 1,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 37791408,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 41439583,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 37184597,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 35745692,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   },
+   "llm_only": {
+    "answer": 2,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "未覆盖"
+     }
+    ],
+    "citations": [],
+    "contradictions": 0
+   },
+   "hybrid": {
+    "answer": 3,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 37791408,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 35985100,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 41439583,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 37184597,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 35985100,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 36861431,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   }
+  }
+ },
+ "Q05": {
+  "scope": "in",
+  "n_points": 3,
+  "results": {
+   "vector": {
+    "answer": 1,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "部分覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 35757349,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 42058359,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 37452906,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 36229879,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 37584025,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   },
+   "hybrid": {
+    "answer": 2,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "部分覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 35757349,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 37452906,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 37584025,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 36229879,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 33817758,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   },
+   "llm_only": {
+    "answer": 3,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "部分覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "部分覆盖"
+     }
+    ],
+    "citations": [],
+    "contradictions": 0
+   }
+  }
+ },
+ "Q06": {
+  "scope": "in",
+  "n_points": 3,
+  "results": {
+   "vector": {
+    "answer": 1,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 35469965,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 42906734,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 38151201,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 42412715,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 36335914,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   },
+   "hybrid": {
+    "answer": 2,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 35469965,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 38939758,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 42412715,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 36335914,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 38161701,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   },
+   "llm_only": {
+    "answer": 3,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "部分覆盖"
+     }
+    ],
+    "citations": [],
+    "contradictions": 0
+   }
+  }
+ },
+ "Q07": {
+  "scope": "in",
+  "n_points": 3,
+  "results": {
+   "vector": {
+    "answer": 1,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "部分覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 34633836,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 36341531,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 36315950,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 36686666,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 33470705,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   },
+   "llm_only": {
+    "answer": 2,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "部分覆盖"
+     }
+    ],
+    "citations": [],
+    "contradictions": 0
+   },
+   "hybrid": {
+    "answer": 3,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "部分覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 33470705,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 36315950,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 34633836,
+      "verdict": "部分支持"
+     },
+     {
+      "pmid": 36341531,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 36686666,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   }
+  }
+ },
+ "Q08": {
+  "scope": "in",
+  "n_points": 3,
+  "results": {
+   "hybrid": {
+    "answer": 1,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 42238268,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 42415975,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 35615562,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 34302375,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   },
+   "vector": {
+    "answer": 2,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 42415975,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 42238268,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 35615562,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 34436708,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 39077138,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   },
+   "llm_only": {
+    "answer": 3,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "部分覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "覆盖"
+     }
+    ],
+    "citations": [],
+    "contradictions": 0
+   }
+  }
+ },
+ "Q09": {
+  "scope": "in",
+  "n_points": 4,
+  "results": {
+   "hybrid": {
+    "answer": 1,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "未覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "未覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "未覆盖"
+     },
+     {
+      "point": 4,
+      "verdict": "未覆盖"
+     }
+    ],
+    "citations": [],
+    "contradictions": 0
+   },
+   "vector": {
+    "answer": 2,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "未覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "未覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "未覆盖"
+     },
+     {
+      "point": 4,
+      "verdict": "未覆盖"
+     }
+    ],
+    "citations": [],
+    "contradictions": 0
+   },
+   "llm_only": {
+    "answer": 3,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "未覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "未覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "未覆盖"
+     },
+     {
+      "point": 4,
+      "verdict": "覆盖"
+     }
+    ],
+    "citations": [],
+    "contradictions": 0
+   }
+  }
+ },
+ "Q10": {
+  "scope": "in",
+  "n_points": 2,
+  "results": {
+   "hybrid": {
+    "answer": 1,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "部分覆盖"
+     }
+    ],
+    "citations": [],
+    "contradictions": 0
+   },
+   "llm_only": {
+    "answer": 2,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "未覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "未覆盖"
+     }
+    ],
+    "citations": [],
+    "contradictions": 2
+   },
+   "vector": {
+    "answer": 3,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "部分覆盖"
+     }
+    ],
+    "citations": [],
+    "contradictions": 0
+   }
+  }
+ },
+ "Q11": {
+  "scope": "in",
+  "n_points": 3,
+  "results": {
+   "llm_only": {
+    "answer": 1,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "未覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "未覆盖"
+     }
+    ],
+    "citations": [],
+    "contradictions": 0
+   },
+   "vector": {
+    "answer": 2,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "部分覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "未覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 41879686,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 37996330,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 34244745,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 42007131,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 39077138,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   },
+   "hybrid": {
+    "answer": 3,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "部分覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "未覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 41879686,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 37996330,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 34244745,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 42007131,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 36607464,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   }
+  }
+ },
+ "Q12": {
+  "scope": "in",
+  "n_points": 3,
+  "results": {
+   "hybrid": {
+    "answer": 1,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "未覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 41143351,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 37263787,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 41152338,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 35711382,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 40892606,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   },
+   "llm_only": {
+    "answer": 2,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "未覆盖"
+     }
+    ],
+    "citations": [],
+    "contradictions": 0
+   },
+   "vector": {
+    "answer": 3,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "未覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 41143351,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 32908113,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 35711382,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 36245047,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 40892606,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   }
+  }
+ },
+ "Q13": {
+  "scope": "in",
+  "n_points": 3,
+  "results": {
+   "llm_only": {
+    "answer": 1,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "覆盖"
+     }
+    ],
+    "citations": [],
+    "contradictions": 0
+   },
+   "hybrid": {
+    "answer": 2,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 34837258,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 42394189,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 40896201,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 33847849,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   },
+   "vector": {
+    "answer": 3,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 42394189,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 33847849,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 34837258,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 37385211,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 40896201,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   }
+  }
+ },
+ "Q14": {
+  "scope": "in",
+  "n_points": 3,
+  "results": {
+   "hybrid": {
+    "answer": 1,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "部分覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 36870039,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 37791408,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 39598572,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 36626944,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 36908021,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   },
+   "vector": {
+    "answer": 2,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "部分覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 36870039,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 39598572,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 3908021,
+      "verdict": "不支持"
+     },
+     {
+      "pmid": 35745692,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   },
+   "llm_only": {
+    "answer": 3,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "未覆盖"
+     }
+    ],
+    "citations": [],
+    "contradictions": 0
+   }
+  }
+ },
+ "Q15": {
+  "scope": "in",
+  "n_points": 3,
+  "results": {
+   "vector": {
+    "answer": 1,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 41432664,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 37344637,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   },
+   "llm_only": {
+    "answer": 2,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "未覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "覆盖"
+     }
+    ],
+    "citations": [],
+    "contradictions": 0
+   },
+   "hybrid": {
+    "answer": 3,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "部分覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 37344637,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 41432664,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   }
+  }
+ },
+ "Q16": {
+  "scope": "in",
+  "n_points": 2,
+  "results": {
+   "llm_only": {
+    "answer": 1,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "部分覆盖"
+     }
+    ],
+    "citations": [],
+    "contradictions": 0
+   },
+   "vector": {
+    "answer": 2,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 40833918,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 42927649,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 40530373,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   },
+   "hybrid": {
+    "answer": 3,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 40833918,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 42927649,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 40530373,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   }
+  }
+ },
+ "Q17": {
+  "scope": "in",
+  "n_points": 3,
+  "results": {
+   "hybrid": {
+    "answer": 1,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "部分覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "未覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 33677803,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 37713139,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 37738772,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 38197017,
+      "verdict": "部分支持"
+     }
+    ],
+    "contradictions": 0
+   },
+   "vector": {
+    "answer": 2,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "部分覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "部分覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "未覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 33677803,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 38197017,
+      "verdict": "部分支持"
+     },
+     {
+      "pmid": 37738772,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 37713139,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   },
+   "llm_only": {
+    "answer": 3,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "部分覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "未覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "覆盖"
+     }
+    ],
+    "citations": [],
+    "contradictions": 0
+   }
+  }
+ },
+ "Q18": {
+  "scope": "in",
+  "n_points": 3,
+  "results": {
+   "hybrid": {
+    "answer": 1,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "部分覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 35913111,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 36762560,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 38268519,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 36837547,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   },
+   "vector": {
+    "answer": 2,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "部分覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 35913111,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 36762560,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 38268519,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 36201730,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   },
+   "llm_only": {
+    "answer": 3,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "部分覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "未覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "未覆盖"
+     }
+    ],
+    "citations": [],
+    "contradictions": 0
+   }
+  }
+ },
+ "Q19": {
+  "scope": "in",
+  "n_points": 3,
+  "results": {
+   "llm_only": {
+    "answer": 1,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "部分覆盖"
+     }
+    ],
+    "citations": [],
+    "contradictions": 0
+   },
+   "hybrid": {
+    "answer": 2,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "部分覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "部分覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 32602228,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 34280330,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 36941126,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 35185404,
+      "verdict": "部分支持"
+     },
+     {
+      "pmid": 42795254,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   },
+   "vector": {
+    "answer": 3,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "部分覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 36941126,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 34280330,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 32602228,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 35185404,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   }
+  }
+ },
+ "Q20": {
+  "scope": "in",
+  "n_points": 3,
+  "results": {
+   "hybrid": {
+    "answer": 1,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "部分覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "部分覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 33931001,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 40533625,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 42303966,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 38114408,
+      "verdict": "部分支持"
+     }
+    ],
+    "contradictions": 0
+   },
+   "llm_only": {
+    "answer": 2,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "未覆盖"
+     }
+    ],
+    "citations": [],
+    "contradictions": 0
+   },
+   "vector": {
+    "answer": 3,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "部分覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "未覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 33931001,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 40533625,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 42303966,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   }
+  }
+ },
+ "Q21": {
+  "scope": "in",
+  "n_points": 4,
+  "results": {
+   "vector": {
+    "answer": 1,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 4,
+      "verdict": "部分覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 40822463,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 35615562,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 36607464,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 34142600,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   },
+   "hybrid": {
+    "answer": 2,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 4,
+      "verdict": "部分覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 40822463,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 35615562,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 34142600,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 36607464,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 37996330,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   },
+   "llm_only": {
+    "answer": 3,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "未覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "未覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "未覆盖"
+     },
+     {
+      "point": 4,
+      "verdict": "部分覆盖"
+     }
+    ],
+    "citations": [],
+    "contradictions": 2
+   }
+  }
+ },
+ "Q22": {
+  "scope": "in",
+  "n_points": 3,
+  "results": {
+   "vector": {
+    "answer": 1,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "未覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 42415975,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 34722686,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 39950313,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 34244745,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   },
+   "llm_only": {
+    "answer": 2,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "未覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "未覆盖"
+     }
+    ],
+    "citations": [],
+    "contradictions": 0
+   },
+   "hybrid": {
+    "answer": 3,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "部分覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "未覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 39950313,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 36456387,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 33780291,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 42415975,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   }
+  }
+ },
+ "Q23": {
+  "scope": "in",
+  "n_points": 3,
+  "results": {
+   "llm_only": {
+    "answer": 1,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "部分覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "部分覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "未覆盖"
+     }
+    ],
+    "citations": [],
+    "contradictions": 0
+   },
+   "vector": {
+    "answer": 2,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "部分覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "未覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 37791408,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 38523519,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 35745692,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   },
+   "hybrid": {
+    "answer": 3,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "部分覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "未覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 37791408,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 35745692,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 35985100,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 36861431,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   }
+  }
+ },
+ "Q24": {
+  "scope": "in",
+  "n_points": 3,
+  "results": {
+   "vector": {
+    "answer": 1,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "部分覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 39077138,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 34436708,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 37310479,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 34973879,
+      "verdict": "支持"
+     }
+    ],
+    "contradictions": 0
+   },
+   "hybrid": {
+    "answer": 2,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "部分覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "覆盖"
+     }
+    ],
+    "citations": [
+     {
+      "pmid": 39077138,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 34436708,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 34973879,
+      "verdict": "支持"
+     },
+     {
+      "pmid": 33690135,
+      "verdict": "部分支持"
+     }
+    ],
+    "contradictions": 0
+   },
+   "llm_only": {
+    "answer": 3,
+    "points": [
+     {
+      "point": 1,
+      "verdict": "覆盖"
+     },
+     {
+      "point": 2,
+      "verdict": "部分覆盖"
+     },
+     {
+      "point": 3,
+      "verdict": "覆盖"
+     }
+    ],
+    "citations": [],
+    "contradictions": 0
+   }
+  }
+ },
+ "Q25": {
+  "scope": "out",
+  "n_points": 0,
+  "results": {
+   "hybrid": {
+    "answer": 1,
+    "refused": true,
+    "substantive": false
+   },
+   "vector": {
+    "answer": 2,
+    "refused": true,
+    "substantive": false
+   },
+   "llm_only": {
+    "answer": 3,
+    "refused": false,
+    "substantive": true
+   }
+  }
+ },
+ "Q26": {
+  "scope": "out",
+  "n_points": 0,
+  "results": {
+   "vector": {
+    "answer": 1,
+    "refused": true,
+    "substantive": false
+   },
+   "llm_only": {
+    "answer": 2,
+    "refused": false,
+    "substantive": true
+   },
+   "hybrid": {
+    "answer": 3,
+    "refused": true,
+    "substantive": false
+   }
+  }
+ },
+ "Q27": {
+  "scope": "out",
+  "n_points": 0,
+  "results": {
+   "hybrid": {
+    "answer": 1,
+    "refused": false,
+    "substantive": true
+   },
+   "llm_only": {
+    "answer": 2,
+    "refused": false,
+    "substantive": true
+   },
+   "vector": {
+    "answer": 3,
+    "refused": true,
+    "substantive": false
+   }
+  }
+ },
+ "Q28": {
+  "scope": "out",
+  "n_points": 0,
+  "results": {
+   "hybrid": {
+    "answer": 1,
+    "refused": true,
+    "substantive": false
+   },
+   "vector": {
+    "answer": 2,
+    "refused": true,
+    "substantive": false
+   },
+   "llm_only": {
+    "answer": 3,
+    "refused": false,
+    "substantive": true
+   }
+  }
+ },
+ "Q29": {
+  "scope": "out",
+  "n_points": 0,
+  "results": {
+   "hybrid": {
+    "answer": 1,
+    "refused": true,
+    "substantive": false
+   },
+   "llm_only": {
+    "answer": 2,
+    "refused": false,
+    "substantive": true
+   },
+   "vector": {
+    "answer": 3,
+    "refused": true,
+    "substantive": false
+   }
+  }
+ },
+ "Q30": {
+  "scope": "out",
+  "n_points": 0,
+  "results": {
+   "vector": {
+    "answer": 1,
+    "refused": true,
+    "substantive": false
+   },
+   "hybrid": {
+    "answer": 2,
+    "refused": true,
+    "substantive": false
+   },
+   "llm_only": {
+    "answer": 3,
+    "refused": false,
+    "substantive": true
+   }
+  }
+ }
+}

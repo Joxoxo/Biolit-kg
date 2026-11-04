@@ -77,7 +77,10 @@ CREATE TABLE IF NOT EXISTS relations (
 def get_connection(db_path: Path = DB_PATH) -> sqlite3.Connection:
     """打开数据库连接；数据库文件不存在时会自动创建，并建好表。"""
     db_path.parent.mkdir(parents=True, exist_ok=True)
-    conn = sqlite3.connect(db_path)
+    # check_same_thread=False：允许在其他线程使用这个连接。
+    # 网页（Streamlit）会在不同线程处理每次操作，而缓存的连接是在第一个线程创建的；
+    # 网页只读不写，所以关掉这个检查是安全的。
+    conn = sqlite3.connect(db_path, check_same_thread=False)
     conn.row_factory = sqlite3.Row  # 查询结果可以按列名取值，如 row["title"]
     conn.executescript(SCHEMA)
     return conn

@@ -106,7 +106,12 @@ class Retriever:
                     stack.append(c)
         return out
 
-    def retrieve(self, question: str, k: int = 5) -> RetrievalResult:
+    def retrieve(self, question: str, k: int = 5, mode: str = "hybrid") -> RetrievalResult:
+        """mode（问答评估的消融实验用）：
+        - "hybrid"：向量相似度 + 实体匹配加分 + 知识图谱（正式版）
+        - "vector"：只按向量相似度排序，不加实体分、不查图谱（普通 RAG 基线）
+        两种模式用同一个英文检索句，保证差异只来自"实体匹配 + 图谱"这两部分。
+        """
         # ① 理解问题
         q: QueryInfo = self.llm.generate(question, QUERY_PROMPT, schema=QueryInfo)
         ents = list(dict.fromkeys(self.norm(e) for e in q.entities if self.norm(e)))
@@ -130,10 +135,10 @@ class Retriever:
             papers.append(Paper(pmid, row["title"], row["abstract"], row["year"], row["journal"],
                                 row["study_type"], float(sims[i]), ent_score, matched,
                                 score=float(sims[i]) + ENTITY_BONUS * ent_score))
-        papers.sort(key=lambda p: -p.score)
+        papers.sort(key=lambda p: -(p.vector_score if mode == "vector" else p.score))
 
         # ④ 知识图谱
-        facts = self.graph_facts(ents) if self.graph is not None else []
+        facts = self.graph_facts(ents) if (mode == "hybrid" and self.graph is not None) else []
         return RetrievalResult(question, q, ents, papers[:k], facts)
 
     def graph_facts(self, ents: list[str], limit: int = 15) -> list[dict]:

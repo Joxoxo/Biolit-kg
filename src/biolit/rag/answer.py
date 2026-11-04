@@ -28,10 +28,24 @@ B. 文献摘要：与问题最相关的几篇原文摘要，每篇带有 PMID、
 1. 只能使用材料中的信息，不得使用你自己的知识补充。材料不足以回答时，直接说"现有检索到的文献未涉及这一点"。
 2. 每个具体结论后标注来源，格式为 [PMID:12345678]；引用知识图谱统计时写 [图谱]。
 3. 说明证据强度：优先引用 Meta 分析和 RCT 的结论，并指出研究类型；不同研究结论不一致时要明确指出。
-4. 结构：先用 1–2 句话给出结论，再分点列出证据，最后用一句话说明局限性。
+4. 结构：先用 1–2 句话给出结论，再分点列出证据，最后用一句话说明「现有证据的局限性」（不要写成「本研究」，因为回答综合了多篇文献）。
 5. 用中文回答，药名首次出现时附英文名。
 6. 结尾固定加一句："以上内容基于文献自动检索，不构成用药建议。"
 """
+
+
+# 系统 A（纯大模型）用的提示词：结构和正式版一样，但没有检索材料，只能凭模型自身知识回答
+LLM_ONLY_PROMPT = """你是一名临床药学信息助手，回答关于口服抗栓药物安全性的问题。
+
+回答要求：
+1. 根据你掌握的医学知识回答。
+2. 说明证据强度：尽量指出结论来自哪类研究（Meta 分析、RCT、观察性研究等）；不同研究结论不一致时要明确指出。
+3. 结构：先用 1–2 句话给出结论，再分点列出证据，最后用一句话说明「现有证据的局限性」。
+4. 用中文回答，药名首次出现时附英文名。
+5. 结尾固定加一句："以上内容不构成用药建议。"
+"""
+
+MODES = ("llm_only", "vector", "hybrid")   # 问答评估对比的三个系统：A 纯大模型 / B 向量 RAG / C 混合 GraphRAG
 
 
 @dataclass
@@ -67,8 +81,13 @@ class QA:
         self.retriever = Retriever()
         self.llm = self.retriever.llm      # 复用同一个模型客户端
 
-    def ask(self, question: str, k: int = 5) -> Answer:
-        res = self.retriever.retrieve(question, k=k)
+    def ask(self, question: str, k: int = 5, mode: str = "hybrid") -> Answer:
+        if mode == "llm_only":
+            text = self.llm.generate(f"问题：{question}", LLM_ONLY_PROMPT)
+            empty = RetrievalResult(question, None, [], [], [])
+            return Answer(question, text, [], [], empty)
+
+        res = self.retriever.retrieve(question, k=k, mode=mode)
         prompt = f"问题：{question}\n\n{build_context(res)}"
         text = self.llm.generate(prompt, ANSWER_PROMPT)
 
@@ -100,3 +119,4 @@ if __name__ == "__main__":
     ]
     for q in questions:
         show(qa.ask(q))
+    print(f"\n模型调用 {qa.llm.calls} 次，缓存命中 {qa.llm.cache_hits} 次")

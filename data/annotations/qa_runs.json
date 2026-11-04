@@ -1,0 +1,4565 @@
+{
+ "Q01|llm_only": {
+  "id": "Q01",
+  "mode": "llm_only",
+  "question": "房颤患者用阿哌沙班和华法林，哪种药的大出血风险更低？颅内出血风险呢？",
+  "answer": "对于非瓣膜性房颤患者，与华法林（Warfarin）相比，阿哌沙班（Apixaban）的大出血风险和颅内出血风险均更低。\n\n*   **大出血风险：** 多项大型随机对照试验（RCT）及随后的Meta分析显示，阿哌沙班显著降低了非瓣膜性房颤患者的大出血发生率。最核心的证据来自ARISTOTLE这一大规模随机对照双盲试验，结果表明阿哌沙班在预防卒中或体循环栓塞的同时，主要大出血风险较华法林降低了约31%（HR 0.69，P<0.001）。\n*   **颅内出血风险：** 颅内出血（ICH）是抗栓治疗中最致命的并发症。现有的RCT研究及真实世界观察性研究一致表明，新型口服抗凝药（NOACs）在这方面显著优于华法林。在ARISTOTLE研究中，阿哌沙班组的颅内出血风险较华法林组大幅降低了约58%（HR 0.42，P<0.001），这一结论在多项Meta分析中得到了高度一致的证实。\n\n现有证据的局限性在于，大多数高质量证据主要来源于西方人群的随机对照试验，亚洲人群在特定剂量调整和临床结局上可能存在种族差异。\n\n以上内容不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [],
+  "retrieved": [],
+  "n_graph_facts": 0,
+  "seconds": 2.5
+ },
+ "Q01|vector": {
+  "id": "Q01",
+  "mode": "vector",
+  "question": "房颤患者用阿哌沙班和华法林，哪种药的大出血风险更低？颅内出血风险呢？",
+  "answer": "对于房颤患者，与华法林（warfarin）相比，使用阿哌沙班（apixaban）的大出血风险更低 [PMID:35807073, 36134060, 39077138, 40286370]；颅内出血风险方面，直接口服抗凝药（DOACs）整体表现出比华法林更少的颅内出血（或出血性卒中）风险 [PMID:42415975]。\n\n具体证据如下：\n* **大出血风险**：\n  * 多项 Meta 分析（系统评价与 Meta 分析）显示，阿哌沙班相比于维生素K拮抗剂（如华法林），与显著降低的大出血风险相关（RR 0.58 至 0.63） [PMID:35807073, 36134060]；另一项 Meta 分析也得出阿哌沙班的重大出血（major hemorrhage）风险低于维生素K拮抗剂（HR 0.60）的结论 [PMID:39077138]。\n  * 一项基于注册登记的队列研究（观察性研究）同样发现，在匹配后的房颤/静脉血栓栓塞患者中，阿哌沙班组的大出血发生率低于华法林组 [PMID:40286370]。\n* **颅内出血风险**：\n  * 一项纳入随机对照试验的 Meta 分析指出，DOACs 整体较华法林表现出更少的颅内出血，其卒中或全身性栓塞风险的降低主要归因于出血性卒中的显著减少 [PMID:42415975]。\n\n现有证据的局限性在于纳入的研究之间存在异质性（如患者特征、随访时间及研究设计差异），且部分观察性研究可能受混杂因素影响。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   35807073,
+   39077138,
+   40286370,
+   42415975
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "atrial fibrillation",
+   "apixaban",
+   "warfarin",
+   "major bleeding",
+   "intracranial hemorrhage"
+  ],
+  "retrieved": [
+   {
+    "pmid": 35807073,
+    "score": 0.8035,
+    "vector": 0.7635,
+    "matched": [
+     "atrial fibrillation",
+     "apixaban",
+     "major bleeding",
+     "intracranial hemorrhage"
+    ]
+   },
+   {
+    "pmid": 36134060,
+    "score": 0.7986,
+    "vector": 0.7586,
+    "matched": [
+     "atrial fibrillation",
+     "apixaban",
+     "warfarin",
+     "major bleeding"
+    ]
+   },
+   {
+    "pmid": 40286370,
+    "score": 0.7902,
+    "vector": 0.7502,
+    "matched": [
+     "atrial fibrillation",
+     "apixaban",
+     "warfarin",
+     "major bleeding"
+    ]
+   },
+   {
+    "pmid": 39077138,
+    "score": 0.7791,
+    "vector": 0.7491,
+    "matched": [
+     "atrial fibrillation",
+     "apixaban",
+     "major bleeding"
+    ]
+   },
+   {
+    "pmid": 42415975,
+    "score": 0.7989,
+    "vector": 0.7489,
+    "matched": [
+     "atrial fibrillation",
+     "apixaban",
+     "warfarin",
+     "major bleeding",
+     "intracranial hemorrhage"
+    ]
+   }
+  ],
+  "n_graph_facts": 0,
+  "seconds": 11.6
+ },
+ "Q01|hybrid": {
+  "id": "Q01",
+  "mode": "hybrid",
+  "question": "房颤患者用阿哌沙班和华法林，哪种药的大出血风险更低？颅内出血风险呢？",
+  "answer": "在房颤患者中，相比于华法林（Warfarin），使用阿哌沙班（Apixaban）的大出血风险和颅内出血风险均更低。\n\n* **大出血风险**：\n  * 多项 Meta 分析显示，阿哌沙班相比于华法林可显著降低大出血事件的风险（RR = 0.58, 95% CI 0.52-0.65 [PMID:35807073]；RR = 0.63, 95% CI 0.58-0.68 [PMID:36134060]）。\n  * 一项基于注册登记的队列研究（observational）也观察到，阿哌沙班组的大出血发生率低于华法林组 [PMID:40286370]。\n  * 知识图谱统计显示有 52 篇文献支持阿哌沙班降低大出血风险（对照华法林）[图谱]。\n* **颅内出血风险**：\n  * 网络 Meta 分析（基于随机对照试验）结果显示，相比于维生素 K 拮抗剂（如华法林），阿哌沙班显著降低了颅内出血/出血的风险（OR = 2.40, 95% CI 1.62-3.56，提示华法林风险更高）[PMID:42238268]。\n  * 知识图谱统计显示有 8 篇文献支持阿哌沙班降低颅内出血风险（对照华法林）[图谱]。\n\n现有证据的局限性在于纳入的研究在设计、患者特征及随访时间等方面存在异质性，且部分真实世界研究可能存在一定程度的混杂偏倚。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   35807073,
+   36134060,
+   40286370,
+   42238268
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "atrial fibrillation",
+   "apixaban",
+   "warfarin",
+   "major bleeding",
+   "intracranial hemorrhage"
+  ],
+  "retrieved": [
+   {
+    "pmid": 35807073,
+    "score": 0.8035,
+    "vector": 0.7635,
+    "matched": [
+     "atrial fibrillation",
+     "apixaban",
+     "major bleeding",
+     "intracranial hemorrhage"
+    ]
+   },
+   {
+    "pmid": 42415975,
+    "score": 0.7989,
+    "vector": 0.7489,
+    "matched": [
+     "atrial fibrillation",
+     "apixaban",
+     "warfarin",
+     "major bleeding",
+     "intracranial hemorrhage"
+    ]
+   },
+   {
+    "pmid": 36134060,
+    "score": 0.7986,
+    "vector": 0.7586,
+    "matched": [
+     "atrial fibrillation",
+     "apixaban",
+     "warfarin",
+     "major bleeding"
+    ]
+   },
+   {
+    "pmid": 40286370,
+    "score": 0.7902,
+    "vector": 0.7502,
+    "matched": [
+     "atrial fibrillation",
+     "apixaban",
+     "warfarin",
+     "major bleeding"
+    ]
+   },
+   {
+    "pmid": 42238268,
+    "score": 0.7868,
+    "vector": 0.7468,
+    "matched": [
+     "atrial fibrillation",
+     "apixaban",
+     "major bleeding",
+     "intracranial hemorrhage"
+    ]
+   }
+  ],
+  "n_graph_facts": 15,
+  "seconds": 5.3
+ },
+ "Q02|llm_only": {
+  "id": "Q02",
+  "mode": "llm_only",
+  "question": "阿哌沙班和利伐沙班直接比较时，消化道出血和缺血性卒中的风险有没有差别？",
+  "answer": "阿哌沙班（Apixaban）与利伐沙班（Rivaroxaban）在直接比较时，多项研究表明阿哌沙班的消化道出血风险显著低于利伐沙班，而两者的缺血性卒中预防效果无显著差异。\n\n*   **消化道出血风险**：多项大型真实世界观察性研究（如队列研究）以及基于真实世界数据的 Meta 分析均显示，与利伐沙班相比，使用阿哌沙班的患者发生消化道出血的风险显著降低（通常可降低 20% 至 50% 不等）。\n*   **缺血性卒中/血栓栓塞风险**：随机对照试验（RCT）及多项大型观察性研究和 Meta 分析表明，在预防房颤患者发生缺血性卒中或系统性栓塞方面，阿哌沙班与利伐沙班的效果相当，两者的差异无统计学意义。\n*   **指南与直接对比证据**：目前缺乏大规模头对头的随机对照试验（RCT）直接比较这两种药物，现有的结论主要依赖于高质量的观察性研究和间接比较 Meta 分析。\n\n现有证据的局限性在于多为回顾性观察性研究，可能存在未知的混杂偏倚，仍需更多前瞻性头对头随机对照试验来进一步证实。\n\n以上内容不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [],
+  "retrieved": [],
+  "n_graph_facts": 0,
+  "seconds": 5.3
+ },
+ "Q02|vector": {
+  "id": "Q02",
+  "mode": "vector",
+  "question": "阿哌沙班和利伐沙班直接比较时，消化道出血和缺血性卒中的风险有没有差别？",
+  "answer": "阿哌沙班（apixaban）与利伐沙班（rivaroxaban）直接比较时，在消化道出血风险方面存在较为一致的差异，但在缺血性卒中风险上不同研究的结论存在一定不一致。\n\n* **消化道出血（GIB）风险：** 多项观察性研究及 Meta 分析均表明，阿哌沙班的消化道出血风险显著低于利伐沙班 [PMID:34949473, PMID:36341531, PMID:36315950, PMID:39546473, PMID:34633836]。其中一项纳入10项观察性研究的 Meta 分析显示，阿哌沙班的消化道出血风险较利伐沙班显著降低（HR 0.57, 95% CI 0.50至0.64）[PMID:34949473]。跨国人群队列研究及全国性队列研究也证实，无论是标准剂量、减低剂量、慢性肾病患者，还是高危人群，阿哌沙班的消化道出血风险均低于利伐沙班 [PMID:36315950, PMID:39546473, PMID:34633836]。\n* **缺血性卒中风险：** 不同研究得出的结论有所分歧。部分研究显示阿哌沙班与利伐沙班的缺血性卒中风险无实质性差异 [PMID:36315950]，或 Meta 分析显示阿哌沙班的卒中/全身栓塞发生率风险更低（HR 0.88, 95% CI 0.81至0.95）[PMID:34949473]，亦有法国全国队列研究显示阿哌沙班的卒中/全身栓塞风险低于利伐沙班（HR 0.90, 95% CI 0.84至0.96）[PMID:39546473]；然而，另有一项针对房颤患者的靶向试验模拟观察性研究得出相反结果，显示利伐沙班组的缺血性卒中发生率低于阿哌沙班组（HR 0.92, 95% CI 0.86至0.99）[PMID:36341531]。\n\n现有证据的局限性主要在于纳入的大多为观察性研究，可能存在残余混杂因素和未测量的混杂偏倚，且缺乏直接头对头的随机对照试验（RCT）数据。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   34633836,
+   34949473,
+   36315950,
+   36341531,
+   39546473
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "apixaban",
+   "rivaroxaban",
+   "gastrointestinal bleeding",
+   "ischemic stroke"
+  ],
+  "retrieved": [
+   {
+    "pmid": 34949473,
+    "score": 0.8442,
+    "vector": 0.8067,
+    "matched": [
+     "apixaban",
+     "rivaroxaban",
+     "gastrointestinal bleeding"
+    ]
+   },
+   {
+    "pmid": 36341531,
+    "score": 0.8537,
+    "vector": 0.8037,
+    "matched": [
+     "apixaban",
+     "rivaroxaban",
+     "gastrointestinal bleeding",
+     "ischemic stroke"
+    ]
+   },
+   {
+    "pmid": 36315950,
+    "score": 0.8493,
+    "vector": 0.7993,
+    "matched": [
+     "apixaban",
+     "rivaroxaban",
+     "gastrointestinal bleeding",
+     "ischemic stroke"
+    ]
+   },
+   {
+    "pmid": 39546473,
+    "score": 0.835,
+    "vector": 0.7975,
+    "matched": [
+     "apixaban",
+     "rivaroxaban",
+     "gastrointestinal bleeding"
+    ]
+   },
+   {
+    "pmid": 34633836,
+    "score": 0.826,
+    "vector": 0.7885,
+    "matched": [
+     "apixaban",
+     "rivaroxaban",
+     "gastrointestinal bleeding"
+    ]
+   }
+  ],
+  "n_graph_facts": 0,
+  "seconds": 9.8
+ },
+ "Q02|hybrid": {
+  "id": "Q02",
+  "mode": "hybrid",
+  "question": "阿哌沙班和利伐沙班直接比较时，消化道出血和缺血性卒中的风险有没有差别？",
+  "answer": "阿哌沙班（apixaban）与利伐沙班（rivaroxaban）直接比较时，在消化道出血和卒中/缺血性卒中风险方面存在差异，其中多数研究显示阿哌沙班的消化道出血风险较低，但卒中相关风险的结论在不同研究间存在不一致。\n\n* **消化道出血（Gastrointestinal bleeding, GIB）风险**：\n  * 多项研究和 Meta 分析表明，与利伐沙班相比，阿哌沙班与显著较低的消化道出血风险相关 [PMID:36341531, PMID:36315950, PMID:34949473, PMID:39546473]。例如，一项跨国人群队列研究（观察性研究）显示阿哌沙班的 GIB 风险低于利伐沙班（HR, 0.72 [CI, 0.66至0.79]）[PMID:36315950]；一项 Meta 分析（纳入观察性研究）显示阿哌沙班的 GIB 风险更低（HR 0.57；95% CI 0.50至0.64）[PMID:34949473]。知识图谱统计也显示多篇文献支持阿哌沙班降低消化道出血风险（对照：利伐沙班）[图谱]。\n* **缺血性卒中与卒中/全身栓塞（Stroke/SE）风险**：\n  * **结论不一致**：部分研究显示阿哌沙班降低了卒中风险，而另有观察性研究得出相反或无差异的结论。\n  * 一项 Meta 分析（基于观察性研究）显示，阿哌沙班相比利伐沙班具有显著较低的卒中/全身栓塞发生率（调整后 HR 0.88，95% CI 0.81至0.95）[PMID:34949473]。另一项法国全国队列研究（观察性研究）也表明阿哌沙班降低了卒中/SE 的风险（HR, 0.90；95% CI, 0.84-0.96）[PMID:39546473]。知识图谱亦支持阿哌沙班降低卒中或全身栓塞风险 [图谱]。\n  * 然而，一项大规模全国靶试模拟观察性研究得出不同结果，显示使用利伐沙班患者的缺血性卒中率低于阿哌沙班（HR, 0.92；95% CI, 0.86-0.99）[PMID:36341531]。另一项 Meta 分析指出相比于利伐沙班，阿哌沙班的缺血性卒中事件风险较低（OR 0.71）[PMID:34462932]。\n\n现有证据的局限性：纳入的研究多为观察性研究或基于真实世界数据的 Meta 分析，可能存在残余混杂因素，且缺乏头对头的随机对照试验（RCT）直接比较。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   34462932,
+   34949473,
+   36315950,
+   36341531,
+   39546473
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "apixaban",
+   "rivaroxaban",
+   "gastrointestinal bleeding",
+   "ischemic stroke"
+  ],
+  "retrieved": [
+   {
+    "pmid": 36341531,
+    "score": 0.8537,
+    "vector": 0.8037,
+    "matched": [
+     "apixaban",
+     "rivaroxaban",
+     "gastrointestinal bleeding",
+     "ischemic stroke"
+    ]
+   },
+   {
+    "pmid": 36315950,
+    "score": 0.8493,
+    "vector": 0.7993,
+    "matched": [
+     "apixaban",
+     "rivaroxaban",
+     "gastrointestinal bleeding",
+     "ischemic stroke"
+    ]
+   },
+   {
+    "pmid": 34949473,
+    "score": 0.8442,
+    "vector": 0.8067,
+    "matched": [
+     "apixaban",
+     "rivaroxaban",
+     "gastrointestinal bleeding"
+    ]
+   },
+   {
+    "pmid": 39546473,
+    "score": 0.835,
+    "vector": 0.7975,
+    "matched": [
+     "apixaban",
+     "rivaroxaban",
+     "gastrointestinal bleeding"
+    ]
+   },
+   {
+    "pmid": 34462932,
+    "score": 0.8331,
+    "vector": 0.7831,
+    "matched": [
+     "apixaban",
+     "rivaroxaban",
+     "gastrointestinal bleeding",
+     "ischemic stroke"
+    ]
+   }
+  ],
+  "n_graph_facts": 15,
+  "seconds": 9.4
+ },
+ "Q03|llm_only": {
+  "id": "Q03",
+  "mode": "llm_only",
+  "question": "华法林和氟康唑合用，为什么可能增加出血风险？这和 CYP2C9 抑制有关系吗？",
+  "answer": "华法林（Warfarin）与氟康唑（Fluconazole）合用会显著增加出血风险，这主要是由于氟康唑抑制了华法林在体内的代谢清除，导致抗凝作用增强。\n\n*   **机制解析与 CYP2C9 的关系**：华法林（尤其是药效更强的 S-异构体）主要通过肝脏细胞色素 P450 酶系统中的 **CYP2C9** 代谢。氟康唑是 CYP2C9 的强效抑制剂，两药合用时，氟康唑会阻断 CYP2C9 对 S-华法林的代谢，导致 S-华法林在血液中蓄积、半衰期延长，进而引发国际标准化比值（INR）过度升高并增加出血风险。\n*   **证据强度与研究类型**：\n    *   **药代动力学/药效动力学研究（PK/PD Studies）与随机对照试验（RCT）**：多项健康志愿者及患者的临床药代动力学研究证实，氟康唑可使 S-华法林的清除率显著下降，AUC（药时曲线下面积）增加，INR 明显上升。\n    *   **观察性研究与药物警戒数据**：大型回顾性队列研究和药物不良事件（ADR）数据库分析一致显示，华法林与氟康唑合用期间，患者发生严重出血事件（如消化道出血、颅内出血）的风险显著高于单独使用华法林。\n    *   **一致性**：各类研究（包括基础药理学、PK/PD 试验及临床观察）在“氟康唑抑制 CYP2C9 导致华法林血药浓度升高及出血风险增加”这一结论上高度一致，无明显分歧。\n\n现有证据的局限性在于，多数药物相互作用数据来源于特定人群或小样本药代动力学试验，患者个体基因多态性（如 CYP2C9 基因型差异）可能导致实际临床反应的个体化波动较大。\n\n以上内容不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [],
+  "retrieved": [],
+  "n_graph_facts": 0,
+  "seconds": 6.7
+ },
+ "Q03|vector": {
+  "id": "Q03",
+  "mode": "vector",
+  "question": "华法林和氟康唑合用，为什么可能增加出血风险？这和 CYP2C9 抑制有关系吗？",
+  "answer": "华法林（warfarin）和氟康唑（fluconazole）合用可能增加出血风险，这确实与 CYP2C9 抑制作用直接相关。氟康唑作为细胞色素 P450（CYP）2C9 抑制剂，会抑制华法林（尤其是药效更强的 S-华法林）的代谢和清除，从而导致其药代动力学发生改变并增强抗凝效应 [PMID:38487942, PMID:35798369, PMID:35798368, PMID:35622425]。\n\n* **CYP2C9 介导的代谢抑制**：华法林主要由 CYP2C9 负责消除，特别是其药效较强的 S-异构体（S-warfarin）[PMID:38487942, PMID:35622425]。研究表明，氟康唑作为 CYP2C9 抑制剂，可显著降低 S-华法林的清除率（CL）及代谢产物（如 6-OH- 和 7-OH-S-warfarin）的形成清除率，导致药物在体内蓄积 [PMID:35798369, PMID:35798368]。\n* **基因多态性的影响**：CYP2C9 基因多态性会影响药物相互作用的程度；例如，携带 *2 或 *3 等位基因的患者在接受氟康唑时，S-华法林清除率的变化幅度与野生型有所不同 [PMID:35798369, PMID:35798368]。\n* **药效学变化**：基于生理学药代动力学/药效动力学（PBPK/PD）模型及临床药代动力学研究，这种相互作用会导致国际标准化比值（INR）升高，进而增加出血等不良反应风险 [PMID:38487942, PMID:35798369]。\n\n现有证据的局限性在于：相关结论主要基于临床药代动力学研究、PBPK/PD 模型预测分析及综述，缺乏大规模前瞻性随机对照试验（RCT）的直接验证。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   35622425,
+   35798368,
+   35798369,
+   38487942
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "warfarin",
+   "fluconazole",
+   "bleeding",
+   "cyp2c9"
+  ],
+  "retrieved": [
+   {
+    "pmid": 38487942,
+    "score": 0.7884,
+    "vector": 0.7509,
+    "matched": [
+     "warfarin",
+     "fluconazole",
+     "cyp2c9"
+    ]
+   },
+   {
+    "pmid": 35798369,
+    "score": 0.7778,
+    "vector": 0.7403,
+    "matched": [
+     "warfarin",
+     "fluconazole",
+     "cyp2c9"
+    ]
+   },
+   {
+    "pmid": 34331435,
+    "score": 0.7627,
+    "vector": 0.7377,
+    "matched": [
+     "warfarin",
+     "cyp2c9"
+    ]
+   },
+   {
+    "pmid": 35798368,
+    "score": 0.7715,
+    "vector": 0.734,
+    "matched": [
+     "warfarin",
+     "fluconazole",
+     "cyp2c9"
+    ]
+   },
+   {
+    "pmid": 35622425,
+    "score": 0.7653,
+    "vector": 0.7278,
+    "matched": [
+     "warfarin",
+     "bleeding",
+     "cyp2c9"
+    ]
+   }
+  ],
+  "n_graph_facts": 0,
+  "seconds": 11.1
+ },
+ "Q03|hybrid": {
+  "id": "Q03",
+  "mode": "hybrid",
+  "question": "华法林和氟康唑合用，为什么可能增加出血风险？这和 CYP2C9 抑制有关系吗？",
+  "answer": "华法林（warfarin）与氟康唑（fluconazole）合用可能通过抑制细胞色素 P450 2C9（CYP2C9）酶活性增加出血风险，这与 CYP2C9 抑制有直接关系 [PMID:35798369, PMID:35798368, PMID:35622425]。\n\n* 华法林（尤其是药效更强的 S-华法林）主要通过 CYP2C9 代谢消除 [PMID:38487942, PMID:35622425]。\n* 临床药代动力学研究与模型分析表明，作为 CYP 抑制剂的氟康唑会显著抑制 CYP2C9 介导的 S-华法林代谢途径（例如使其 6-OH 和 7-OH 代谢物形成清除率分别下降 73.2% 和 74.8%），从而导致 S-华法林清除率下降和血药浓度升高 [PMID:35798369, PMID:35798368]。\n* 华法林与 CYP2C9 抑制剂的相互作用会导致药代动力学和药效学改变，进而增加出血等严重副作用的风险 [PMID:35622425, PMID:37093458]。\n* 此外，知识图谱统计显示有 1 篇临床药代动力学文献支持氟康唑与华法林的药物相互作用 [图谱]，且多篇文献指出华法林本身具有增加出血的风险 [图谱]。\n\n现有证据的局限性在于，相关机制及药代动力学模型多基于特定人群、群体药代动力学分析或临床前预测模型，个体间的基因多态性（如 CYP2C9 *2 或 *3 等等位基因变异）及非 CYP2C9 代谢途径也会对具体的药物相互作用程度产生影响 [PMID:38487942, PMID:35798369, PMID:35798368]。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   35622425,
+   35798368,
+   35798369,
+   37093458,
+   38487942
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "warfarin",
+   "fluconazole",
+   "bleeding",
+   "cyp2c9"
+  ],
+  "retrieved": [
+   {
+    "pmid": 38487942,
+    "score": 0.7884,
+    "vector": 0.7509,
+    "matched": [
+     "warfarin",
+     "fluconazole",
+     "cyp2c9"
+    ]
+   },
+   {
+    "pmid": 35798369,
+    "score": 0.7778,
+    "vector": 0.7403,
+    "matched": [
+     "warfarin",
+     "fluconazole",
+     "cyp2c9"
+    ]
+   },
+   {
+    "pmid": 35798368,
+    "score": 0.7715,
+    "vector": 0.734,
+    "matched": [
+     "warfarin",
+     "fluconazole",
+     "cyp2c9"
+    ]
+   },
+   {
+    "pmid": 35622425,
+    "score": 0.7653,
+    "vector": 0.7278,
+    "matched": [
+     "warfarin",
+     "bleeding",
+     "cyp2c9"
+    ]
+   },
+   {
+    "pmid": 37093458,
+    "score": 0.7641,
+    "vector": 0.7266,
+    "matched": [
+     "warfarin",
+     "bleeding",
+     "cyp2c9"
+    ]
+   }
+  ],
+  "n_graph_facts": 15,
+  "seconds": 4.9
+ },
+ "Q04|llm_only": {
+  "id": "Q04",
+  "mode": "llm_only",
+  "question": "利伐沙班与胺碘酮合用时，出血风险会不会升高？摘要里有没有提到 P-gp 或 CYP3A4 相关的机制？",
+  "answer": "利伐沙班（Rivaroxaban）与胺碘酮（Amiodarone）合用会使出血风险升高，摘要及相关药代动力学研究表明这主要与 P-糖蛋白（P-gp）和细胞色素 P450 3A4（CYP3A4）的抑制作用有关。\n\n以下是相关证据与机制：\n\n*   **出血风险升高的临床证据**：多项药物警戒数据库分析和观察性研究（如基于真实世界数据的回顾性队列研究）显示，利伐沙班与中效或强效 P-gp 及 CYP3A4 抑制剂（胺碘酮属于此类抑制剂）合用时，患者的主要出血事件（如胃肠道出血）发生率显著增加。\n*   **P-gp 与 CYP3A4 相关机制**：\n    *   **代谢抑制**：利伐沙班经由 CYP3A4/5 和 CYP2J2 代谢，胺碘酮及其代谢物去乙基胺碘酮是 CYP3A4 的中效抑制剂，合用会减少利伐沙班的肝脏清除率，导致其血药浓度升高。\n    *   **转运蛋白抑制**：利伐沙班是肠道和肾脏外排转运蛋白 P-gp 的底物。胺碘酮是 P-gp 的强效抑制剂，会抑制 P-gp 介导的利伐沙班外排，从而增加其在胃肠道的吸收并减少其肾脏排泄，进一步提高血药浓度。\n\n现有证据的局限性在于多来源于观察性研究和药代动力学/药效动力学（PK/PD）推论，缺乏大规模、专门针对该联合用药的前瞻性随机对照试验（RCT）。\n\n以上内容不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [],
+  "retrieved": [],
+  "n_graph_facts": 0,
+  "seconds": 7.3
+ },
+ "Q04|vector": {
+  "id": "Q04",
+  "mode": "vector",
+  "question": "利伐沙班与胺碘酮合用时，出血风险会不会升高？摘要里有没有提到 P-gp 或 CYP3A4 相关的机制？",
+  "answer": "现有文献表明，利伐沙班（rivaroxaban）与胺碘酮（amiodarone）合用时的出血风险结论尚不完全一致：部分大型队列研究提示合用 P-gp/CYP3A4 抑制剂（包括胺碘酮）会增加主要出血风险 [PMID:37791408]，但也有回顾性研究和法国医保数据库研究未观察到利伐沙班与胺碘酮合用显著增加 INR 变化或出血住院风险 [PMID:41439583, PMID:37184597]。摘要中明确提到了 P-gp 和 CYP3A4 相关机制 [PMID:41439583, PMID:35745692]。\n\n证据分点如下：\n* **出血风险升高相关证据：** 一项全国性队列研究（观察性研究）显示，非维生素K拮抗剂口服抗凝药（NOACs）使用者中，伴随使用 P-gp/CYP3A4 抑制剂与显著增加的主要出血风险相关（调整后风险比 aHR = 1.24, 95% CI 1.18–1.30）[PMID:37791408]。其中，亚组分析显示利伐沙班使用者合用此类抑制剂（包括胺碘酮）伴随主要出血风险显著增加（aHR = 1.25, 95% CI 1.16–1.34；胺碘酮单药亚组 aHR = 1.27, 95% CI 1.21–1.34）[PMID:37791408]。\n* **未观察到显著风险升高的证据：** 一项回顾性观察性研究显示，与仅使用利伐沙班相比，利伐沙班合并使用胺碘酮患者的平均国际标准化比值（INR）未见显著升高（1.61 vs. 1.57）[PMID:41439583]。一项基于法国医保数据库的队列研究（观察性研究）也指出，抗心律失常药物与利伐沙班或阿哌沙班（apixaban）的合用与出血住院风险无显著关联（aHR = 1.19, 95% CI 0.90–1.58）[PMID:37184597]。\n* **P-gp 和 CYP3A4 相关机制：** 摘要指出，利伐沙班的清除在不同程度上由细胞色素 P450 3A4（CYP3A4）和 P-糖蛋白（P-gp，Permeability-glycoprotein）介导 [PMID:41439583, PMID:35745692]。胺碘酮被描述为一种弱效 CYP3A4 和中效 P-gp 抑制剂，理论上有潜力降低这些凝血因子 Xa（FXa）抑制剂的清除率并增加药物暴露量 [PMID:41439583]。\n\n现有证据的局限性：纳入的文献主要为观察性研究和回顾性分析，存在人群特征差异、个体间药代动力学变异以及潜在的混杂因素，且缺乏前瞻性随机对照试验数据。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   35745692,
+   37184597,
+   37791408,
+   41439583
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "rivaroxaban",
+   "amiodarone",
+   "bleeding",
+   "p-gp",
+   "cyp3a4"
+  ],
+  "retrieved": [
+   {
+    "pmid": 41439583,
+    "score": 0.8534,
+    "vector": 0.8134,
+    "matched": [
+     "rivaroxaban",
+     "amiodarone",
+     "p-gp",
+     "cyp3a4"
+    ]
+   },
+   {
+    "pmid": 35985100,
+    "score": 0.8462,
+    "vector": 0.8062,
+    "matched": [
+     "rivaroxaban",
+     "bleeding",
+     "p-gp",
+     "cyp3a4"
+    ]
+   },
+   {
+    "pmid": 37791408,
+    "score": 0.8421,
+    "vector": 0.7921,
+    "matched": [
+     "rivaroxaban",
+     "amiodarone",
+     "bleeding",
+     "p-gp",
+     "cyp3a4"
+    ]
+   },
+   {
+    "pmid": 37184597,
+    "score": 0.8313,
+    "vector": 0.7913,
+    "matched": [
+     "rivaroxaban",
+     "amiodarone",
+     "p-gp",
+     "cyp3a4"
+    ]
+   },
+   {
+    "pmid": 35745692,
+    "score": 0.8132,
+    "vector": 0.7832,
+    "matched": [
+     "rivaroxaban",
+     "bleeding",
+     "p-gp"
+    ]
+   }
+  ],
+  "n_graph_facts": 0,
+  "seconds": 15.0
+ },
+ "Q04|hybrid": {
+  "id": "Q04",
+  "mode": "hybrid",
+  "question": "利伐沙班与胺碘酮合用时，出血风险会不会升高？摘要里有没有提到 P-gp 或 CYP3A4 相关的机制？",
+  "answer": "现有文献表明，利伐沙班（rivaroxaban）与胺碘酮（amiodarone）合用时的出血风险升高的证据存在不一致，且摘要中提及了该药物组合与 P-gp 和 CYP3A4 相关的作用机制。\n\n具体证据如下：\n* **出血风险升高的证据**：一项大型全国队列研究（观察性研究）指出，在非维生素K拮抗剂口服抗凝药（NOAC）使用者中，伴随使用 P-gp/CYP3A4 抑制剂（包括胺碘酮）与显著增加的大出血风险相关（调整后风险比 aHR 为 1.27，95% CI 1.21-1.34） [PMID:37791408]。另一项针对利伐沙班使用者的队列研究也显示利伐沙班用户合用该类抑制剂时大出血风险增加（aHR 1.25，95% CI 1.16-1.34） [PMID:37791408]。此外，生理药代动力学/药效动力学（PBPK/PD）建模研究表明，合用 P-gp 和 CYP3A4 中效抑制剂（如决奈达隆，同类机制药物）会使利伐沙班的曲线下面积（AUC）增加 1.29 至 1.31 倍，并可能使大出血风险轻度增加（小于 1.5 倍） [PMID:35985100]。\n* **出血风险未升高的证据**：一项回顾性观察性研究显示，在同时服用利伐沙班与胺碘酮的患者中，国际标准化比值（INR）与单用利伐沙班相比并未显著升高（1.57 对比 1.61），提示药效学变化不明显 [PMID:41439583]。另一项基于法国医疗保险数据库的队列研究（观察性研究）发现，房颤患者在接受利伐沙班或阿哌沙班（apixaban）治疗期间暴露于 CYP3A4 和 P-gp 抑制剂（如胺碘酮、维拉帕米、地尔硫卓）与因出血住院的风险之间没有显著关联（aHR = 1.19，95% CI: 0.90, 1.58） [PMID:37184597]。\n* **P-gp 和 CYP3A4 相关机制**：摘要提到，利伐沙班的清除在不同程度上由细胞色素 P450 3A4（CYP3A4）和渗透性糖蛋白（P-gp，即 P-glycoprotein）介导 [PMID:41439583, PMID:35985100, PMID:36861431]。胺碘酮是一种弱效 CYP3A4 抑制剂和中效 P-gp 抑制剂，具有降低这些Xa因子抑制剂清除率的潜力 [PMID:41439583]。\n\n现有证据的局限性在于纳入的文献多为回顾性观察性研究或基于模型的预测分析，缺乏大规模前瞻性随机对照试验的直接证实，且真实世界中药物相互作用的幅度存在较大的个体差异。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   35985100,
+   36861431,
+   37184597,
+   37791408,
+   41439583
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "rivaroxaban",
+   "amiodarone",
+   "bleeding",
+   "p-gp",
+   "cyp3a4"
+  ],
+  "retrieved": [
+   {
+    "pmid": 41439583,
+    "score": 0.8534,
+    "vector": 0.8134,
+    "matched": [
+     "rivaroxaban",
+     "amiodarone",
+     "p-gp",
+     "cyp3a4"
+    ]
+   },
+   {
+    "pmid": 35985100,
+    "score": 0.8462,
+    "vector": 0.8062,
+    "matched": [
+     "rivaroxaban",
+     "bleeding",
+     "p-gp",
+     "cyp3a4"
+    ]
+   },
+   {
+    "pmid": 37791408,
+    "score": 0.8421,
+    "vector": 0.7921,
+    "matched": [
+     "rivaroxaban",
+     "amiodarone",
+     "bleeding",
+     "p-gp",
+     "cyp3a4"
+    ]
+   },
+   {
+    "pmid": 37184597,
+    "score": 0.8313,
+    "vector": 0.7913,
+    "matched": [
+     "rivaroxaban",
+     "amiodarone",
+     "p-gp",
+     "cyp3a4"
+    ]
+   },
+   {
+    "pmid": 36861431,
+    "score": 0.823,
+    "vector": 0.783,
+    "matched": [
+     "rivaroxaban",
+     "bleeding",
+     "p-gp",
+     "cyp3a4"
+    ]
+   }
+  ],
+  "n_graph_facts": 15,
+  "seconds": 7.5
+ },
+ "Q05|llm_only": {
+  "id": "Q05",
+  "mode": "llm_only",
+  "question": "老年房颤患者合并肾功能不全时，DOAC 和华法林相比，大出血与卒中风险分别怎么样？",
+  "answer": "对于老年房颤合并肾功能不全患者，新型口服抗栓药物（DOAC，如阿哌沙班 apixaban、利伐沙班 rivaroxaban、达比加群 dabigatran）在预防卒中方面疗效与华法林相当或更优，且在大出血风险方面通常表现出更低的风险或相似的安全性。\n\n*   **大出血风险**：\n    *   **Meta 分析与随机对照试验（RCT）**：多项大型 RCT 的亚组分析及系统评价（Meta 分析）表明，在轻中度肾功能不全的患者中，标准剂量或减量后的 DOAC（尤其是阿哌沙班）与华法林相比，大出血风险显著降低或相似。\n    *   **观察性研究（真实世界研究）**：真实世界的数据同样支持这一趋势，尤其是在高龄和肾功能进一步减退的患者中，DOAC 导致颅内出血的风险显著低于华法林。\n*   **卒中及全身性栓塞风险**：\n    *   **随机对照试验（RCT）**：高质量 RCT（如 ARISTOTLE、RE-LY、ROCKET AF 的亚组分析）表明，在肌酐清除率轻度至中度下降的老年房颤患者中，DOAC 在预防卒中和全身性栓塞方面的有效性不逊于甚至优于华法林。\n    *   **不同研究的不一致性**：对于重度肾功能不全（如肌酐清除率 < 15-30 mL/min 或透析患者），不同研究和指南对 DOAC（特别是达比加群和利伐沙班）的安全有效性结论存在争议，部分观察性研究提示出血风险可能增加，需高度谨慎。\n\n现有证据的局限性在于，极重度肾功能不全及终末期肾病患者在随机对照试验中的代表性严重不足，真实世界观察性研究也易受混杂偏倚的影响。\n\n以上内容不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [],
+  "retrieved": [],
+  "n_graph_facts": 0,
+  "seconds": 5.8
+ },
+ "Q05|vector": {
+  "id": "Q05",
+  "mode": "vector",
+  "question": "老年房颤患者合并肾功能不全时，DOAC 和华法林相比，大出血与卒中风险分别怎么样？",
+  "answer": "在房颤合并肾功能不全患者中，与华法林（Warfarin）相比，直接口服抗凝药物（DOACs，包括阿哌沙班 apixaban、利伐沙班 rivaroxaban、达比加群 dabigatran 和依度沙班 edoxaban）通常显示出更低的卒中风险，而在大出血风险方面不同研究所得结果存在差异。\n\n* **卒中/血栓栓塞风险**：\n  * 多项 Meta 分析（基于随机对照试验和观察性研究）表明，与华法林相比，DOACs 显著降低了房颤合并慢性肾病（CKD）或晚期 CKD 患者的卒中或全身性栓塞风险 [PMID:35757349, PMID:42058359]（Meta 分析证据）。\n  * 一项针对晚期肾病患者的观察性研究也显示，DOACs 组的卒中/系统性栓塞及任何缺血事件风险显著低于华法林组 [PMID:37452906]（观察性研究证据）。\n  * 另有队列研究显示，在对 DOACs 进行适当剂量调整后，不同肾功能不全阶段患者的血栓栓塞发生率与华法林组相比无显著差异 [PMID:36229879]（观察性研究证据）。\n* **大出血风险**：\n  * 一部分 Meta 分析指出，DOACs 整体呈现出比华法林更低的大出血风险 [PMID:35757349, PMID:42058359]（Meta 分析证据）。其中，阿哌沙班表现出最优异的安全性（最低的大出血风险），而达比加群在部分研究中被观察到与出血增加相关 [PMID:42058359]。\n  * 另有观察性研究得出不同的结果，例如一项针对晚期肾病患者的研究指出，DOACs 与华法林相比具有可比的大出血风险 [PMID:37452906]；而一项关于利伐沙班的研究显示，华法林的使用降低了 CKD 患者的出血风险 [PMID:37584025]（观察性研究证据）。此外，一项队列研究表明，在进行适当剂量调整时，各 DOAC 与华法林的大出血风险相似 [PMID:36229879]。\n\n现有证据的局限性在于部分纳入的研究为观察性研究，出血结局的异质性较大，且部分晚期肾病/透析患者的信息量仍有待更充分的随机对照试验来细化剂量策略。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   35757349,
+   36229879,
+   37452906,
+   37584025,
+   42058359
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "atrial fibrillation",
+   "renal impairment",
+   "doac",
+   "warfarin",
+   "major bleeding",
+   "stroke"
+  ],
+  "retrieved": [
+   {
+    "pmid": 35757349,
+    "score": 0.8116,
+    "vector": 0.7782,
+    "matched": [
+     "atrial fibrillation",
+     "doac",
+     "warfarin",
+     "major bleeding"
+    ]
+   },
+   {
+    "pmid": 37452906,
+    "score": 0.8071,
+    "vector": 0.7738,
+    "matched": [
+     "atrial fibrillation",
+     "doac",
+     "warfarin",
+     "major bleeding"
+    ]
+   },
+   {
+    "pmid": 36229879,
+    "score": 0.8068,
+    "vector": 0.7734,
+    "matched": [
+     "atrial fibrillation",
+     "doac",
+     "warfarin",
+     "major bleeding"
+    ]
+   },
+   {
+    "pmid": 37584025,
+    "score": 0.811,
+    "vector": 0.7693,
+    "matched": [
+     "atrial fibrillation",
+     "doac",
+     "warfarin",
+     "major bleeding",
+     "stroke"
+    ]
+   },
+   {
+    "pmid": 42058359,
+    "score": 0.7888,
+    "vector": 0.7638,
+    "matched": [
+     "atrial fibrillation",
+     "doac",
+     "major bleeding"
+    ]
+   }
+  ],
+  "n_graph_facts": 0,
+  "seconds": 13.2
+ },
+ "Q05|hybrid": {
+  "id": "Q05",
+  "mode": "hybrid",
+  "question": "老年房颤患者合并肾功能不全时，DOAC 和华法林相比，大出血与卒中风险分别怎么样？",
+  "answer": "在老年房颤伴肾功能不全患者中，直接口服抗凝药物（DOACs）与华法林（warfarin）相比，在卒中和多数大出血风险上表现出相似或更低的风险，但具体结果因药物种类和研究类型而异。\n\n* **卒中/血栓栓塞风险**：\n  * 一项纳入124,628例患者的 Meta 分析显示，与华法林相比，DOACs 显著降低了房颤合并慢性肾脏病（CKD）患者的卒中或血栓栓塞风险（$\\text{HR}_{\\text{pooled}} = 0.78$），在晚期 CKD 患者中结果依然一致（$\\text{HR}_{\\text{pooled}} = 0.60$）[PMID:35757349]。\n  * 一项针对晚期肾病患者的观察性研究显示，DOACs 组相比华法林组具有显著较低的卒中/体循环栓塞风险（$\\text{aHR} = 0.29$）[PMID:37452906]。\n  * 另有一项观察性研究显示，利伐沙班（rivaroxaban）与华法林在卒中发生率上无显著差异 [PMID:37584025]，且不同肾功能分层下各 DOACs 与华法林的血栓栓塞事件发生率无显著差异 [PMID:36229879]。\n  * 知识图谱统计显示有 6 篇文献支持 DOACs 降低卒中或全身栓塞风险 [图谱]。\n\n* **大出血风险**：\n  * Meta 分析显示，DOACs 总体上较华法林显著降低大出血风险（$\\text{HR}_{\\text{pooled}} = 0.76$），其中阿哌沙班（apixaban）和依度沙班（edoxaban）表现出较好的安全性 [PMID:35757349, PMID:33817758]。知识图谱统计也支持阿哌沙班、达比加群（dabigatran）、依度沙班等降低大出血风险 [图谱]。\n  * 针对晚期肾病患者的观察性研究显示，DOACs 与华法林的大出血风险无显著差异（$\\text{aHR} = 0.99$），但阿哌沙班的任何出血风险低于华法林 [PMID:37452906]。\n  * 相反，一项针对中重度肾损患者的观察性研究表明，利伐沙班组的大出血发生率高于华法林组，多因素分析提示华法林使用可降低出血风险 [PMID:37584025]。知识图谱统计也有部分文献提示利伐沙班存在增加大出血或 DOACs 增加胃肠道出血的记录 [图谱]。\n  * 另有一项观察性研究指出，在进行了适当剂量调整后，各 DOACs 与华法林在不同肾功能阶段的大出血发生率无重大差异 [PMID:36229879]。\n\n现有证据的局限性在于纳入的部分研究为回顾性观察性研究，且不同 DOACs 药物种类、患者肾损伤严重程度及剂量调整方案存在异质性。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   33817758,
+   35757349,
+   36229879,
+   37452906,
+   37584025
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "atrial fibrillation",
+   "renal impairment",
+   "doac",
+   "warfarin",
+   "major bleeding",
+   "stroke"
+  ],
+  "retrieved": [
+   {
+    "pmid": 35757349,
+    "score": 0.8116,
+    "vector": 0.7782,
+    "matched": [
+     "atrial fibrillation",
+     "doac",
+     "warfarin",
+     "major bleeding"
+    ]
+   },
+   {
+    "pmid": 37584025,
+    "score": 0.811,
+    "vector": 0.7693,
+    "matched": [
+     "atrial fibrillation",
+     "doac",
+     "warfarin",
+     "major bleeding",
+     "stroke"
+    ]
+   },
+   {
+    "pmid": 37452906,
+    "score": 0.8071,
+    "vector": 0.7738,
+    "matched": [
+     "atrial fibrillation",
+     "doac",
+     "warfarin",
+     "major bleeding"
+    ]
+   },
+   {
+    "pmid": 36229879,
+    "score": 0.8068,
+    "vector": 0.7734,
+    "matched": [
+     "atrial fibrillation",
+     "doac",
+     "warfarin",
+     "major bleeding"
+    ]
+   },
+   {
+    "pmid": 33817758,
+    "score": 0.8029,
+    "vector": 0.7613,
+    "matched": [
+     "atrial fibrillation",
+     "renal impairment",
+     "doac",
+     "warfarin",
+     "major bleeding"
+    ]
+   }
+  ],
+  "n_graph_facts": 15,
+  "seconds": 7.8
+ },
+ "Q06|llm_only": {
+  "id": "Q06",
+  "mode": "llm_only",
+  "question": "正在接受透析的房颤患者，使用阿哌沙班或华法林时，出血、卒中和死亡风险有什么差异？",
+  "answer": "对于正在接受透析的终末期肾病（ESRD）合并房颤患者，与华法林（Warfarin）相比，使用阿哌沙班（Apixaban）在降低出血风险方面表现出明显优势，但在预防卒中和降低全因死亡率方面，两者的差异尚无定论。\n\n*   **出血风险（特别是大出血）：** 多项大型观察性研究和回顾性分析一致表明，与华法林相比，阿哌沙班（尤其是标准剂量或低剂量）可显著降低透析患者的大出血风险。\n*   **卒中与血栓栓塞风险：** 观察性研究的结果存在一定分歧；部分研究显示阿哌沙班在预防缺血性卒中方面与华法林疗效相当，但也有部分研究提示两者的卒中发生率无统计学显著差异。\n*   **全因死亡率：** 观察性研究和Meta分析的结果提示，阿哌沙班可能与较低的全因死亡率相关，但由于透析患者基础疾病复杂，不同研究间的数据表现出异质性。\n\n现有证据的局限性在于：目前缺乏专门针对透析患者的大型前瞻性随机对照试验（RCT），绝大多数结论来源于证据级别相对较低的观察性研究和回顾性数据库分析，且不同研究所采用的阿哌沙班剂量（如5mg每日两次 vs. 2.5mg每日两次）存在差异。\n\n以上内容不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [],
+  "retrieved": [],
+  "n_graph_facts": 0,
+  "seconds": 6.2
+ },
+ "Q06|vector": {
+  "id": "Q06",
+  "mode": "vector",
+  "question": "正在接受透析的房颤患者，使用阿哌沙班或华法林时，出血、卒中和死亡风险有什么差异？",
+  "answer": "正在接受透析的房颤患者使用阿哌沙班（apixaban）或华法林（warfarin）时，在出血、卒中和死亡风险方面的差异因研究设计和透析类型而异：证据多表明阿哌沙班的出血风险可能低于或相似于华法林，卒中风险部分研究显示降低或无显著差异，而死亡风险在部分大型队列研究中显示阿哌沙班较低，但在其他研究中无显著差异。\n\n* **出血风险**：\n  * 两项回顾性队列研究（观察性研究）显示，标签剂量（label-concordant）阿哌沙班的大出血风险低于华法林 [PMID:35469965]；另一项目标试验模拟研究（观察性研究）也表明，阿哌沙班组的临床重要出血风险较华法林降低 28% [PMID:42906734]。\n  * 另有小样本回顾性研究和针对腹膜透析患者的研究（观察性研究）显示，两组在症状性出血、大出血或临床重要出血发生率上无统计学显著差异 [PMID:38151201, PMID:42412715]。\n  * 一项多中心随机对照试验（RCT）因招募受阻导致效能不足，未能得出两组在出血率上有差异的明确结论 [PMID:36335914]。\n\n* **卒中风险**：\n  * 多项观察性研究显示，阿哌沙班与华法林在缺血性卒中/全身栓塞风险上无显著差异 [PMID:35469965, PMID:38151201, PMID:42412715]。\n  * 然而，一项目标试验模拟研究（观察性研究）发现，阿哌沙班组的缺血性卒中风险较华法林降低 34% [PMID:42906734]。\n\n* **死亡风险**：\n  * 一项大型回顾性队列研究（观察性研究）显示，标签剂量的阿哌沙班与较低的全因死亡风险相关 [PMID:35469965]。\n  * 另有两项观察性研究表明，两组在全因死亡率或心血管死亡风险上没有显著差异 [PMID:42906734, PMID:42412715]。\n\n现有证据的局限性包括多为观察性研究或回顾性分析、存在潜在的残余混杂因素、部分研究依赖行政索赔数据或样本量较小导致检验效能不足。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   35469965,
+   36335914,
+   38151201,
+   42412715,
+   42906734
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "atrial fibrillation",
+   "dialysis",
+   "apixaban",
+   "warfarin",
+   "bleeding",
+   "stroke",
+   "all-cause mortality"
+  ],
+  "retrieved": [
+   {
+    "pmid": 35469965,
+    "score": 0.8433,
+    "vector": 0.8076,
+    "matched": [
+     "atrial fibrillation",
+     "apixaban",
+     "warfarin",
+     "bleeding",
+     "all-cause mortality"
+    ]
+   },
+   {
+    "pmid": 36335914,
+    "score": 0.8295,
+    "vector": 0.801,
+    "matched": [
+     "atrial fibrillation",
+     "apixaban",
+     "warfarin",
+     "stroke"
+    ]
+   },
+   {
+    "pmid": 42906734,
+    "score": 0.8237,
+    "vector": 0.7951,
+    "matched": [
+     "atrial fibrillation",
+     "apixaban",
+     "warfarin",
+     "stroke"
+    ]
+   },
+   {
+    "pmid": 38151201,
+    "score": 0.8266,
+    "vector": 0.7908,
+    "matched": [
+     "atrial fibrillation",
+     "apixaban",
+     "warfarin",
+     "bleeding",
+     "stroke"
+    ]
+   },
+   {
+    "pmid": 42412715,
+    "score": 0.8332,
+    "vector": 0.7903,
+    "matched": [
+     "atrial fibrillation",
+     "apixaban",
+     "warfarin",
+     "bleeding",
+     "stroke",
+     "all-cause mortality"
+    ]
+   }
+  ],
+  "n_graph_facts": 0,
+  "seconds": 12.1
+ },
+ "Q06|hybrid": {
+  "id": "Q06",
+  "mode": "hybrid",
+  "question": "正在接受透析的房颤患者，使用阿哌沙班或华法林时，出血、卒中和死亡风险有什么差异？",
+  "answer": "对于正在接受透析的房颤（Atrial Fibrillation, AF）患者，使用阿哌沙班（Apixaban）对比华法林（Warfarin）在出血、卒中和死亡风险上的差异，现有文献存在一定不一致性。\n\n*   **出血风险**：多项回顾性队列研究和 Meta 分析表明阿哌沙班显著降低大出血风险 [PMID:35469965, 38939758]，然而也有部分研究（包括 RCT 和针对腹膜透析患者的研究）显示两组在出血风险上无统计学差异 [PMID:42412715, 36335914]。\n    *   一项大型回顾性队列研究显示，无论按说明书剂量还是减量给药，阿哌沙班的大出血风险均低于华法林（意向性治疗分析的 HR 分别为 0.67 和 0.68） [PMID:35469965]。\n    *   Meta 分析（基于观察性研究）同样表明，与华法林相比，阿哌沙班可显著降低大出血（OR 0.51）、颅内出血（OR 0.58）及胃肠道出血（OR 0.61）风险 [PMID:38939758]。\n    *   然而，一项多中心随机对照试验（RENAL-AF，研究类型：rct）显示，阿哌沙班与华法林在 1 年大出血或临床相关非大出血发生率上无显著差异（HR 1.20，但该试验因入组困难提前终止，效能不足） [PMID:36335914]。\n    *   针对腹膜透析患者的回顾性队列研究（研究类型：observational）也发现两组在临床重要出血或大出血风险上无统计学差异 [PMID:42412715]。\n*   **卒中/血栓栓塞风险**：\n    *   Meta 分析（研究类型：meta_analysis）表明阿哌沙班可降低卒中/全身性栓塞风险（OR 0.64） [PMID:38939758]。\n    *   但多项队列研究及 RCT 结果显示，阿哌沙班与华法林在缺血性卒中或全身性栓塞的发生率上无显著差异 [PMID:35469965, 42412715, 36335914]。\n*   **死亡风险**：\n    *   部分回顾性队列研究（研究类型：observational）表明，按说明书标准剂量使用的阿哌沙班与华法林相比具有降低全因死亡率的获益（HR 0.85） [PMID:35469965]。\n    *   系统评价与网络 Meta 分析（研究类型：meta_analysis）则指出，直接比较中，华法林与阿哌沙班在降低全因死亡率方面无显著差异 [PMID:38161701]。\n\n现有证据的局限性在于：多数证据来源于观察性研究或因样本量与提前终止而导致统计效能不足的随机试验，且可能存在残余混杂及行政理赔数据准确性的局限。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   35469965,
+   36335914,
+   38161701,
+   38939758,
+   42412715
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "atrial fibrillation",
+   "dialysis",
+   "apixaban",
+   "warfarin",
+   "bleeding",
+   "stroke",
+   "all-cause mortality"
+  ],
+  "retrieved": [
+   {
+    "pmid": 35469965,
+    "score": 0.8433,
+    "vector": 0.8076,
+    "matched": [
+     "atrial fibrillation",
+     "apixaban",
+     "warfarin",
+     "bleeding",
+     "all-cause mortality"
+    ]
+   },
+   {
+    "pmid": 42412715,
+    "score": 0.8332,
+    "vector": 0.7903,
+    "matched": [
+     "atrial fibrillation",
+     "apixaban",
+     "warfarin",
+     "bleeding",
+     "stroke",
+     "all-cause mortality"
+    ]
+   },
+   {
+    "pmid": 38939758,
+    "score": 0.8314,
+    "vector": 0.7886,
+    "matched": [
+     "atrial fibrillation",
+     "apixaban",
+     "warfarin",
+     "bleeding",
+     "stroke",
+     "all-cause mortality"
+    ]
+   },
+   {
+    "pmid": 38161701,
+    "score": 0.8311,
+    "vector": 0.7811,
+    "matched": [
+     "atrial fibrillation",
+     "dialysis",
+     "apixaban",
+     "warfarin",
+     "bleeding",
+     "stroke",
+     "all-cause mortality"
+    ]
+   },
+   {
+    "pmid": 36335914,
+    "score": 0.8295,
+    "vector": 0.801,
+    "matched": [
+     "atrial fibrillation",
+     "apixaban",
+     "warfarin",
+     "stroke"
+    ]
+   }
+  ],
+  "n_graph_facts": 15,
+  "seconds": 8.2
+ },
+ "Q07|llm_only": {
+  "id": "Q07",
+  "mode": "llm_only",
+  "question": "不同 DOAC 的消化道出血风险一样吗？阿哌沙班、利伐沙班和达比加群之间有什么差别？",
+  "answer": "不同新型口服抗凝药（DOACs）之间的消化道出血风险并不完全一样，其中阿哌沙班（Apixaban）的消化道出血风险相对最低，而利伐沙班（Rivaroxaban）和达比加群酯（Dabigatran etexilate）相对较高。\n\n以下是具体的证据支持：\n*   **随机对照试验（RCT）证据**：在大型III期临床试验（如ARISTOTLE、ROCKET AF、RE-LY）及多项直接头对头对比（Head-to-head）的**网状Meta分析**中显示，在标准剂量下，阿哌沙班的消化道出血发生率显著低于华法林、利伐沙班和达比加群酯。\n*   **真实世界观察性研究证据**：多项基于大型医疗数据库的**观察性研究（如队列研究和真实世界Meta分析）**同样证实，与利伐沙班和达比加群酯相比，阿哌沙班在非瓣膜性房颤患者中与较低的消化道出血风险相关；而利伐沙班在高剂量或老年人群中，消化道出血的风险往往表现得更为突出。\n*   **结论的一致性**：尽管不同研究在绝对风险数值上略有差异，但在“阿哌沙班消化道出血风险低于利伐沙班和达比加群酯”这一点上，RCT和真实世界研究的总体方向基本一致。\n\n现有证据的局限性在于，多数真实世界研究为观察性设计，难以完全消除患者基线特征差异带来的混杂偏倚。\n\n以上内容不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [],
+  "retrieved": [],
+  "n_graph_facts": 0,
+  "seconds": 4.0
+ },
+ "Q07|vector": {
+  "id": "Q07",
+  "mode": "vector",
+  "question": "不同 DOAC 的消化道出血风险一样吗？阿哌沙班、利伐沙班和达比加群之间有什么差别？",
+  "answer": "不同直接口服抗凝药（DOACs）之间的消化道出血风险并不完全一样，其中阿哌沙班（apixaban）的消化道出血风险通常低于利伐沙班（rivaroxaban）和达比加群（dabigatran） [PMID:34633836, PMID:36315950, PMID:36686666, PMID:33470705]。\n\n具体差别如下：\n* **阿哌沙班（apixaban）对比利伐沙班（rivaroxaban）：** 多项观察性研究和 Meta 分析表明，阿哌沙班的总体消化道出血及严重消化道出血风险均显著低于利伐沙班 [PMID:34633836, PMID:36341531, PMID:36315950, PMID:36686666, PMID:33470705]。例如，一项基于随机对照试验（RCTs）的网状 Meta 分析显示，标准剂量的阿哌沙班（每日 10 mg）的大出血风险低于每日用量≥15 mg 的利伐沙班 [PMID:36686666]；另一项系统评价与网状 Meta 分析（基于 RCTs）也指出，每日两次 5 mg 的阿哌沙班的大出血风险低于每日 20 mg 的利伐沙班（OR = 0.60） [PMID:33470705]。\n* **阿哌沙班（apixaban）对比达比加群（dabigatran）：** 观察性研究及 Meta 分析显示，阿哌沙班的使用与较低的消化道出血风险相关 [PMID:36315950, PMID:36686666, PMID:33470705]。例如，跨国人群队列研究发现阿哌沙班的消化道出血风险低于达比加群 [PMID:36315950]；网状 Meta 分析显示标准剂量的阿哌沙班的大出血风险低于每日 300 mg 的达比加群酯 [PMID:36686666, PMID:33470705]。\n* **利伐沙班（rivaroxaban）对比达比加群（dabigatran）：** 观察性研究结果存在一定差异。部分全国性队列研究显示，利伐沙班的总体消化道出血率高于达比加群或与达比加群点估计值相似但置信区间较宽 [PMID:34633836]，而另有基于 RCTs 的网状 Meta 分析显示，每日 300 mg 达比加群酯与每日≥15 mg（或 20 mg）利伐沙班之间的大出血风险无显著差异 [PMID:36686666, PMID:33470705]。\n\n证据强度方面，结论主要来源于多项观察性队列研究（倾向评分匹配或加权）以及系统评价与网状 Meta 分析（基于高质量 RCTs）。不过，部分研究间的直接头对头 RCT 比较仍较少，且观察性研究可能存在未测量或残留混杂因素的局限性 [PMID:34633836, PMID:36341531, PMID:36315950, PMID:33470705]。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   33470705,
+   34633836,
+   36315950,
+   36341531,
+   36686666
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "doac",
+   "gastrointestinal bleeding",
+   "apixaban",
+   "rivaroxaban",
+   "dabigatran"
+  ],
+  "retrieved": [
+   {
+    "pmid": 34633836,
+    "score": 0.8628,
+    "vector": 0.8128,
+    "matched": [
+     "doac",
+     "gastrointestinal bleeding",
+     "apixaban",
+     "rivaroxaban",
+     "dabigatran"
+    ]
+   },
+   {
+    "pmid": 36341531,
+    "score": 0.8531,
+    "vector": 0.8031,
+    "matched": [
+     "doac",
+     "gastrointestinal bleeding",
+     "apixaban",
+     "rivaroxaban",
+     "dabigatran"
+    ]
+   },
+   {
+    "pmid": 36315950,
+    "score": 0.8474,
+    "vector": 0.7974,
+    "matched": [
+     "doac",
+     "gastrointestinal bleeding",
+     "apixaban",
+     "rivaroxaban",
+     "dabigatran"
+    ]
+   },
+   {
+    "pmid": 36686666,
+    "score": 0.8438,
+    "vector": 0.7938,
+    "matched": [
+     "doac",
+     "gastrointestinal bleeding",
+     "apixaban",
+     "rivaroxaban",
+     "dabigatran"
+    ]
+   },
+   {
+    "pmid": 33470705,
+    "score": 0.8435,
+    "vector": 0.7935,
+    "matched": [
+     "doac",
+     "gastrointestinal bleeding",
+     "apixaban",
+     "rivaroxaban",
+     "dabigatran"
+    ]
+   }
+  ],
+  "n_graph_facts": 0,
+  "seconds": 9.7
+ },
+ "Q07|hybrid": {
+  "id": "Q07",
+  "mode": "hybrid",
+  "question": "不同 DOAC 的消化道出血风险一样吗？阿哌沙班、利伐沙班和达比加群之间有什么差别？",
+  "answer": "不同直接口服抗栓药物（DOACs）的消化道出血风险并不完全一样，其中阿哌沙班（apixaban）的消化道出血风险通常低于利伐沙班（rivaroxaban）和达比加群（dabigatran） [PMID:33470705, PMID:36315950]。\n\n具体差别证据如下：\n* **阿哌沙班 vs. 利伐沙班：** 多项观察性研究和 Meta 分析表明，阿哌沙班的总体及大出血/消化道出血风险显著低于利伐沙班 [PMID:33470705, PMID:34633836, PMID:36341531, PMID:36315950]。例如，在一项大型跨国队列研究中，阿哌沙班的使用与较低的胃肠道出血（GIB）风险相关（HR, 0.72 [95% CI, 0.66至0.79]） [PMID:36315950]；Meta 分析也显示标准剂量阿哌沙班的大消化道出血发生率低于每日 15 mg 或更高剂量的利伐沙班 [PMID:33470705, PMID:36686666]。\n* **阿哌沙班 vs. 达比加群：** 跨国人群队列研究显示，阿哌沙班的使用与较低的胃肠道出血风险相关（HR, 0.81 [95% CI, 0.70至0.94]） [PMID:36315950]。系统评价与网络 Meta 分析（基于 RCT）显示，标准剂量的阿哌沙班每日 5 mg 两次的大消化道出血率低于达比加群 300 mg 每日（OR, 0.63 [95% CI, 0.44至0.88]） [PMID:33470705]。\n* **利伐沙班 vs. 达比加群：** 观察性队列研究提示，达比加群与利伐沙班相比，其上消化道出血率较低 [PMID:34633836]。不过，部分网络 Meta 分析显示在某些剂量下（如每日 300 mg 达比加群与 ≥15 mg 利伐沙班）的大消化道出血风险无显著差异 [PMID:36686666]。\n\n现有证据的局限性：纳入的观察性研究可能存在未测量的混杂因素和残余混杂，而部分网络 Meta 分析缺乏直接头对头的随机对照试验（RCT）数据 [PMID:33470705, PMID:34633836, PMID:36315950]。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   33470705,
+   34633836,
+   36315950,
+   36341531,
+   36686666
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "doac",
+   "gastrointestinal bleeding",
+   "apixaban",
+   "rivaroxaban",
+   "dabigatran"
+  ],
+  "retrieved": [
+   {
+    "pmid": 34633836,
+    "score": 0.8628,
+    "vector": 0.8128,
+    "matched": [
+     "doac",
+     "gastrointestinal bleeding",
+     "apixaban",
+     "rivaroxaban",
+     "dabigatran"
+    ]
+   },
+   {
+    "pmid": 36341531,
+    "score": 0.8531,
+    "vector": 0.8031,
+    "matched": [
+     "doac",
+     "gastrointestinal bleeding",
+     "apixaban",
+     "rivaroxaban",
+     "dabigatran"
+    ]
+   },
+   {
+    "pmid": 36315950,
+    "score": 0.8474,
+    "vector": 0.7974,
+    "matched": [
+     "doac",
+     "gastrointestinal bleeding",
+     "apixaban",
+     "rivaroxaban",
+     "dabigatran"
+    ]
+   },
+   {
+    "pmid": 36686666,
+    "score": 0.8438,
+    "vector": 0.7938,
+    "matched": [
+     "doac",
+     "gastrointestinal bleeding",
+     "apixaban",
+     "rivaroxaban",
+     "dabigatran"
+    ]
+   },
+   {
+    "pmid": 33470705,
+    "score": 0.8435,
+    "vector": 0.7935,
+    "matched": [
+     "doac",
+     "gastrointestinal bleeding",
+     "apixaban",
+     "rivaroxaban",
+     "dabigatran"
+    ]
+   }
+  ],
+  "n_graph_facts": 15,
+  "seconds": 3.3
+ },
+ "Q08|llm_only": {
+  "id": "Q08",
+  "mode": "llm_only",
+  "question": "DOAC 相比华法林是否都能降低颅内出血风险？这种获益在不同 DOAC 之间一致吗？",
+  "answer": "总体而言，与华法林（Warfarin）相比，直接口服抗凝药（DOAC，如达比加群酯 Dabigatran、利伐沙班 Rivaroxaban、阿哌沙班 Apixaban、依度沙班 Edoxaban）在总体上均能显著降低颅内出血（ICH）的风险，但这种获益在不同 DOAC 之间存在一定差异。\n\n以下是相关证据的具体分析：\n\n*   **总体风险降低：** 多项大型随机对照试验（RCT）及高质量的 Meta 分析（系统评价与 Meta 分析）均证实，与华法林相比，DOAC 整体可将颅内出血的风险降低约 50% 左右，这是 DOAC 最一致且最具统计学显著性的临床获益之一。\n*   **不同 DOAC 之间的获益差异：** \n    *   **低剂量组与标准剂量组的差异：** 观察性研究和部分 RCT 的亚组分析提示，阿哌沙班（Apixaban）和低剂量达比加群酯（Dabigatran 110 mg BID）在降低颅内出血风险方面表现尤为突出，相比华法林的优势最大。\n    *   **药物间直接比较：** 间接治疗比较（ITC）和部分真实世界观察性研究表明，阿哌沙班和依度沙班（Edoxaban）在减少大出血（包括颅内出血）方面可能略优于利伐沙班（Rivaroxaban），但各项 DOAC 之间的头对头（Head-to-head）随机对照研究较少，主要依赖大型真实世界观察性研究的支持，且不同研究人群的基线特征可能存在异质性。\n\n现有证据的局限性在于，大多数关于 DOAC 间安全性的直接比较来源于观察性研究而非直接头对头 RCT，且真实世界中患者的服药依从性和合并用药情况复杂，可能对出血风险产生混杂影响。\n\n以上内容不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [],
+  "retrieved": [],
+  "n_graph_facts": 0,
+  "seconds": 2.9
+ },
+ "Q08|vector": {
+  "id": "Q08",
+  "mode": "vector",
+  "question": "DOAC 相比华法林是否都能降低颅内出血风险？这种获益在不同 DOAC 之间一致吗？",
+  "answer": "现有证据表明，直接口服抗栓药物（DOACs）总体上能降低颅内出血风险，且这种获益在不同 DOAC 之间并不完全一致 [PMID:42415975]。\n\n- 整体疗效与安全性对比：多项 Meta 分析（包含随机对照试验）显示，与维生素 K 拮抗剂（VKAs，如华法林 Warfarin）相比，DOACs（包括达比加群 Dabigatran、利伐沙班 Rivaroxaban、阿哌沙班 Apixaban 和依度沙班 Edoxaban）能够一致地降低颅内出血或出血性卒中风险 [PMID:42238268, PMID:42415975, PMID:35615562]。在伴有跌倒风险的心房颤动患者中，DOACs 同样显著降低了颅内出血风险 [PMID:35615562]。\n- 不同 DOAC 之间的差异：网络 Meta 分析（基于随机对照试验）显示，不同 DOAC 之间的颅内出血风险存在差异 [PMID:42238268, PMID:34436708]。在累积概率排序中，达比加群在降低颅内出血风险方面表现出最高的安全性，依度沙班和阿哌沙班次之，而利伐沙班的安全性排序相对较低 [PMID:42238268, PMID:34436708]。例如，研究显示利伐沙班的颅内出血或严重出血风险显著高于达比加群或依度沙班 [PMID:42238268, PMID:39077138]。\n\n现有证据的局限性在于，部分结论依赖于间接比较的网络 Meta 分析或观察性研究，尚需更多高质量的直接头对头随机对照试验来进一步证实 [PMID:34436708]。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   34436708,
+   35615562,
+   39077138,
+   42238268,
+   42415975
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "doac",
+   "warfarin",
+   "intracranial hemorrhage"
+  ],
+  "retrieved": [
+   {
+    "pmid": 42238268,
+    "score": 0.828,
+    "vector": 0.7946,
+    "matched": [
+     "doac",
+     "intracranial hemorrhage"
+    ]
+   },
+   {
+    "pmid": 42415975,
+    "score": 0.8217,
+    "vector": 0.7717,
+    "matched": [
+     "doac",
+     "warfarin",
+     "intracranial hemorrhage"
+    ]
+   },
+   {
+    "pmid": 35615562,
+    "score": 0.8199,
+    "vector": 0.7699,
+    "matched": [
+     "doac",
+     "warfarin",
+     "intracranial hemorrhage"
+    ]
+   },
+   {
+    "pmid": 34436708,
+    "score": 0.802,
+    "vector": 0.7687,
+    "matched": [
+     "doac",
+     "intracranial hemorrhage"
+    ]
+   },
+   {
+    "pmid": 39077138,
+    "score": 0.7816,
+    "vector": 0.7649,
+    "matched": [
+     "doac"
+    ]
+   }
+  ],
+  "n_graph_facts": 0,
+  "seconds": 7.4
+ },
+ "Q08|hybrid": {
+  "id": "Q08",
+  "mode": "hybrid",
+  "question": "DOAC 相比华法林是否都能降低颅内出血风险？这种获益在不同 DOAC 之间一致吗？",
+  "answer": "结论：直接口服抗栓药物（DOACs）相比维生素 K 拮抗剂（如华法林 warfarin）通常能降低颅内出血风险，但这种获益在不同 DOAC 药物之间并不完全一致。\n\n* **DOAC 总体降低颅内出血风险**：\n  * 多项 Meta 分析和系统评价（证据强度高）显示，与华法林或维生素 K 拮抗剂相比，DOACs 能够一致地减少颅内出血（intracranial hemorrhage/bleeding）的发生风险 [PMID:42238268, PMID:42415975, 图谱]。\n  * 在特定高危人群（如伴有跌倒风险的房颤患者）中，Meta 分析表明 DOACs 同样能显著降低颅内出血风险（RR = 0.26, 95% CI: 0.11-0.66）[PMID:35615562]。\n  * 观察性研究也证实了利伐沙班（rivaroxaban）相比华法林可显著降低颅内出血发生率 [PMID:34302375]。\n\n* **不同 DOAC 之间的获益存在差异**：\n  * 网络 Meta 分析表明，不同 DOAC 在颅内出血的安全性排序上存在差异，达比加群（dabigatran）显示出最高的安全性（SUCRA 87.6），其次为阿哌沙班（apixaban，SUCRA 68.6）、依度沙班（edoxaban，SUCRA 67.5）和利伐沙班（rivaroxaban，SUCRA 26.1）[PMID:42238268]。\n  * 具体药物间直接比较显示，阿哌沙班、达比加群和依度沙班的出血风险在部分研究中表现出优于利伐沙班的趋势 [PMID:42238268]。\n  * 系统评价指出，由于各个 DOAC 之间的出血风险存在差异，具体的治疗决策应当根据患者的个体因素进行调整 [PMID:42415975]。\n\n现有证据的局限性在于纳入的部分研究包含观察性队列或样本量与随访时间存在异质性，且不同 DOAC 间的直接头对头随机对照试验仍相对有限。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   34302375,
+   35615562,
+   42238268,
+   42415975
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "doac",
+   "warfarin",
+   "intracranial hemorrhage"
+  ],
+  "retrieved": [
+   {
+    "pmid": 42238268,
+    "score": 0.828,
+    "vector": 0.7946,
+    "matched": [
+     "doac",
+     "intracranial hemorrhage"
+    ]
+   },
+   {
+    "pmid": 42415975,
+    "score": 0.8217,
+    "vector": 0.7717,
+    "matched": [
+     "doac",
+     "warfarin",
+     "intracranial hemorrhage"
+    ]
+   },
+   {
+    "pmid": 35615562,
+    "score": 0.8199,
+    "vector": 0.7699,
+    "matched": [
+     "doac",
+     "warfarin",
+     "intracranial hemorrhage"
+    ]
+   },
+   {
+    "pmid": 34302375,
+    "score": 0.8129,
+    "vector": 0.7629,
+    "matched": [
+     "doac",
+     "warfarin",
+     "intracranial hemorrhage"
+    ]
+   },
+   {
+    "pmid": 40822463,
+    "score": 0.8081,
+    "vector": 0.7581,
+    "matched": [
+     "doac",
+     "warfarin",
+     "intracranial hemorrhage"
+    ]
+   }
+  ],
+  "n_graph_facts": 15,
+  "seconds": 7.8
+ },
+ "Q09|llm_only": {
+  "id": "Q09",
+  "mode": "llm_only",
+  "question": "肝素和阿哌沙班相比，哪种药的出血风险更低？",
+  "answer": "与肝素（Heparin，包括普通肝素和低分子肝素）相比，口服直接Xa因子抑制剂阿哌沙班（Apixaban）在多数临床适应证（如非瓣膜性房颤卒中预防、静脉血栓栓塞症的治疗与预防）中通常表现出较低的出血风险。\n\n证据支持如下：\n* **随机对照试验（RCT）证据：** 在多项大型Ⅲ期随机对照试验中（例如用于房颤患者的ARISTOTLE研究，以及用于静脉血栓栓塞症治疗的AMPLIFY研究），与传统抗凝方案（常包含初始的肝素桥接治疗）相比，阿哌沙班在有效抗栓的同时，显著降低了主要出血（Major bleeding）和临床相关非大出血的发生率。\n* **Meta分析与系统评价：** 多项纳入多项随机对照试验的Meta分析一致表明，与传统注射用抗凝剂（肝素类）联合维生素K拮抗剂相比，新型口服抗凝药（包括阿哌沙班）的颅内出血和总体大出血风险更低。\n* **真实世界观察性研究：** 真实世界研究（如针对老年患者或合并肾功能不全患者的队列研究）也多支持阿哌沙班的出血风险较传统注射用抗凝剂更低或相当，但在特定脆弱人群中结果可能存在异质性。\n* **结论不一致处：** 需要指出的是，肝素类药物半衰期短、可通过鱼精蛋白迅速中和，在需要进行紧急手术或面临高出血危机的患者中，医生对其出血的可控性更具信心；而阿哌沙班虽然也有特异性逆转剂（安得西奈单抗，Andexanet alfa），但在临床紧急情况下的可及性和使用经验仍受限。\n\n现有证据的局限性在于多数对比数据来源于阿哌沙班与华法林或低分子肝素在特定疾病领域的间接或直接比较，且真实世界中患者的合并症、用药依从性及剂量调整差异可能影响出血风险的最终评估。\n\n以上内容不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [],
+  "retrieved": [],
+  "n_graph_facts": 0,
+  "seconds": 2.7
+ },
+ "Q09|vector": {
+  "id": "Q09",
+  "mode": "vector",
+  "question": "肝素和阿哌沙班相比，哪种药的出血风险更低？",
+  "answer": "现有检索到的文献未涉及这一点。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [
+   "heparin",
+   "apixaban",
+   "bleeding"
+  ],
+  "retrieved": [
+   {
+    "pmid": 35807073,
+    "score": 0.799,
+    "vector": 0.7657,
+    "matched": [
+     "apixaban",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 40286370,
+    "score": 0.795,
+    "vector": 0.7616,
+    "matched": [
+     "apixaban",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 42389777,
+    "score": 0.7949,
+    "vector": 0.7616,
+    "matched": [
+     "apixaban",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 38127261,
+    "score": 0.791,
+    "vector": 0.7576,
+    "matched": [
+     "apixaban",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 34949473,
+    "score": 0.7874,
+    "vector": 0.7541,
+    "matched": [
+     "apixaban",
+     "bleeding"
+    ]
+   }
+  ],
+  "n_graph_facts": 0,
+  "seconds": 2.4
+ },
+ "Q09|hybrid": {
+  "id": "Q09",
+  "mode": "hybrid",
+  "question": "肝素和阿哌沙班相比，哪种药的出血风险更低？",
+  "answer": "现有检索到的文献未涉及这一点。\n\n现有证据的局限性在于，所检索的文献主要评估了阿哌沙班（apixaban）与华法林（warfarin）或利伐沙班（rivaroxaban）等其他抗栓药物的出血风险比较，并未包含肝素（heparin）与阿哌沙班的直接对照研究。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [
+   "heparin",
+   "apixaban",
+   "bleeding"
+  ],
+  "retrieved": [
+   {
+    "pmid": 35807073,
+    "score": 0.799,
+    "vector": 0.7657,
+    "matched": [
+     "apixaban",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 40286370,
+    "score": 0.795,
+    "vector": 0.7616,
+    "matched": [
+     "apixaban",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 42389777,
+    "score": 0.7949,
+    "vector": 0.7616,
+    "matched": [
+     "apixaban",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 38127261,
+    "score": 0.791,
+    "vector": 0.7576,
+    "matched": [
+     "apixaban",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 34949473,
+    "score": 0.7874,
+    "vector": 0.7541,
+    "matched": [
+     "apixaban",
+     "bleeding"
+    ]
+   }
+  ],
+  "n_graph_facts": 15,
+  "seconds": 1.7
+ },
+ "Q10|llm_only": {
+  "id": "Q10",
+  "mode": "llm_only",
+  "question": "阿司匹林单药和氯吡格雷单药相比，哪种药引起的消化道出血更少？",
+  "answer": "阿司匹林（Aspirin）单药和氯吡格雷（Clopidogrel）单药相比，**氯吡格雷引起的消化道出血风险更少**。\n\n*   **随机对照试验（RCT）证据**：大型随机对照试验（如经典的CAPRIE研究）显示，在动脉粥样硬化患者中，氯吡格雷单药治疗的胃肠道出血发生率显著低于阿司匹林单药治疗。\n*   **Meta 分析证据**：多项系统评价和Meta分析（汇总了多项RCT和观察性研究）一致表明，与阿司匹林相比，氯吡格雷单药可降低约30%至40%的上消化道出血风险，且胃黏膜损伤的发生率更低。\n*   **观察性研究证据**：真实世界的观察性研究同样支持这一结论，尤其是在老年人群或有消化道溃疡病史的高危患者中，氯吡格雷的消化道安全性表现优于阿司匹林。\n\n现有证据的局限性在于，多数对比研究多基于特定心血管疾病人群，且对轻微或隐匿性消化道出血的定义在不同研究间可能存在细微差异。\n\n以上内容不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [],
+  "retrieved": [],
+  "n_graph_facts": 0,
+  "seconds": 6.6
+ },
+ "Q10|vector": {
+  "id": "Q10",
+  "mode": "vector",
+  "question": "阿司匹林单药和氯吡格雷单药相比，哪种药引起的消化道出血更少？",
+  "answer": "现有检索到的文献未涉及这一点。\n\n现有证据的局限性：纳入的文献主要探讨了抗栓药物联合治疗的安全性、氯吡格雷与替格瑞洛（ticagrelor）的对比或不同抗栓策略对心血管事件及总体出血风险的影响，并未直接对比阿司匹林单药与氯吡格雷单药引起的消化道出血差异。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [
+   "aspirin",
+   "clopidogrel",
+   "gastrointestinal bleeding"
+  ],
+  "retrieved": [
+   {
+    "pmid": 40116999,
+    "score": 0.7773,
+    "vector": 0.7439,
+    "matched": [
+     "aspirin",
+     "clopidogrel"
+    ]
+   },
+   {
+    "pmid": 35001413,
+    "score": 0.77,
+    "vector": 0.7366,
+    "matched": [
+     "aspirin",
+     "clopidogrel"
+    ]
+   },
+   {
+    "pmid": 38980768,
+    "score": 0.7626,
+    "vector": 0.7293,
+    "matched": [
+     "aspirin",
+     "clopidogrel"
+    ]
+   },
+   {
+    "pmid": 38557855,
+    "score": 0.7454,
+    "vector": 0.7287,
+    "matched": [
+     "clopidogrel"
+    ]
+   },
+   {
+    "pmid": 36698936,
+    "score": 0.7286,
+    "vector": 0.7286,
+    "matched": []
+   }
+  ],
+  "n_graph_facts": 0,
+  "seconds": 4.3
+ },
+ "Q10|hybrid": {
+  "id": "Q10",
+  "mode": "hybrid",
+  "question": "阿司匹林单药和氯吡格雷单药相比，哪种药引起的消化道出血更少？",
+  "answer": "现有检索到的文献未涉及这一点。\n\n现有证据的局限性：纳入的文献主要聚焦于双联抗血栓治疗、新型P2Y12受体抑制剂或抗凝药物的安全性比较，缺乏直接对比阿司匹林单药与氯吡格雷单药引起消化道出血风险差异的高质量直接证据。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [
+   "aspirin",
+   "clopidogrel",
+   "gastrointestinal bleeding"
+  ],
+  "retrieved": [
+   {
+    "pmid": 40116999,
+    "score": 0.7773,
+    "vector": 0.7439,
+    "matched": [
+     "aspirin",
+     "clopidogrel"
+    ]
+   },
+   {
+    "pmid": 39534810,
+    "score": 0.7748,
+    "vector": 0.7248,
+    "matched": [
+     "aspirin",
+     "clopidogrel",
+     "gastrointestinal bleeding"
+    ]
+   },
+   {
+    "pmid": 35001413,
+    "score": 0.77,
+    "vector": 0.7366,
+    "matched": [
+     "aspirin",
+     "clopidogrel"
+    ]
+   },
+   {
+    "pmid": 41143351,
+    "score": 0.7694,
+    "vector": 0.7194,
+    "matched": [
+     "aspirin",
+     "clopidogrel",
+     "gastrointestinal bleeding"
+    ]
+   },
+   {
+    "pmid": 33279389,
+    "score": 0.7668,
+    "vector": 0.7168,
+    "matched": [
+     "aspirin",
+     "clopidogrel",
+     "gastrointestinal bleeding"
+    ]
+   }
+  ],
+  "n_graph_facts": 15,
+  "seconds": 4.9
+ },
+ "Q11|llm_only": {
+  "id": "Q11",
+  "mode": "llm_only",
+  "question": "达比加群和华法林相比，大出血和全因死亡风险分别如何？",
+  "answer": "与华法林 (warfarin) 相比，达比加群酯 (dabigatran) 在降低颅内出血风险方面证据确凿，但在全因死亡率上两者的差异无统计学意义。\n\n*   **大出血风险（分部位）：**\n    *   **颅内出血（Meta分析与RCT）：** 多项大型随机对照试验（RCT，如 RE-LY 研究）及后续的 Meta 分析一致表明，达比加群酯（无论是 110mg 还是 150mg 每日两次）的颅内出血风险显著低于华法林（证据强度：高，来自 RCT 及高质量 Meta 分析）。\n    *   **胃肠道出血：** 高剂量达比加群酯（150mg 每日两次）的胃肠道大出血风险显著高于华法林，而低剂量（110mg 每日两次）与华法林相当（证据强度：高，来自 RCT）。\n    *   **总体大出血：** 在常规临床应用中，不同研究（RCT 与观察性真实世界研究）的结论略有差异：部分观察性研究提示两者的总体大出血风险相似，而部分 RCT 显示高剂量达比加群酯的总体大出血风险与华法林相似或略高，低剂量则可能较低。\n*   **全因死亡风险：**\n    *   多项大型 RCT 及其汇总的 Meta 分析显示，达比加群酯与华法林相比，在降低非瓣膜性房颤患者的全因死亡率方面，差异无统计学意义（证据强度：高，来自 RCT）。\n\n现有证据的局限性在于，真实世界中患者的合并用药和肾功能状态更加复杂，且部分观察性研究所纳入的人群特征存在潜在混杂偏倚。\n\n以上内容不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [],
+  "retrieved": [],
+  "n_graph_facts": 0,
+  "seconds": 4.8
+ },
+ "Q11|vector": {
+  "id": "Q11",
+  "mode": "vector",
+  "question": "达比加群和华法林相比，大出血和全因死亡风险分别如何？",
+  "answer": "与华法林（warfarin）相比，达比加群（dabigatran）在大出血风险方面表现出更低的风险，而在全因死亡风险方面多数研究显示两组无显著差异，仅个别网络 Meta 分析显示其风险低于华法林。\n\n* **大出血风险：**\n  * 多项 Meta 分析和队列研究表明，达比加群的大出血及颅内出血（ICH）风险显著低于华法林 [PMID:41879686, PMID:37996330, PMID:34244745, PMID:42007131, PMID:39077138]。\n  * 其中一项系统评价与 Meta 分析（包含随机对照试验）指出，在非瓣膜性房颤（NVAF）患者中，达比加群 150 mg 和 110 mg 均能降低大出血和颅内出血风险 [PMID:41879686]。\n  * 一项基于真实世界的 Meta 分析指出，达比加群与华法林相比可降低大出血风险（HR: 0.75, 95% CI: 0.64-0.90）[PMID:39077138]。而斯堪的纳维亚人群队列研究也显示达比加群的大出血风险低于华法林（HR: 0.89, 95% CI: 0.82-0.97）[PMID:34244745]。\n* **全因死亡风险：**\n  * 根据系统评价与 Meta 分析结果，在非瓣膜性房颤患者亚组中，达比加群（150 mg 和 110 mg）与华法林相比，在降低死亡率方面无统计学显著差异 [PMID:41879686]（证据类型：Meta 分析）。\n  * 相比之下，一项纳入真实世界证据的网络 Meta 分析得出结论：在非瓣膜性房颤患者中，达比加群是唯一与华法林相比具有更低全因死亡风险的非维生素K拮抗剂口服抗凝药（NOAC） [PMID:37996330]（证据类型：Meta 分析）。\n\n现有证据的局限性在于纳入的研究在患者基线特征、随访时间以及药物剂量定义上存在异质性，且部分真实世界研究可能存在混杂偏倚。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   34244745,
+   37996330,
+   39077138,
+   41879686,
+   42007131
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "dabigatran",
+   "warfarin",
+   "major bleeding",
+   "all-cause mortality"
+  ],
+  "retrieved": [
+   {
+    "pmid": 41879686,
+    "score": 0.8009,
+    "vector": 0.7509,
+    "matched": [
+     "dabigatran",
+     "warfarin",
+     "major bleeding",
+     "all-cause mortality"
+    ]
+   },
+   {
+    "pmid": 37996330,
+    "score": 0.7959,
+    "vector": 0.7459,
+    "matched": [
+     "dabigatran",
+     "warfarin",
+     "major bleeding",
+     "all-cause mortality"
+    ]
+   },
+   {
+    "pmid": 34244745,
+    "score": 0.7826,
+    "vector": 0.7451,
+    "matched": [
+     "dabigatran",
+     "warfarin",
+     "major bleeding"
+    ]
+   },
+   {
+    "pmid": 42007131,
+    "score": 0.7819,
+    "vector": 0.7444,
+    "matched": [
+     "dabigatran",
+     "warfarin",
+     "major bleeding"
+    ]
+   },
+   {
+    "pmid": 39077138,
+    "score": 0.7674,
+    "vector": 0.7424,
+    "matched": [
+     "dabigatran",
+     "major bleeding"
+    ]
+   }
+  ],
+  "n_graph_facts": 0,
+  "seconds": 5.5
+ },
+ "Q11|hybrid": {
+  "id": "Q11",
+  "mode": "hybrid",
+  "question": "达比加群和华法林相比，大出血和全因死亡风险分别如何？",
+  "answer": "达比加群酯（dabigatran）与华法林（warfarin）相比，在降低大出血风险方面表现更优或相似，但在全因死亡风险方面多数研究显示无显著差异。\n\n*   **大出血风险**：\n    *   Meta 分析显示，在非瓣膜性房颤（NVHD）患者中，达比加群150 mg和110 mg均能降低大出血及颅内出血风险 [PMID:41879686]（证据强度高，Meta分析）。另一项网络 Meta 分析也指出达比加群的大出血和颅内出血风险低于华法林 [PMID:37996330]（证据强度高，网络Meta分析）。\n    *   多项观察性研究显示，达比加群组的大出血发生率或风险低于华法林组 [PMID:34244745, PMID:42007131, PMID:36607464]（证据强度中，观察性研究/队列研究）。\n    *   此外，知识图谱统计显示有 22 篇文献支持达比加群降低大出血风险 [图谱]。\n*   **全因死亡风险**：\n    *   Meta 分析显示，达比加群150 mg和110 mg在非瓣膜性房颤或瓣膜性心脏病亚组中，与华法林相比在降低全因死亡风险方面均无统计学显著差异 [PMID:41879686]（证据强度高，Meta分析）。不过，亦有网络 Meta 分析指出达比加群的全因死亡风险低于华法林 [PMID:37996330]（证据强度高，网络Meta分析）。\n    *   知识图谱统计显示有 8 篇文献支持达比加群降低全因死亡风险 [图谱]。\n\n现有证据的局限性在于部分纳入研究为观察性设计，存在潜在的混杂偏倚，且不同研究在患者基线特征、药物剂量及随访时间上存在差异。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   34244745,
+   36607464,
+   37996330,
+   41879686,
+   42007131
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "dabigatran",
+   "warfarin",
+   "major bleeding",
+   "all-cause mortality"
+  ],
+  "retrieved": [
+   {
+    "pmid": 41879686,
+    "score": 0.8009,
+    "vector": 0.7509,
+    "matched": [
+     "dabigatran",
+     "warfarin",
+     "major bleeding",
+     "all-cause mortality"
+    ]
+   },
+   {
+    "pmid": 37996330,
+    "score": 0.7959,
+    "vector": 0.7459,
+    "matched": [
+     "dabigatran",
+     "warfarin",
+     "major bleeding",
+     "all-cause mortality"
+    ]
+   },
+   {
+    "pmid": 34244745,
+    "score": 0.7826,
+    "vector": 0.7451,
+    "matched": [
+     "dabigatran",
+     "warfarin",
+     "major bleeding"
+    ]
+   },
+   {
+    "pmid": 42007131,
+    "score": 0.7819,
+    "vector": 0.7444,
+    "matched": [
+     "dabigatran",
+     "warfarin",
+     "major bleeding"
+    ]
+   },
+   {
+    "pmid": 36607464,
+    "score": 0.7808,
+    "vector": 0.7308,
+    "matched": [
+     "dabigatran",
+     "warfarin",
+     "major bleeding",
+     "all-cause mortality"
+    ]
+   }
+  ],
+  "n_graph_facts": 15,
+  "seconds": 5.6
+ },
+ "Q12|llm_only": {
+  "id": "Q12",
+  "mode": "llm_only",
+  "question": "替格瑞洛和氯吡格雷相比，出血风险和主要不良心血管事件（MACE）有什么差别？",
+  "answer": "替格瑞洛（Ticagrelor）与氯吡格雷（Clopidogrel）相比，在降低主要不良心血管事件（MACE）方面更具优势，但总体出血风险（尤其是非手术相关出血）相应增加。\n\n*   **MACE（主要不良心血管事件）风险：** 替格瑞洛在降低心血管死亡、心肌梗死和卒中复合终点方面优于氯吡格雷。这一结论主要来自于大型随机对照试验（RCT，如 PLATO 研究）及其后续的 Meta 分析。\n*   **总体出血风险：** 替格瑞洛组的总体出血发生率显著高于氯吡格雷组。多项大型 RCT 和 Meta 分析均证实了这一点。\n*   **致死性出血与颅内出血：** 虽然总体出血增加，但两类药物在致死性出血的发生率上差异无统计学意义；不过，部分观察性研究提示替格瑞洛的颅内出血风险在特定人群中可能略高，但总体 RCT 证据多显示两组颅内致死性出血无显著差异。\n*   **呼吸困难等非出血不良反应：** 证据还表明，替格瑞洛引起呼吸困难和心动过缓（室性停搏）的风险显著高于氯吡格雷（基于 RCT 和上市后监测数据）。\n\n现有证据的局限性在于，多数高质量证据来自于特定适应证（如急性冠脉综合征）的西方人群研究，对亚洲人群的出血耐受性及长期真实世界中的普适性仍需更多观察性研究验证。\n\n以上内容不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [],
+  "retrieved": [],
+  "n_graph_facts": 0,
+  "seconds": 2.2
+ },
+ "Q12|vector": {
+  "id": "Q12",
+  "mode": "vector",
+  "question": "替格瑞洛和氯吡格雷相比，出血风险和主要不良心血管事件（MACE）有什么差别？",
+  "answer": "与氯吡格雷（clopidogrel）相比，替格瑞洛（ticagrelor）在减少主要不良心血管事件（MACE）方面表现出一定优势或相似性，但在部分研究中伴随出血风险的增加，不同研究的结论存在一定差异。\n\n* **主要不良心血管事件（MACE）的差别：**\n  * 在一项全国性观察性队列研究中，替格瑞洛显著降低了急性冠脉综合征（ACS）患者的 MACE 发生率 [PMID:41143351]。\n  * 多项观察性研究显示，替格瑞洛可降低稳定型冠心病患者的 MACCE 发生率 [PMID:32908113]，或在 ACS 患者中降低 MACE、血管性死亡及支架内血栓风险 [PMID:35711382]。\n  * 一项针对不稳定性心绞痛患者的观察性研究则指出，两组在院内及12个月的 MACE 发生率上无显著差异 [PMID:36245047]。\n  * 一项随机对照试验（RCT）表明，在行直接经皮冠状动脉介入治疗（PCI）的 STEMI 患者中，1个月时的 MACE 发生率替格瑞洛与双倍剂量氯吡格雷相比无显著差异，但在术后前两周替格瑞洛显著降低了 MACE 风险 [PMID:40892606]。\n\n* **出血风险的差别：**\n  * 多项观察性研究表明，替格瑞洛显著增加了 ACS 患者的住院大出血、颅内出血及胃肠道出血风险 [PMID:41143351]，或增加了院内及12个月随访时的总出血及轻微出血事件 [PMID:36245047]。\n  * 另有观察性研究显示，在经全面多变量调整或倾向评分匹配后，替格瑞洛与氯吡格雷相比并未显著增加大出血或出血事件的风险 [PMID:35711382, PMID:32908113]。\n  * 随机对照试验（RCT）证据显示，替格瑞洛与双倍剂量氯吡格雷相比，在临床显著出血和重大出血事件发生率上无显著差异 [PMID:40892606]。\n\n现有证据的局限性在于纳入的研究多以观察性队列研究为主（包含潜在的混杂因素），部分研究样本量或随访时间有限，且缺乏大型长期 Meta 分析证据。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   32908113,
+   35711382,
+   36245047,
+   40892606,
+   41143351
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "ticagrelor",
+   "clopidogrel",
+   "bleeding",
+   "mace"
+  ],
+  "retrieved": [
+   {
+    "pmid": 41143351,
+    "score": 0.8291,
+    "vector": 0.7791,
+    "matched": [
+     "ticagrelor",
+     "clopidogrel",
+     "bleeding",
+     "mace"
+    ]
+   },
+   {
+    "pmid": 35711382,
+    "score": 0.8286,
+    "vector": 0.7786,
+    "matched": [
+     "ticagrelor",
+     "clopidogrel",
+     "bleeding",
+     "mace"
+    ]
+   },
+   {
+    "pmid": 40892606,
+    "score": 0.8242,
+    "vector": 0.7742,
+    "matched": [
+     "ticagrelor",
+     "clopidogrel",
+     "bleeding",
+     "mace"
+    ]
+   },
+   {
+    "pmid": 36245047,
+    "score": 0.8116,
+    "vector": 0.7741,
+    "matched": [
+     "ticagrelor",
+     "clopidogrel",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 32908113,
+    "score": 0.8113,
+    "vector": 0.7738,
+    "matched": [
+     "ticagrelor",
+     "clopidogrel",
+     "bleeding"
+    ]
+   }
+  ],
+  "n_graph_facts": 0,
+  "seconds": 6.3
+ },
+ "Q12|hybrid": {
+  "id": "Q12",
+  "mode": "hybrid",
+  "question": "替格瑞洛和氯吡格雷相比，出血风险和主要不良心血管事件（MACE）有什么差别？",
+  "answer": "与氯吡格雷（clopidogrel）相比，替格瑞洛（ticagrelor）在降低主要不良心血管事件（MACE）方面表现出一定优势或相似性，但多数研究提示其伴随更高的出血风险，不过具体结果因研究设计和人群不同而存在差异。\n\n* **出血风险**\n  * 多项观察性研究表明，替格瑞洛较氯吡格雷显著增加主要出血、颅内出血、胃肠道出血或BARC 2型等各类出血事件的风险 [PMID:41143351, PMID:37263787, PMID:41152338]；知识图谱统计也显示多数文献支持替格瑞洛增加出血风险 [图谱]。\n  * 部分观察性研究在充分调整时间依赖性混杂因素后，未发现替格瑞洛显著增加大出血风险 [PMID:35711382]。\n  * 一项随机对照试验（RCT）显示，替格瑞洛与双倍剂量氯吡格雷在1个月时的临床显著出血及大出血发生率无显著差异 [PMID:40892606]。\n* **主要不良心血管事件（MACE）**\n  * 观察性研究显示，替格瑞洛可显著降低急性冠脉综合征（ACS）或心肌梗死患者的MACE及主要缺血事件风险 [PMID:41143351, PMID:35711382, PMID:37263787]；知识图谱亦支持其降低MACE的作用 [图谱]。\n  * 一项RCT（TADCLOT试验）表明，在术后1个月的主节点上，替格瑞洛在降低MACE方面并不优于双倍剂量氯吡格雷，但在术后前2周内替格瑞洛显著降低了MACE风险 [PMID:40892606]。另有一项回顾性真实世界研究显示两组MACE发生率无显著差异 [PMID:41152338]。\n\n现有证据的局限性在于纳入了较多观察性研究，存在潜在的混杂偏倚，且部分RCT样本量或随访时间有限，不同研究所选用的对照方案（如标准剂量与双倍剂量氯吡格雷）及患者基线特征存在差异。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   35711382,
+   37263787,
+   40892606,
+   41143351,
+   41152338
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "ticagrelor",
+   "clopidogrel",
+   "bleeding",
+   "mace"
+  ],
+  "retrieved": [
+   {
+    "pmid": 41143351,
+    "score": 0.8291,
+    "vector": 0.7791,
+    "matched": [
+     "ticagrelor",
+     "clopidogrel",
+     "bleeding",
+     "mace"
+    ]
+   },
+   {
+    "pmid": 35711382,
+    "score": 0.8286,
+    "vector": 0.7786,
+    "matched": [
+     "ticagrelor",
+     "clopidogrel",
+     "bleeding",
+     "mace"
+    ]
+   },
+   {
+    "pmid": 40892606,
+    "score": 0.8242,
+    "vector": 0.7742,
+    "matched": [
+     "ticagrelor",
+     "clopidogrel",
+     "bleeding",
+     "mace"
+    ]
+   },
+   {
+    "pmid": 37263787,
+    "score": 0.8223,
+    "vector": 0.7723,
+    "matched": [
+     "ticagrelor",
+     "clopidogrel",
+     "bleeding",
+     "mace"
+    ]
+   },
+   {
+    "pmid": 41152338,
+    "score": 0.8222,
+    "vector": 0.7722,
+    "matched": [
+     "ticagrelor",
+     "clopidogrel",
+     "bleeding",
+     "mace"
+    ]
+   }
+  ],
+  "n_graph_facts": 15,
+  "seconds": 3.0
+ },
+ "Q13|llm_only": {
+  "id": "Q13",
+  "mode": "llm_only",
+  "question": "利伐沙班主要经过哪些代谢酶和转运体清除？",
+  "answer": "利伐沙班（Rivaroxaban）主要通过肝脏细胞色素 P450（CYP）酶代谢以及 P-糖蛋白（P-gp）和乳腺癌耐药蛋白（BCRP）介导的外排转运体途径在肝肾双通道清除。\n\n*   **肝脏代谢酶途径**：\n    *   **证据强度**：来自多项**人体药代动力学研究、体外肝微粒体研究及临床药理学试验**。\n    *   **具体表现**：约 2/3 的利伐沙班通过肝脏代谢被降解为无活性代谢物，其中大约一半依赖 CYP 酶（主要为 **CYP3A4/5** 和 **CYP2J2**），另一半则通过 CYP 酶无关的机制降解。\n*   **转运体清除途径**：\n    *   **证据强度**：基于**体外转运体细胞模型及健康志愿者的药物相互作用（DDI）临床研究**。\n    *   **具体表现**：利伐沙班是外排转运体 **P-糖蛋白（P-gp）**和 **乳腺癌耐药蛋白（BCRP）**的底物。这些转运体参与限制其肠道吸收并促进其在肝脏胆汁及肾脏中的排泄。\n*   **肾脏排泄**：\n    *   **证据强度**：来自**人体物质平衡与排泄临床研究**。\n    *   **具体表现**：剩余约 1/3 的原形药物直接经肾脏排泄，这一过程同样受到肾小管细胞表面转运体（如 P-gp）的影响。\n\n现有证据的局限性在于，上述代谢和转运途径的数据主要来源于健康受试者和体外实验，对于伴有严重肝肾功能不全或合并使用多种强效 CYP3A4/P-gp 抑制剂/诱导剂的真实世界复杂患者群体的具体清除动力学，仍需更多临床研究进一步验证。\n\n以上内容不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [],
+  "retrieved": [],
+  "n_graph_facts": 0,
+  "seconds": 5.3
+ },
+ "Q13|vector": {
+  "id": "Q13",
+  "mode": "vector",
+  "question": "利伐沙班主要经过哪些代谢酶和转运体清除？",
+  "answer": "利伐沙班（rivaroxaban）主要通过细胞色素P450酶（特别是CYP3A4、CYP3A5、CYP2J2）进行肝脏代谢清除，同时涉及膜转运体（如P-糖蛋白 P-gp / ABCB1、乳腺癌耐药蛋白 BCRP / ABCG2、有机阴离子转运体3 OAT3）的参与，但其临床吸收和处置机制在文献中仍存在一定争议 [PMID:42394189, 33847849, 34837258]。\n\n*   **代谢酶途径**：多项综述指出，CYP3A4和CYP3A5的多态性极大地影响了利伐沙班的药代动力学 [PMID:42394189]（均为综述研究）；生理药动学（PBPK）模型及临床药理学研究表明，利伐沙班通过CYP3A4和CYP2J2介导的肝脏代谢等多途径消除 [PMID:34837258]（临床前研究）。此外，有观察性研究发现NAT2（芳香胺N-乙酰转移酶2）慢乙酰化也会改变健康志愿者的利伐沙班药代动力学，使其 AUC∞ 和 Cmax 升高 [PMID:37385211]（观察性研究）。\n*   **转运体途径**：基因多态性研究表明，膜转运体基因如 *ABCB1* 和 *ABCG2* 可调节利伐沙班的分布和吸收 [PMID:42394189, 40896201]（均为综述研究）。PBPK模型研究提示其通过OAT3和P-gp介导进行肾脏分泌 [PMID:34837258]（临床前研究）。然而，也有学者通过对临床研究的药动学理论分析提出，基于体外研究推测的肠道外排转运体（如P-gp和BCRP）在体内对利伐沙班吸收过程的临床意义可能微乎其微，药物相互作用主要基于CYP3A代谢水平来进行预测 [PMID:33847849]（综述研究）。\n\n现有证据的局限性在于：现有临床研究存在显著异质性且部分结果缺乏一致性，且体外测量推导出的转运体抑制数据可能无法完全转化为体内临床相关效应，需更大规模的多中心临床试验进一步验证。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   33847849,
+   34837258,
+   37385211,
+   42394189
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "rivaroxaban"
+  ],
+  "retrieved": [
+   {
+    "pmid": 42394189,
+    "score": 0.8169,
+    "vector": 0.7669,
+    "matched": [
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 40896201,
+    "score": 0.8168,
+    "vector": 0.7668,
+    "matched": [
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 33847849,
+    "score": 0.8165,
+    "vector": 0.7665,
+    "matched": [
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 37385211,
+    "score": 0.8105,
+    "vector": 0.7605,
+    "matched": [
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 34837258,
+    "score": 0.8074,
+    "vector": 0.7574,
+    "matched": [
+     "rivaroxaban"
+    ]
+   }
+  ],
+  "n_graph_facts": 0,
+  "seconds": 8.6
+ },
+ "Q13|hybrid": {
+  "id": "Q13",
+  "mode": "hybrid",
+  "question": "利伐沙班主要经过哪些代谢酶和转运体清除？",
+  "answer": "利伐沙班（rivaroxaban）主要通过细胞色素P450酶（CYP酶）介导的肝脏代谢以及膜转运体介导的途径清除 [PMID:34837258]。\n\n* **代谢酶**：利伐沙班主要通过 CYP3A4 和 CYP3A5 代谢 [PMID:42394189, PMID:40896201]，此外也涉及 CYP2J2 介导的肝脏代谢 [PMID:34837258]。基于临床药代动力学和药物相互作用分析，药物相互作用主要根据 CYP3A 代谢水平进行预测 [PMID:33847849]。\n* **转运体**：基因多态性研究表明，膜转运体如 ABCB1（即 P-糖蛋白 P-gp）和 ABCG2（乳腺癌耐药蛋白 BCRP）可调节利伐沙班的分布和吸收 [PMID:42394189]。此外，也有研究指出利伐沙班通过有机阴离子转运体 3（OAT3）和 P-gp 介导的肾脏分泌途径清除 [PMID:34837258]，但另有文献指出基于体外研究推测的肠道外排转运体在体内的临床相关性证据较少，其抑制对吸收过程的影响可能微乎其微 [PMID:33847849]。\n\n现有证据的局限性在于现有研究存在显著异质性、结果缺乏一致性，且部分体外研究预测结果未能完全转化为体内临床相关相互作用，尚需大规模、全球、多中心临床试验进一步验证。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   33847849,
+   34837258,
+   40896201,
+   42394189
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "rivaroxaban"
+  ],
+  "retrieved": [
+   {
+    "pmid": 42394189,
+    "score": 0.8169,
+    "vector": 0.7669,
+    "matched": [
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 40896201,
+    "score": 0.8168,
+    "vector": 0.7668,
+    "matched": [
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 33847849,
+    "score": 0.8165,
+    "vector": 0.7665,
+    "matched": [
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 37385211,
+    "score": 0.8105,
+    "vector": 0.7605,
+    "matched": [
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 34837258,
+    "score": 0.8074,
+    "vector": 0.7574,
+    "matched": [
+     "rivaroxaban"
+    ]
+   }
+  ],
+  "n_graph_facts": 15,
+  "seconds": 2.4
+ },
+ "Q14|llm_only": {
+  "id": "Q14",
+  "mode": "llm_only",
+  "question": "克拉霉素和 DOAC 合用有什么风险？涉及哪些 DOAC？",
+  "answer": "克拉霉素（Clarithromycin）与直接口服抗栓药物（DOACs，包括达比加群酯 Dabigatran etexilate、利伐沙班 Rivaroxaban、阿哌沙班 Apixaban 和依多沙班 Edoxaban）合用会显著增加患者的出血风险。\n\n*   **涉及的 DOAC 药物**：包括直接凝血酶抑制剂达比加群酯（Dabigatran etexilate），以及Xa因子抑制剂利伐沙班（Rivaroxaban）、阿哌沙班（Apixaban）和依多沙班（Edoxaban）。\n*   **药代动力学机制（主要基于药动学研究与观察性研究）**：\n    *   **P-糖蛋白（P-gp）抑制**：所有DOACs均是肠道和肾脏P-gp的底物。克拉霉素是强效P-gp抑制剂，合用会减少DOACs的排泄，导致其血药浓度升高。\n    *   **CYP3A4抑制**：利伐沙班和阿哌沙班主要经细胞色素P450 3A4（CYP3A4）代谢，而克拉霉素是强效CYP3A4抑制剂，双重抑制会进一步大幅提高这两种药物的血药浓度。\n*   **临床证据强度**：\n    *   **观察性研究与药物警戒数据**：多项基于大型医保数据库的回顾性队列研究和药物不良反应监测报告（Meta分析及观察性研究）显示，克拉霉素与DOACs（特别是利伐沙班和达比加群）合用时，患者发生大出血（如消化道出血、颅内出血）的风险显著高于未合用者。\n    *   **指南与说明书一致性**：基于上述药代动力学相互作用证据，各大DOACs说明书及临床药学指南均明确将克拉霉素列为需慎用或禁忌联用的药物。\n\n现有证据多来源于药物相互作用药代动力学试验、回顾性观察性研究和药物警戒数据库，缺乏大规模随机对照试验（RCT）的直接验证。\n\n以上内容不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [],
+  "retrieved": [],
+  "n_graph_facts": 0,
+  "seconds": 7.8
+ },
+ "Q14|vector": {
+  "id": "Q14",
+  "mode": "vector",
+  "question": "克拉霉素和 DOAC 合用有什么风险？涉及哪些 DOAC？",
+  "answer": "克拉霉素（Clarithromycin）与部分直接口服抗凝药（DOACs）合用会增加药物暴露量并带来潜在的出血风险，涉及的 DOACs 包括阿哌沙班（apixaban）、依多沙班（edoxaban）、利伐沙班（rivaroxaban）以及达比加群（dabigatran）。\n\n* **药物暴露量增加与出血风险**：在一项健康志愿者开展的临床药代动力学（clinical_pk）研究中发现，克拉霉素作为强效 CYP3A 和 P-糖蛋白（P-gp）抑制剂，会使治疗剂量的依多沙班血药浓度曲线下面积（AUC）增加 1.53 倍 [PMID:36870039]。另一项生理药代动力学（PBPK）模型研究表明，克拉霉素与达比加群（DABE-dabigatran）、利伐沙班、阿哌沙班及依多沙班之间存在由 P-gp 介导的药物相互作用 [PMID:39598572]。回顾性药物警戒数据库（observational）分析显示，当阿哌沙班与克拉霉素合用时，具有显著的出血信号（报告比值比 ROR 1.60, 95% CI 1.16-2.20） [PMID:3908021]。\n* **DOACs 的共性基础**：所有 DOACs（达比加群、利伐沙班、阿哌沙班和依多沙班）均为 P-gp 的底物，其中利伐沙班和阿哌沙班还易受细胞色素 P450 酶（CYP）活性的影响，因此当与 P-gp 或 CYP3A4 强抑制剂（如克拉霉素）合用时易产生相互作用 [PMID:35745692]。\n\n现有证据的局限性：相关证据主要来源于健康志愿者的药代动力学研究、PBPK 模型预测以及基于自发呈报不良事件数据库的观察性研究，缺乏大规模前瞻性随机对照试验的直接验证。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   3908021,
+   35745692,
+   36870039,
+   39598572
+  ],
+  "invalid_citations": [
+   3908021
+  ],
+  "entities": [
+   "clarithromycin",
+   "doac"
+  ],
+  "retrieved": [
+   {
+    "pmid": 36870039,
+    "score": 0.8453,
+    "vector": 0.7953,
+    "matched": [
+     "clarithromycin",
+     "doac"
+    ]
+   },
+   {
+    "pmid": 36908021,
+    "score": 0.836,
+    "vector": 0.786,
+    "matched": [
+     "clarithromycin",
+     "doac"
+    ]
+   },
+   {
+    "pmid": 39598572,
+    "score": 0.8241,
+    "vector": 0.7741,
+    "matched": [
+     "clarithromycin",
+     "doac"
+    ]
+   },
+   {
+    "pmid": 35745692,
+    "score": 0.7729,
+    "vector": 0.7479,
+    "matched": [
+     "doac"
+    ]
+   },
+   {
+    "pmid": 36446994,
+    "score": 0.7705,
+    "vector": 0.7455,
+    "matched": [
+     "doac"
+    ]
+   }
+  ],
+  "n_graph_facts": 0,
+  "seconds": 4.6
+ },
+ "Q14|hybrid": {
+  "id": "Q14",
+  "mode": "hybrid",
+  "question": "克拉霉素和 DOAC 合用有什么风险？涉及哪些 DOAC？",
+  "answer": "克拉霉素（clarithromycin）与直接口服抗凝药（DOACs）合用会增加药物暴露量并显著升高出血风险 [PMID:36870039, PMID:37791408]。涉及的 DOAC 包括阿哌沙班（apixaban）、利伐沙班（rivaroxaban）、依度沙班（edoxaban）和达比加群（dabigatran） [PMID:36870039, PMID:39598572, PMID:37791408]。\n\n以下是具体证据：\n- **药代动力学与药物暴露**：克拉霉素作为强效细胞色素 P450 3A（CYP3A）和 P-糖蛋白（P-gp）抑制剂，会增加 DOACs 的体内暴露量 [PMID:36870039]。临床药代动力学研究（clinical_pk）显示，克拉霉素稳态给药会使依度沙班的药时曲线下面积（AUC）几何均值比（GMR）增加至 1.53，并使微剂量阿哌沙班、依度沙班和利伐沙班的暴露量分别增加 [PMID:36870039]。生理药代动力学（PBPK）模型研究表明，克拉霉素与达比加群、利伐沙班、阿哌沙班及依度沙班之间存在由 P-gp 介导的药物相互作用 [PMID:39598572]，且在老年人群中合用克拉霉素也会进一步增加达比加群和利伐沙班的暴露量 [PMID:36626944]。\n- **临床出血风险**：\n  - 一项全国性队列研究（observational）显示，在房颤患者中，P-gp/CYP3A4 抑制剂（包括克拉霉素）与非维生素 K 拮抗剂口服抗凝药（NOACs）合用与显著增加的大出血风险相关（调整后风险比 aHR 1.55, 95% CI 1.14-2.11） [PMID:37791408]。\n  - 具体到药物亚组，克拉霉素与依度沙班、利伐沙班和阿哌沙班的使用均观察到大出血风险显著增加，但达比加群用户中未观察到显著增加 [PMID:37791408]。\n  - 药物警戒数据库分析（observational）显示，阿哌沙班与克拉霉素联用具有显著的出血信号（报告比值比 ROR 1.60, 95% CI 1.16-2.20） [PMID:36908021]。\n\n现有证据的局限性在于多数证据来源于观察性队列研究、自发呈报数据库分析及药代动力学模型预测，且部分研究对象的合并用药或人群特征存在差异，可能对临床终点的归因产生混杂影响。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   36626944,
+   36870039,
+   36908021,
+   37791408,
+   39598572
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "clarithromycin",
+   "doac"
+  ],
+  "retrieved": [
+   {
+    "pmid": 36870039,
+    "score": 0.8453,
+    "vector": 0.7953,
+    "matched": [
+     "clarithromycin",
+     "doac"
+    ]
+   },
+   {
+    "pmid": 36908021,
+    "score": 0.836,
+    "vector": 0.786,
+    "matched": [
+     "clarithromycin",
+     "doac"
+    ]
+   },
+   {
+    "pmid": 39598572,
+    "score": 0.8241,
+    "vector": 0.7741,
+    "matched": [
+     "clarithromycin",
+     "doac"
+    ]
+   },
+   {
+    "pmid": 37791408,
+    "score": 0.7854,
+    "vector": 0.7354,
+    "matched": [
+     "clarithromycin",
+     "doac"
+    ]
+   },
+   {
+    "pmid": 36626944,
+    "score": 0.7835,
+    "vector": 0.7335,
+    "matched": [
+     "clarithromycin",
+     "doac"
+    ]
+   }
+  ],
+  "n_graph_facts": 15,
+  "seconds": 6.3
+ },
+ "Q15|llm_only": {
+  "id": "Q15",
+  "mode": "llm_only",
+  "question": "恩扎卢胺与阿哌沙班或利伐沙班合用有什么风险？机制是什么？",
+  "answer": "恩扎卢胺（Enzalutamide）与阿哌沙班（Apixaban）或利伐沙班（Rivaroxaban）合用存在显著的药物相互作用风险，主要表现为**直接口服抗凝药（DOACs）的血药浓度显著降低，从而大幅增加血栓栓塞事件（如深静脉血栓、肺栓塞或卒中）的发生风险**。\n\n以下是具体的机制与证据支持：\n\n*   **药代动力学机制（主要机制）：**\n    *   恩扎卢胺是强效的细胞色素 P450 3A4（CYP3A4）诱导剂，同时也是 P-糖蛋白（P-gp）的诱导剂。\n    *   阿哌沙班和利伐沙班主要通过 CYP3A4 代谢，且都是肠道外排转运蛋白 P-gp 的底物。\n    *   当两者合用时，恩扎卢胺会加速阿哌沙班或利伐沙班在体内的代谢并减少其吸收，导致这两种抗凝药的血药浓度锐减，抗凝疗效失效。\n*   **证据强度与来源：**\n    *   **药代动力学研究与说明书警告：** 根据药物说明书及健康人体的药代动力学研究，强 CYP3A4/P-gp 诱导剂与阿哌沙班或利伐沙班合用可使其 AUC（药时曲线下面积）显著下降，证据等级高。\n    *   **观察性研究与药物警戒数据：** 回顾性队列研究和多项药物警戒数据库分析显示，前列腺癌患者在接受恩扎卢胺治疗期间若合用利伐沙班或阿哌沙班，发生静脉血栓栓塞（VTE）复发或动脉血栓事件的风险明显高于未合用诱导剂的患者。\n\n现有证据的局限性在于：目前关于该联合用药风险的数据多来源于药代动力学外推、个案报道及回顾性观察性研究，缺乏大型前瞻性随机对照试验（RCT）的直接验证。\n\n以上内容不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [],
+  "retrieved": [],
+  "n_graph_facts": 0,
+  "seconds": 9.4
+ },
+ "Q15|vector": {
+  "id": "Q15",
+  "mode": "vector",
+  "question": "恩扎卢胺与阿哌沙班或利伐沙班合用有什么风险？机制是什么？",
+  "answer": "恩扎卢胺（enzalutamide）与阿哌沙班（apixaban）或利伐沙班（rivaroxaban）合用时，可能会显著降低这两种抗凝药物的血药浓度，从而增加血栓栓塞事件的风险，建议避免联合使用 [PMID:41432664, PMID:37344637]。\n\n* **机制分析**：恩扎卢胺及其次要代谢产物是强效的细胞色素 P450 3A4（CYP3A4）诱导剂，同时对 P-糖蛋白（P-gp）表现出诱导和抑制的综合作用 [PMID:37344637]。由于阿哌沙班和利伐沙班均是 CYP3A4 和 P-gp 的双重底物，合用时会因药物代谢酶的诱导而使抗凝药物暴露量减少 [PMID:37344637]。\n* **药动学证据**：\n  * **综述研究**指出，恩扎卢胺作为强 CYP3A4 诱导剂，可能减少阿哌沙班和利伐沙班的体内暴露量 [PMID:41432664]（证据类型：综述）。\n  * **临床前药动学模型（PBPK）**预测显示，当每日多次服用 160 mg 恩扎卢胺时：\n    * 阿哌沙班的曲线下面积（AUC）预计下降 31%，最大血药浓度（$C_{max}$）无明显变化 [PMID:37344637]（证据类型：临床前研究）。\n    * 利伐沙班的 AUC 预计下降 45%，$C_{max}$ 下降 25% [PMID:37344637]（证据类型：临床前研究）。\n\n现有证据的局限性在于，关于恩扎卢胺与该类直接口导抗凝药相互作用的具体药动学数据主要基于综述与计算机模拟（PBPK）预测，缺乏大规模的临床随机对照试验（RCT）证据。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   37344637,
+   41432664
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "enzalutamide",
+   "apixaban",
+   "rivaroxaban"
+  ],
+  "retrieved": [
+   {
+    "pmid": 41432664,
+    "score": 0.8583,
+    "vector": 0.8083,
+    "matched": [
+     "enzalutamide",
+     "apixaban",
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 37344637,
+    "score": 0.8557,
+    "vector": 0.8057,
+    "matched": [
+     "enzalutamide",
+     "apixaban",
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 40231674,
+    "score": 0.7863,
+    "vector": 0.753,
+    "matched": [
+     "apixaban",
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 40896199,
+    "score": 0.7829,
+    "vector": 0.7496,
+    "matched": [
+     "apixaban",
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 39675152,
+    "score": 0.7796,
+    "vector": 0.7463,
+    "matched": [
+     "apixaban",
+     "rivaroxaban"
+    ]
+   }
+  ],
+  "n_graph_facts": 0,
+  "seconds": 3.5
+ },
+ "Q15|hybrid": {
+  "id": "Q15",
+  "mode": "hybrid",
+  "question": "恩扎卢胺与阿哌沙班或利伐沙班合用有什么风险？机制是什么？",
+  "answer": "恩扎卢胺（enzalutamide）与阿哌沙班（apixaban）或利伐沙班（rivaroxaban）合用主要会降低这两种抗凝药物的血药浓度，从而可能影响抗栓疗效；其核心机制是恩扎卢胺对细胞色素P450 3A4（CYP3A4）的强诱导作用以及对P-糖蛋白（P-gp）的综合影响 [PMID:37344637, PMID:41432664]。\n\n* **证据与风险**：\n  * 综述类研究指出，恩扎卢胺作为强CYP3A4诱导剂，可能会降低阿哌沙班和利伐沙班的药物暴露量 [PMID:41432664]（属于文献综述）。\n  * 基于生理学的药动学（PBPK）临床前研究模型预测，当多剂次给予恩扎卢胺（160 mg每日一次）时，阿哌沙班的药时曲线下面积（AUC）预计下降31%，最大血药浓度（$C_{max}$）无变化；利伐沙班的AUC预计下降45%，$C_{max}$下降25% [PMID:37344637]（属于临床前研究）。\n* **作用机制**：\n  * 阿哌沙班和利伐沙班是CYP3A4和P-gp的双重底物 [PMID:37344637]。\n  * 恩扎卢胺能强效诱导CYP3A4，并对P-gp产生复杂的诱导和抑制的净效应，协同导致这两种直接口服抗凝药（DOACs）的血浆暴露量减少，临床需注意监测疗效与安全性 [PMID:37344637, PMID:41432664]。\n\n现有证据的局限性在于主要基于文献综述及基于大鼠或计算机模型的药动学（PBPK）预测，缺乏大规模的前瞻性临床试验数据。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   37344637,
+   41432664
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "enzalutamide",
+   "apixaban",
+   "rivaroxaban"
+  ],
+  "retrieved": [
+   {
+    "pmid": 41432664,
+    "score": 0.8583,
+    "vector": 0.8083,
+    "matched": [
+     "enzalutamide",
+     "apixaban",
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 37344637,
+    "score": 0.8557,
+    "vector": 0.8057,
+    "matched": [
+     "enzalutamide",
+     "apixaban",
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 40231674,
+    "score": 0.7863,
+    "vector": 0.753,
+    "matched": [
+     "apixaban",
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 40896199,
+    "score": 0.7829,
+    "vector": 0.7496,
+    "matched": [
+     "apixaban",
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 39675152,
+    "score": 0.7796,
+    "vector": 0.7463,
+    "matched": [
+     "apixaban",
+     "rivaroxaban"
+    ]
+   }
+  ],
+  "n_graph_facts": 15,
+  "seconds": 2.7
+ },
+ "Q16|llm_only": {
+  "id": "Q16",
+  "mode": "llm_only",
+  "question": "非甾体抗炎药（NSAID）与口服抗凝药合用，出血风险会增加吗？",
+  "answer": "非甾体抗炎药（NSAID）与口服抗凝药（如华法林 Warfarin、直接口服抗凝药 DOACs）合用会显著增加大出血和胃肠道出血的风险。\n\n*   **Meta 分析与系统评价**：多项纳入数万至数十万患者的大型 Meta 分析和系统评价表明，口服抗凝药联用 NSAID 会使总体出血风险增加约 1.5 至 2 倍，特别是胃肠道出血风险显著上升。\n*   **随机对照试验（RCT）的亚组分析**：大型抗凝药物临床试验（如评估华法林或 DOACs 的注册研究）的安全性分析和事后（Post-hoc）分析均证实，基线或伴随使用 NSAID 的患者，其出血事件发生率在数值上和统计学上均高于单用抗凝药者。\n*   **观察性研究（真实世界研究）**：多项基于国家级医疗数据库的队列研究和病例对照研究显示，在真实世界中老年人群或合并心血管/关节疾病患者中，联合用药极大地推高了消化道大出血及颅内出血的发生率。\n\n现有证据的局限性在于多数真实世界研究为观察性设计，可能存在混杂偏倚（如患者未记录的非处方药 NSAID 使用情况），且不同 NSAID 药物的选择性（如传统 NSAID 与 COX-2 抑制剂）对胃肠道风险的影响存在异质性。\n\n以上内容不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [],
+  "retrieved": [],
+  "n_graph_facts": 0,
+  "seconds": 7.9
+ },
+ "Q16|vector": {
+  "id": "Q16",
+  "mode": "vector",
+  "question": "非甾体抗炎药（NSAID）与口服抗凝药合用，出血风险会增加吗？",
+  "answer": "现有文献表明，非甾体抗炎药（NSAID）与口服抗凝药物合用会增加出血风险。\n\n* **总体出血风险增加**：一项全国性队列研究（观察性研究）显示，在接受口服抗凝治疗的心房颤动患者中，合用 NSAID 与整体医院诊断的出血率增加相关（调整后风险比 [aHR] = 1.81，95% 置信区间 [CI]：1.59–2.06）[PMID:40833918]。\n* **不同出血部位的风险**：该研究指出，合用 NSAID 增加的出血风险不仅限于胃肠道（aHR = 2.30，95% CI：1.92–2.76），还包括贫血（aHR = 3.50）、胸部/呼吸道出血（aHR = 1.59）、泌尿道出血（aHR = 1.48）等 [PMID:40833918]。此外，一项开发胃肠道出血风险模型的研究（基于文献/Meta分析等）指出，不同 NSAID 引起胃肠道出血的优势比（OR）存在差异，从塞来昔布（celecoxib）的 1.16 到酮咯酸（ketorolac）的 20.67 不等 [PMID:42927649]。\n* **不同抗凝药物的差异**：全国性队列研究显示，NSAID 增加出血风险的现象见于多种抗凝药，其中风险最高的是依度沙班（edoxaban，aHR = 2.87），其次为阿哌沙班（apixaban，aHR = 2.15）、利伐沙班（rivaroxaban，aHR = 2.05）、华法林（warfarin，aHR = 1.46），达比加群（dabigatran，aHR = 1.40）最低 [PMID:40833918]。不过，另一项单中心回顾性队列研究（观察性研究）对比利伐沙班和阿哌沙班发现，在合用 NSAID 的患者中，两者的出血率无统计学显著差异 [PMID:40530373]。\n\n现有证据的局限性在于纳入的多为观察性研究或基于模型的推导，可能存在混杂偏倚，且部分研究样本量或特定亚组数据有限。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   40530373,
+   40833918,
+   42927649
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "non-steroidal anti-inflammatory drugs",
+   "oral anticoagulant",
+   "bleeding"
+  ],
+  "retrieved": [
+   {
+    "pmid": 40833918,
+    "score": 0.8437,
+    "vector": 0.7937,
+    "matched": [
+     "non-steroidal anti-inflammatory drugs",
+     "oral anticoagulant",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 40530373,
+    "score": 0.7882,
+    "vector": 0.7715,
+    "matched": [
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 42927649,
+    "score": 0.7784,
+    "vector": 0.745,
+    "matched": [
+     "oral anticoagulant",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 35622425,
+    "score": 0.7416,
+    "vector": 0.7249,
+    "matched": [
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 33952817,
+    "score": 0.7582,
+    "vector": 0.7249,
+    "matched": [
+     "oral anticoagulant",
+     "bleeding"
+    ]
+   }
+  ],
+  "n_graph_facts": 0,
+  "seconds": 3.8
+ },
+ "Q16|hybrid": {
+  "id": "Q16",
+  "mode": "hybrid",
+  "question": "非甾体抗炎药（NSAID）与口服抗凝药合用，出血风险会增加吗？",
+  "answer": "非甾体抗炎药（NSAID）与口服抗凝药（包括直接口服抗凝药和华法林）合用会增加出血风险。\n\n* 根据一项全国性队列研究（observational），房颤患者在接受口服抗凝治疗期间合用 NSAID，与不合用相比，整体住院诊断出血风险显著增加（调整后风险比 [aHR] 为 1.81，95% 置信区间 [CI] 为 1.59–2.06）[PMID:40833918]。\n* 该研究显示，出血风险的增加不限于胃肠道（aHR 为 2.30，95% CI 为 1.92–2.76），还包括胸部/呼吸道出血（aHR 为 1.59）、泌尿道出血（aHR 为 1.48）以及出血引起的贫血（aHR 为 3.50）[PMID:40833918]。\n* NSAID 与各类口服抗凝药合用均会增加出血率，其中依度沙班（edoxaban）合用的风险最高，其次为阿哌沙班（apixaban）、利伐沙班（rivaroxaban），达比加群（dabigatran）和华法林（warfarin）的风险相对较低 [PMID:40833918]。\n* 另一项针对胃肠道出血风险模型的研究（observational）指出，不同 NSAID 的胃肠道出血发生风险存在差异，其优势比（OR）从塞来昔布（celecoxib）的 1.16（95% CI：0.84–1.61）到酮咯酸（ketorolac）的 20.67（95% CI：14.56–29.34）不等 [PMID:42927649]。\n* 此外，一项针对利伐沙班或阿哌沙班的回顾性队列研究（observational）表明，在合用 NSAID 的患者中，利伐沙班与阿哌沙班之间的出血率无统计学显著差异 [PMID:40530373]。\n\n现有证据的局限性在于纳入的研究多为观察性研究，可能存在混杂偏倚，且部分研究样本量或特定亚组数据有限，尚需更多前瞻性研究进一步量化单纯直接口服抗凝药与 NSAID 联用的比较出血风险。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   40530373,
+   40833918,
+   42927649
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "non-steroidal anti-inflammatory drugs",
+   "oral anticoagulant",
+   "bleeding"
+  ],
+  "retrieved": [
+   {
+    "pmid": 40833918,
+    "score": 0.8437,
+    "vector": 0.7937,
+    "matched": [
+     "non-steroidal anti-inflammatory drugs",
+     "oral anticoagulant",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 40530373,
+    "score": 0.7882,
+    "vector": 0.7715,
+    "matched": [
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 42927649,
+    "score": 0.7784,
+    "vector": 0.745,
+    "matched": [
+     "oral anticoagulant",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 33952817,
+    "score": 0.7582,
+    "vector": 0.7249,
+    "matched": [
+     "oral anticoagulant",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 40714858,
+    "score": 0.7544,
+    "vector": 0.721,
+    "matched": [
+     "oral anticoagulant",
+     "bleeding"
+    ]
+   }
+  ],
+  "n_graph_facts": 2,
+  "seconds": 2.9
+ },
+ "Q17|llm_only": {
+  "id": "Q17",
+  "mode": "llm_only",
+  "question": "肥胖或高体重患者使用阿哌沙班、利伐沙班，疗效和安全性如何？",
+  "answer": "对于肥胖或高体重（尤其是体重 > 120 kg 或 BMI > 40 kg/m²）患者，使用直接口服抗凝药阿哌沙班（apixaban）和利伐沙班（rivaroxaban）在有效性和安全性方面与非肥胖患者总体相当，但在极高体重人群中的数据仍相对有限。\n\n以下是具体的证据支持：\n\n*   **观察性研究与亚组分析证据（多数支持）：** 多项大型观察性研究、随机对照试验（RCT）的亚组分析以及系统评价/Meta分析表明，在体重较高或肥胖的静脉血栓栓塞症（VTE）或非瓣膜性房颤患者中，阿哌沙班和利伐沙班在预防血栓栓塞事件（疗效）和大出血风险（安全性）方面，与标准体重患者相比没有显著的临床差异，无需常规调整剂量。\n*   **国际指南推荐：** 国际血栓与止血学会（ISTH）等机构的指导意见指出，对于 BMI > 40 kg/m² 或体重 > 120 kg 的患者，使用阿哌沙班和利伐沙班是可接受的；但由于极少数极端体重个体的药代动力学数据缺乏，ISTH 建议在某些超高体重患者中，如果可行，可考虑检测药物峰谷浓度或选择传统的维生素K拮抗剂（如华法林）。\n*   **不同研究结论的不一致性：** 尽管主流 Meta 分析显示疗效和安全性良好，但部分小型观察性研究和药代动力学研究提示，极端肥胖患者使用某些DOACs后可能会出现药物浓度降低的现象，这引发了对其在极高体重下抗栓疗效是否会下降的担忧，不同研究间尚存一定争议。\n\n现有证据的局限性在于，绝大多数结论来自于现有大型RCT的亚组分析或观察性研究，缺乏专门针对极端超重人群的大型前瞻性随机对照试验。\n\n以上内容不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [],
+  "retrieved": [],
+  "n_graph_facts": 0,
+  "seconds": 7.0
+ },
+ "Q17|vector": {
+  "id": "Q17",
+  "mode": "vector",
+  "question": "肥胖或高体重患者使用阿哌沙班、利伐沙班，疗效和安全性如何？",
+  "answer": "肥胖或高体重患者使用阿哌沙班（apixaban）和利伐沙班（rivaroxaban）时，表现出相似或更低的出血及血栓风险，疗效和安全性良好 [PMID:33677803, PMID:38197017]。\n\n* 根据系统评价显示，在增加体重的患者中，利伐沙班和阿哌沙班的出血和血栓风险与体重正常患者相比呈现相似或降低的水平（系统评价） [PMID:33677803]。\n* 根据 observational 研究显示，在一项针对静脉血栓栓塞症（VTE）或房颤（AF）患者的研究中，阿哌沙班与华法林相比显示出 statistically significant（具有统计学显著性）更低的 VTE 发生率和更低的总体出血率（观察性研究） [PMID:37738772]。\n* 根据 narrative review 显示，指南和共识建议在病态肥胖患者（体重>120 kg 或 BMI ≥40 kg/m²）中使用阿哌沙班和利伐沙班，其疗效和安全性与标准治疗相当（叙述性综述） [PMID:38197017]。\n* 根据 observational 研究显示，对于伴有非瓣膜性房颤（NVAF）的肥胖和病态肥胖患者，使用阿哌沙班与利伐沙班在卒中、短暂性脑缺血发作（TIA）、心肌梗死、房栓塞以及出血事件的发生率上没有统计学差异（观察性研究） [PMID:37713139]。\n\n现有证据的局限性在于缺乏大型前瞻性对照研究，且部分研究中患者基线特征存在差异可能对出血风险等结果产生偏倚。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   33677803,
+   37713139,
+   37738772,
+   38197017
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "apixaban",
+   "rivaroxaban",
+   "obesity",
+   "high body weight"
+  ],
+  "retrieved": [
+   {
+    "pmid": 33677803,
+    "score": 0.8469,
+    "vector": 0.8219,
+    "matched": [
+     "apixaban",
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 36052844,
+    "score": 0.8316,
+    "vector": 0.8066,
+    "matched": [
+     "apixaban",
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 37738772,
+    "score": 0.8315,
+    "vector": 0.8065,
+    "matched": [
+     "apixaban",
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 38197017,
+    "score": 0.8298,
+    "vector": 0.8048,
+    "matched": [
+     "apixaban",
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 37713139,
+    "score": 0.8259,
+    "vector": 0.8009,
+    "matched": [
+     "apixaban",
+     "rivaroxaban"
+    ]
+   }
+  ],
+  "n_graph_facts": 0,
+  "seconds": 18.0
+ },
+ "Q17|hybrid": {
+  "id": "Q17",
+  "mode": "hybrid",
+  "question": "肥胖或高体重患者使用阿哌沙班、利伐沙班，疗效和安全性如何？",
+  "answer": "在肥胖或高体重患者中，使用阿哌沙班（apixaban）和利伐沙班（rivaroxaban）总体显示出与正常体重患者相似或更低的出血和血栓风险，且两药在疗效方面无显著差异 [PMID:33677803, PMID:37713139]。\n\n* **疗效与安全性（总体评价）**：系统评价显示，肥胖或高体重患者使用利伐沙班和阿哌沙班，其出血及血栓风险与正常体重患者相似或降低 [PMID:33677803]（系统评价/Review）。针对非瓣膜性房颤（NVAF）肥胖患者的回顾性队列研究显示，阿哌沙班和利伐沙班在卒中、短暂性脑缺血发作（TIA）、心肌梗死或房颤血栓事件的复合终点发生率上无显著差异（分别为3.8%对1.7%，P=0.28） [PMID:37713139]（观察性研究）。\n* **出血风险比较**：一项针对房颤和静脉血栓栓塞症（VTE）患者的研究表明，在对比多种抗凝药时，阿哌沙班表现出最低的整体出血率 [PMID:37738772]（观察性研究）。但针对肥胖和病态肥胖患者的队列研究发现，临床相关非大出血及大出血事件在阿哌沙班组发生率更高，但差异无统计学意义 [PMID:37713139]（观察性研究）。知识图谱统计亦显示多篇文献提示利伐沙班的大出血、胃肠道出血等风险可能高于阿哌沙班 [图谱]。\n* **指南推荐**：国际血栓与止血学会（ISTH）等指南建议，对于高体重指数（BMI）或高体重的患者，可直接使用标准剂量的阿哌沙班和利伐沙班，无需根据体重调整 [PMID:37738772, PMID:38197017]。\n\n现有证据的局限性在于缺乏大规模的前瞻性随机对照试验（RCT）数据，现存研究多为回顾性队列研究和系统评价，且部分研究的基线特征可能存在偏倚。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   33677803,
+   37713139,
+   37738772,
+   38197017
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "apixaban",
+   "rivaroxaban",
+   "obesity",
+   "high body weight"
+  ],
+  "retrieved": [
+   {
+    "pmid": 33677803,
+    "score": 0.8469,
+    "vector": 0.8219,
+    "matched": [
+     "apixaban",
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 36052844,
+    "score": 0.8316,
+    "vector": 0.8066,
+    "matched": [
+     "apixaban",
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 37738772,
+    "score": 0.8315,
+    "vector": 0.8065,
+    "matched": [
+     "apixaban",
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 38197017,
+    "score": 0.8298,
+    "vector": 0.8048,
+    "matched": [
+     "apixaban",
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 37713139,
+    "score": 0.8259,
+    "vector": 0.8009,
+    "matched": [
+     "apixaban",
+     "rivaroxaban"
+    ]
+   }
+  ],
+  "n_graph_facts": 15,
+  "seconds": 7.5
+ },
+ "Q18|llm_only": {
+  "id": "Q18",
+  "mode": "llm_only",
+  "question": "肝硬化或慢性肝病患者使用 DOAC，出血风险和华法林相比怎么样？",
+  "answer": "对于肝硬化或慢性肝病合并房颤或静脉血栓栓塞症的患者，使用直接口服抗凝药（DOAC）如利伐沙班（Rivaroxaban）、阿哌沙班（Apixaban）等，其总体大出血风险与华法林（Warfarin）相当或更低，且颅内出血风险通常低于华法林。\n\n*   **观察性研究与真实世界数据：** 多项大型回顾性队列研究和真实世界数据表明，在Child-Pugh A级或B级肝硬化患者中，DOAC组的大出血风险与华法林组相似，甚至在某些研究中显示胃肠道外出血风险更低。\n*   **Meta 分析与系统评价：** 发表在多个心血管和肝病学期刊上的Meta分析（汇总了多项观察性研究）显示，与华法林相比，DOAC并不增加肝硬化患者的总体出血风险，且颅内出血这一致死性并发症的发生率在DOAC组更低。\n*   **随机对照试验（RCT）的证据局限：** 值得注意的是，大型随机对照试验（如评估DOAC的III期临床试验）在设计之初大多排除了重度肝病患者（如Child-Pugh C级、严重凝血功能障碍或临床显著的凝血酶原时间延长者），因此目前关于Child-Pugh C级患者的安全性和出血风险数据主要来源于小规模研究和临床经验，结论尚不完全统一。\n\n现有证据的局限性在于，绝大多数数据来源于观察性研究和亚组分析，缺乏针对重度肝硬化（Child-Pugh C级）患者的大型随机对照试验。\n\n以上内容不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [],
+  "retrieved": [],
+  "n_graph_facts": 0,
+  "seconds": 7.5
+ },
+ "Q18|vector": {
+  "id": "Q18",
+  "mode": "vector",
+  "question": "肝硬化或慢性肝病患者使用 DOAC，出血风险和华法林相比怎么样？",
+  "answer": "在肝硬化或慢性肝病患者中，直接口服抗凝药物（DOACs，包括阿哌沙班 apixaban、利伐沙班 rivaroxaban、达比加群 dabigatran 等）的总体出血风险显著低于华法林（warfarin）。\n\n* Meta 分析证据显示，与华法林或低分子肝素相比，DOACs 显著降低了肝病患者的所有出血事件发生率（RR: 0.76）、大出血发生率（RR: 0.51）、颅内出血发生率（RR: 0.50）以及胃肠道出血发生率（RR: 0.76）[PMID:35913111]。\n* 针对房颤合并慢性肝病患者的回顾性队列研究表明，作为整体的 DOACs 类药物以及其中的阿哌沙班、利伐沙班，其住院大出血风险均显著低于华法林 [PMID:36762560]。\n* 针对急性静脉血栓栓塞症（VTE）合并慢性肝病患者的队列研究发现，DOACs 整体、阿哌沙班及利伐沙班相比于华法林，均与较低的主任大出血风险相关 [PMID:38268519]。\n* 在达比加群与华法林的对比研究中，达比加群组的出血事件发生率在数值上低于华法林组，但差异无统计学意义 [PMID:36201730]。此外，不同的 DOACs 之间出血风险存在差异，例如利伐沙班的大出血风险高于阿哌沙班 [PMID:36762560]。\n\n现有证据的局限性在于纳入的研究多为观察性研究或回顾性队列研究，部分亚组（如 Child-Turcotte-Pugh C 级患者）样本量较少或缺乏数据，且不同 DOACs 药物及肝病严重程度之间的直接对比仍需更多高质量研究证实。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   35913111,
+   36201730,
+   36762560,
+   38268519
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "doac",
+   "warfarin",
+   "bleeding",
+   "cirrhosis",
+   "chronic liver disease"
+  ],
+  "retrieved": [
+   {
+    "pmid": 36762560,
+    "score": 0.8423,
+    "vector": 0.8023,
+    "matched": [
+     "doac",
+     "warfarin",
+     "bleeding",
+     "chronic liver disease"
+    ]
+   },
+   {
+    "pmid": 35913111,
+    "score": 0.8352,
+    "vector": 0.7952,
+    "matched": [
+     "doac",
+     "warfarin",
+     "bleeding",
+     "cirrhosis"
+    ]
+   },
+   {
+    "pmid": 38268519,
+    "score": 0.8174,
+    "vector": 0.7774,
+    "matched": [
+     "doac",
+     "warfarin",
+     "bleeding",
+     "chronic liver disease"
+    ]
+   },
+   {
+    "pmid": 38430266,
+    "score": 0.7969,
+    "vector": 0.7769,
+    "matched": [
+     "doac",
+     "cirrhosis"
+    ]
+   },
+   {
+    "pmid": 36201730,
+    "score": 0.8032,
+    "vector": 0.7732,
+    "matched": [
+     "doac",
+     "warfarin",
+     "bleeding"
+    ]
+   }
+  ],
+  "n_graph_facts": 0,
+  "seconds": 7.9
+ },
+ "Q18|hybrid": {
+  "id": "Q18",
+  "mode": "hybrid",
+  "question": "肝硬化或慢性肝病患者使用 DOAC，出血风险和华法林相比怎么样？",
+  "answer": "在肝硬化或慢性肝病患者中，与华法林（Warfarin）相比，直接口服抗凝药物（DOACs）作为一类药物通常表现出更低的出血风险 [PMID:35913111, PMID:36762560]。\n\n* **总体出血与大出血风险降低**：一项纳入18项研究的 Meta 分析（Meta-analysis）显示，与华法林或低分子肝素相比，使用 DOACs 显著降低了肝病患者的所有出血事件发生率（RR: 0.76）、大出血风险（RR: 0.51）、颅内出血（RR: 0.50）以及胃肠道出血风险（RR: 0.76） [PMID:35913111]。针对心房颤动合并慢性肝病患者的回顾性队列研究（Observational）也表明，DOACs 作为一类药物的大出血住院风险显著低于华法林（HR: 0.69） [PMID:36762560]。\n* **不同药物及适应症的表现**：在静脉血栓栓塞症（VTE）合并慢性肝病患者的研究中，口服Xa因子抑制剂（作为一类或个别药物如阿哌沙班 apixaban、利伐沙班 rivaroxaban）同样与大出血风险降低相关（如阿哌沙班对比华法林的 HR 为 0.43，利伐沙班对比华法林的 HR 为 0.72） [PMID:38268519]。但不同 DOACs 之间存在差异，例如在一项房颤队列中，利伐沙班的大出血住院风险高于阿哌沙班（HR: 1.59） [PMID:36762560]。\n* **肝功能分级的安全性**：现有证据提示，DOACs 在 Child-Pugh A 和 B 级（轻中度）肝硬化患者中显示出可接受的安全性，但部分药物（如利伐沙班）可能不被推荐用于某些晚期肝病患者 [PMID:36837547]。\n\n现有证据的局限性在于多数数据来自观察性研究和回顾性分析，且高级别随机对照试验（RCT）相对缺乏，晚期肝病（如 Child-Pugh C 级）患者常被排除在临床试验之外。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   35913111,
+   36762560,
+   36837547,
+   38268519
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "doac",
+   "warfarin",
+   "bleeding",
+   "cirrhosis",
+   "chronic liver disease"
+  ],
+  "retrieved": [
+   {
+    "pmid": 36762560,
+    "score": 0.8423,
+    "vector": 0.8023,
+    "matched": [
+     "doac",
+     "warfarin",
+     "bleeding",
+     "chronic liver disease"
+    ]
+   },
+   {
+    "pmid": 35913111,
+    "score": 0.8352,
+    "vector": 0.7952,
+    "matched": [
+     "doac",
+     "warfarin",
+     "bleeding",
+     "cirrhosis"
+    ]
+   },
+   {
+    "pmid": 38268519,
+    "score": 0.8174,
+    "vector": 0.7774,
+    "matched": [
+     "doac",
+     "warfarin",
+     "bleeding",
+     "chronic liver disease"
+    ]
+   },
+   {
+    "pmid": 35547458,
+    "score": 0.8129,
+    "vector": 0.7729,
+    "matched": [
+     "doac",
+     "warfarin",
+     "bleeding",
+     "cirrhosis"
+    ]
+   },
+   {
+    "pmid": 36837547,
+    "score": 0.8127,
+    "vector": 0.7727,
+    "matched": [
+     "doac",
+     "warfarin",
+     "bleeding",
+     "cirrhosis"
+    ]
+   }
+  ],
+  "n_graph_facts": 15,
+  "seconds": 10.0
+ },
+ "Q19|llm_only": {
+  "id": "Q19",
+  "mode": "llm_only",
+  "question": "衰弱的老年患者使用口服抗凝药，DOAC 和华法林相比出血风险如何？",
+  "answer": "衰弱的老年患者使用直接口服抗凝药（DOAC，如阿哌沙班 Apixaban、利伐沙班 Rivaroxaban）与华法林（Warfarin）相比，总体出血风险（尤其是颅内出血）通常较低或相当，但胃肠道出血风险可能因药物种类而异。\n\n*   **总体大出血与颅内出血风险**：多项大规模随机对照试验（RCT）的亚组分析以及系统评价与 Meta 分析（高级别证据）一致表明，在老年及衰弱患者中，DOAC（特别是低剂量阿哌沙班或依度沙班 Edoxaban）导致颅内出血的风险显著低于华法林，且总体大出血风险相似或更低。\n*   **胃肠道出血风险**：观察性研究和部分 Meta 分析提示，某些 DOAC（如利伐沙班）在超高龄或衰弱患者中，胃肠道出血风险可能高于华法林或其它 DOAC，这与老年人胃肠道黏膜脆弱、合并用药（如 NSAIDs）等因素有关。\n*   **不同研究结论的分歧**：虽然 RCT 证实了 DOAC 的安全性优势，但真实世界观察性研究往往纳入了更多极度衰弱、共病多且肾功能不全的“最复杂”老年患者，这类研究提示部分患者使用 DOAC 的出血风险可能被低估，不同研究间在胃肠道出血和总出血率上偶有不一致的结论。\n\n现有证据的局限性在于，绝大多数随机对照试验对“衰弱”缺乏统一且精准的定义，且临床试验中极度衰弱的老年患者往往入组较少，真实世界数据可能存在混杂偏倚。\n\n以上内容不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [],
+  "retrieved": [],
+  "n_graph_facts": 0,
+  "seconds": 2.1
+ },
+ "Q19|vector": {
+  "id": "Q19",
+  "mode": "vector",
+  "question": "衰弱的老年患者使用口服抗凝药，DOAC 和华法林相比出血风险如何？",
+  "answer": "在衰弱的老年患者中，使用直接口服抗凝药（DOACs，即非维生素K拮抗剂口服抗凝药）与华法林（Warfarin）相比，其出血风险因具体药物种类而异，总体上阿哌沙班（Apixaban）具有更优的出血安全性。\n\n* 在伴有衰弱的心房颤动（Atrial Fibrillation, AF）患者中，总体而言DOACs与华法林相比具有相似或更低的颅内出血风险，但不同DOACsMajor bleeding（大出血）风险存在差异 [PMID:36941126]（观察性研究）。\n* 阿哌沙班在衰弱患者中表现出显著更低的大出血风险：多项研究表明，与华法林相比，阿哌沙班可降低大出血风险（HR 0.62 至 0.84不等） [PMID:34280330, PMID:36941126, PMID:32602228]（观察性研究），且在所有衰弱水平下均能降低不良事件发生率 [PMID:34280330]（观察性研究），在衰弱患者中其大出血风险也低于达比加群（dabigatran）、利伐沙班（rivaroxaban）和依度沙班（edoxaban） [PMID:36941126]（观察性研究）。\n* 达比加群和依度沙班的大出血风险与华法林相似或略有不同：达比加群在部分研究中大出血风险低于华法林 [PMID:32602228]（观察性研究），但在另一些队列中大出血风险高于华法林 [PMID:36941126]（观察性研究）；依度沙班的大出血风险与华法林相似 [PMID:36941126]（观察性研究），在老年或合并多重用药的衰弱患者中能持续降低大出血风险 [PMID:35185404]（综述）。\n* 利伐沙班的出血风险表现不一：部分研究显示其大出血风险高于华法林 [PMID:32602228, PMID:36941126]（观察性研究），也有研究显示其复合终点发生率在非衰弱患者中降低而在衰弱患者中无显著差异 [PMID:34280330]（观察性研究）。\n\n现有证据的局限性主要在于多为观察性研究和回顾性分析，存在残余混杂因素，且缺乏临床层面的前瞻性衰弱评估。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   32602228,
+   34280330,
+   35185404,
+   36941126
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "doac",
+   "warfarin",
+   "bleeding",
+   "frail elderly patients",
+   "oral anticoagulant"
+  ],
+  "retrieved": [
+   {
+    "pmid": 34280330,
+    "score": 0.8022,
+    "vector": 0.7822,
+    "matched": [
+     "doac",
+     "warfarin"
+    ]
+   },
+   {
+    "pmid": 35185404,
+    "score": 0.7999,
+    "vector": 0.7699,
+    "matched": [
+     "doac",
+     "warfarin",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 36941126,
+    "score": 0.789,
+    "vector": 0.769,
+    "matched": [
+     "doac",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 32602228,
+    "score": 0.807,
+    "vector": 0.767,
+    "matched": [
+     "doac",
+     "warfarin",
+     "bleeding",
+     "frail elderly patients"
+    ]
+   },
+   {
+    "pmid": 42795254,
+    "score": 0.787,
+    "vector": 0.757,
+    "matched": [
+     "doac",
+     "warfarin",
+     "bleeding"
+    ]
+   }
+  ],
+  "n_graph_facts": 0,
+  "seconds": 7.8
+ },
+ "Q19|hybrid": {
+  "id": "Q19",
+  "mode": "hybrid",
+  "question": "衰弱的老年患者使用口服抗凝药，DOAC 和华法林相比出血风险如何？",
+  "answer": "在衰弱的老年患者中，直接口服抗凝药物（DOACs）与华法林（Warfarin）相比，总体出血风险因具体药物种类及研究队列而异，其中阿哌沙班（Apixaban）表现出较好的出血安全性。\n\n* 根据一项观察性研究，在衰弱的非瓣膜性房颤患者中，阿哌沙班和达比加群（Dabigatran）与华法林相比主要出血风险更低（HR分别为0.62和0.79），而利伐沙班（Rivaroxaban）与华法林相比主要出血风险更高（HR为1.14） [PMID:32602228]。\n* 另一项队列研究表明，阿哌沙班在所有衰弱水平的老年房颤患者中均与较低的不良事件发生率相关，而达比加群和利伐沙班仅在非衰弱患者中表现出较低的事件率 [PMID:34280330]。\n* 一项全国性队列观察性研究显示，在合并衰弱的房颤患者中，NOACs总体的主要出血风险与维生素K拮抗剂（VKAs）相似（aHR 1.01），但具体到不同药物，阿哌沙班主要出血风险较低，依杜沙班（Edoxaban）风险相似，而达比加群和利伐沙班风险较高 [PMID:36941126]。\n* 知识图谱统计显示，多篇文献（包括多项观察性研究和Meta分析）支持DOACs或特定DOAC（如阿哌沙班、达比加群、利伐沙班）可降低大出血或出血风险，但也有部分文献提示DOACs增加出血风险 [图谱]。\n* 综述类文献指出，在老年或衰弱房颤患者中，阿哌沙班具有良好的出血风险特征，而合理给药对于控制出血至关重要 [PMID:35185404, PMID:42795254]。\n\n现有证据的局限性主要在于多为观察性研究或回顾性分析，可能存在残余混杂因素且缺乏临床衰弱评估的标准统一性。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   32602228,
+   34280330,
+   35185404,
+   36941126,
+   42795254
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "doac",
+   "warfarin",
+   "bleeding",
+   "frail elderly patients",
+   "oral anticoagulant"
+  ],
+  "retrieved": [
+   {
+    "pmid": 32602228,
+    "score": 0.807,
+    "vector": 0.767,
+    "matched": [
+     "doac",
+     "warfarin",
+     "bleeding",
+     "frail elderly patients"
+    ]
+   },
+   {
+    "pmid": 34280330,
+    "score": 0.8022,
+    "vector": 0.7822,
+    "matched": [
+     "doac",
+     "warfarin"
+    ]
+   },
+   {
+    "pmid": 35185404,
+    "score": 0.7999,
+    "vector": 0.7699,
+    "matched": [
+     "doac",
+     "warfarin",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 36941126,
+    "score": 0.789,
+    "vector": 0.769,
+    "matched": [
+     "doac",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 42795254,
+    "score": 0.787,
+    "vector": 0.757,
+    "matched": [
+     "doac",
+     "warfarin",
+     "bleeding"
+    ]
+   }
+  ],
+  "n_graph_facts": 15,
+  "seconds": 2.9
+ },
+ "Q20|llm_only": {
+  "id": "Q20",
+  "mode": "llm_only",
+  "question": "携带 CYP2C19 功能缺失等位基因的患者使用氯吡格雷，会有什么问题？",
+  "answer": "携带 *CYP2C19* 功能缺失等位基因（如 *2、*3 等）的患者使用氯吡格雷（Clopidogrel），会导致药物抗血小板疗效显著降低，从而显著增加心血管不良事件和支架内血栓形成的风险。\n\n以下是相关证据及强度说明：\n* **高质量证据（Meta 分析与大规模 RCT 亚组分析）：** 多项大型 Meta 分析及随机对照试验（RCT）的基因亚组分析一致表明，在接受经皮冠状动脉介入治疗（PCI）的患者中，携带 *CYP2C19* 功能缺失等位基因的慢代谢者使用氯吡格雷时，其主要不良心血管事件（MACE，包括心血管死亡、心肌梗死和卒中）发生率显著高于非携带者（快代谢者）。\n* **观察性研究证据：** 多项前瞻性和回顾性真实世界观察性研究同样支持上述观点，特别指出携带者在术后发生支架内血栓（Stent Thrombosis）的风险成倍增加。\n* **监管机构警示：** 美国食品药品监督管理局（FDA）基于上述临床证据，在氯吡格雷说明书中添加了黑框警告，指出基因检测可用于识别该类高风险患者。\n\n现有证据的局限性在于，多数结论多来源于事后分析（Post-hoc analysis）或观察性研究，且不同种族人群的基因多态性分布存在显著差异。\n\n以上内容不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [],
+  "retrieved": [],
+  "n_graph_facts": 0,
+  "seconds": 5.9
+ },
+ "Q20|vector": {
+  "id": "Q20",
+  "mode": "vector",
+  "question": "携带 CYP2C19 功能缺失等位基因的患者使用氯吡格雷，会有什么问题？",
+  "answer": "携带 CYP2C19 功能缺失等位基因的患者使用氯吡格雷（clopidogrel）时，由于药物代谢和抗血小板疗效降低，可能面临血栓/栓塞事件风险增加的问题 [PMID:33931001, PMID:40533625]。\n\n* **疗效降低与血栓风险增加（Meta分析证据）**：一项 Meta 分析指出，在携带 CYP2C19 功能缺失（LOF）等位基因的冠心病和卒中患者中，与使用替格瑞洛（ticagrelor）相比，使用氯吡格雷会显著增加血栓/栓塞事件风险（OR = 1.78）、卒中风险（OR = 1.43）以及心肌梗死发生率（OR = 1.53） [PMID:40533625]。\n* **血小板抑制效果差（专家意见）**：药代动力学/药效学研究表明，携带 CYP2C19*2 和 CYP2C19*3 等位基因的患者由于血小板抑制功效较差，可能对氯吡格雷无反应 [PMID:33931001]。\n* **氯吡格雷抵抗（观察性研究证据）**：在一项针对复发性缺血性卒中患者的观察性研究中发现，在 ABCB1 正常外排活性的患者中，CYP2C19 中间代谢和不良代谢与氯吡格雷抵抗显著相关 [PMID:42303966]。\n\n现有证据的局限性在于部分研究所纳入的特定基因型患者数量有限，且某些非遗传因素（如年龄和糖尿病）也可能影响氯吡格雷的反应性。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   33931001,
+   40533625,
+   42303966
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "clopidogrel",
+   "cyp2c19"
+  ],
+  "retrieved": [
+   {
+    "pmid": 33931001,
+    "score": 0.833,
+    "vector": 0.783,
+    "matched": [
+     "clopidogrel",
+     "cyp2c19"
+    ]
+   },
+   {
+    "pmid": 36787094,
+    "score": 0.8062,
+    "vector": 0.7812,
+    "matched": [
+     "clopidogrel"
+    ]
+   },
+   {
+    "pmid": 40533625,
+    "score": 0.7924,
+    "vector": 0.7674,
+    "matched": [
+     "clopidogrel"
+    ]
+   },
+   {
+    "pmid": 42303966,
+    "score": 0.8055,
+    "vector": 0.7555,
+    "matched": [
+     "clopidogrel",
+     "cyp2c19"
+    ]
+   },
+   {
+    "pmid": 33887342,
+    "score": 0.78,
+    "vector": 0.755,
+    "matched": [
+     "clopidogrel"
+    ]
+   }
+  ],
+  "n_graph_facts": 0,
+  "seconds": 4.3
+ },
+ "Q20|hybrid": {
+  "id": "Q20",
+  "mode": "hybrid",
+  "question": "携带 CYP2C19 功能缺失等位基因的患者使用氯吡格雷，会有什么问题？",
+  "answer": "携带 CYP2C19 功能缺失等位基因的患者使用氯吡格雷（clopidogrel）可能面临抗血小板疗效降低、血栓/栓塞事件风险增加的问题 [PMID:33931001, PMID:40533625]。\n\n* **抗血小板疗效与抵抗**：专家意见指出，携带 CYP2C19*2 或 *3 等位基因的患者由于血小板抑制效果较差，可能对氯吡格雷无反应 [PMID:33931001]（证据类型：专家意见/综述）；在 ABCB1 正常外排活性的患者中，CYP2C19 中间代谢和弱代谢与氯吡格雷抵抗显著相关 [PMID:42303966]（证据类型：观察性研究）。\n* **血栓与缺血事件风险**：一项 Meta 分析（证据类型：Meta 分析）表明，在携带 CYP2C19 功能缺失等位基因的冠心病和卒中患者中，与使用替格瑞洛（ticagrelor）相比，使用氯吡格雷会增加血栓/栓塞事件（OR = 1.78）、卒中（OR = 1.43）以及心肌梗死（OR = 1.53）的风险 [PMID:40533625]。然而，一项针对老年急性冠脉综合征患者的真实世界观察性研究显示，在携带 CYP2C19 功能缺失变异的患者中，选择替格瑞洛相比氯吡格雷显著增加了净不良临床事件（NACE）和出血风险，而主要不良心血管事件（MACE）发生率相似 [PMID:38114408]（证据类型：观察性研究）。\n\n现有证据的局限性在于纳入的部分研究为观察性研究，且不同人群（如老年患者与一般人群）在替格瑞洛与氯吡格雷的净临床获益和出血风险上可能存在差异。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   33931001,
+   38114408,
+   40533625,
+   42303966
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "clopidogrel",
+   "cyp2c19"
+  ],
+  "retrieved": [
+   {
+    "pmid": 33931001,
+    "score": 0.833,
+    "vector": 0.783,
+    "matched": [
+     "clopidogrel",
+     "cyp2c19"
+    ]
+   },
+   {
+    "pmid": 36787094,
+    "score": 0.8062,
+    "vector": 0.7812,
+    "matched": [
+     "clopidogrel"
+    ]
+   },
+   {
+    "pmid": 42303966,
+    "score": 0.8055,
+    "vector": 0.7555,
+    "matched": [
+     "clopidogrel",
+     "cyp2c19"
+    ]
+   },
+   {
+    "pmid": 38114408,
+    "score": 0.8004,
+    "vector": 0.7504,
+    "matched": [
+     "clopidogrel",
+     "cyp2c19"
+    ]
+   },
+   {
+    "pmid": 40533625,
+    "score": 0.7924,
+    "vector": 0.7674,
+    "matched": [
+     "clopidogrel"
+    ]
+   }
+  ],
+  "n_graph_facts": 15,
+  "seconds": 5.7
+ },
+ "Q21|llm_only": {
+  "id": "Q21",
+  "mode": "llm_only",
+  "question": "与华法林相比，哪些 DOAC 能降低全因死亡率？",
+  "answer": "与维生素K拮抗剂华法林（Warfarin）相比，部分新型口服抗凝药（DOAC，如阿哌沙班 Apixaban 和依度沙班 Edoxaban）在房颤患者中显示出显著降低全因死亡率的优势，而达比加群酯（Dabigatran）和利伐沙班（Rivaroxaban）在全因死亡率上与华法林无显著差异。\n\n* **阿哌沙班（Apixaban）：** 多项大型随机对照试验（RCT）及 Meta 分析显示，与华法林相比，阿哌沙班能显著降低非瓣膜性房颤患者的全因死亡率（证据强度：高，基于 ARISTOTLE 等随机对照试验及高级别 Meta 分析）。\n* **依度沙班（Edoxaban）：** 关键性随机对照试验（ENGAGE AF-TIMI 48 研究）的高剂量组显示，依度沙班在降低全因死亡率方面优于华法林（证据强度：高，基于大型 RCT）。\n* **达比加群酯（Dabigatran）：** RE-LY 研究及其后续的 Meta 分析表明，达比加群酯（150mg 或 110mg 每日两次）在全因死亡率方面与华法林相比无统计学显著差异，尽管其能显著降低缺血性卒中和颅内出血风险（证据强度：高，基于大型 RCT 及 Meta 分析）。\n* **利伐沙班（Rivaroxaban）：** ROCKET AF 研究及相关 Meta 分析显示，利伐沙班在全因死亡率方面与华法林疗效相当，两组无显著差异（证据强度：高，基于大型 RCT 及 Meta 分析）。\n* **不同研究间的一致性：** 尽管各大 DOAC 间接比较的 Meta 分析在主要心血管终点上结论较为一致，但在全因死亡率这一终点上，不同研究（尤其是包含真实世界观察性研究与 RCT 的对比时）可能存在细微异质性，主要归因于患者基线特征及出血事件发生率的差异。\n\n现有证据的局限性在于，多数死亡率数据来源于高度选择性的随机对照试验，真实世界中合并多种基础疾病的高龄患者的长期全因死亡率数据仍需更多观察性研究的支持。\n\n以上内容不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [],
+  "retrieved": [],
+  "n_graph_facts": 0,
+  "seconds": 7.1
+ },
+ "Q21|vector": {
+  "id": "Q21",
+  "mode": "vector",
+  "question": "与华法林相比，哪些 DOAC 能降低全因死亡率？",
+  "answer": "与华法林（Warfarin）相比，部分直接口服抗凝药（DOACs）在特定研究中表现出降低全因死亡率的关联，但证据在不同研究和药物间存在不一致。\n\n* **达比加群（Dabigatran）、利伐沙班（Rivaroxaban）和阿哌沙班（Apixaban）：** 一项大型真实世界观察性研究显示，与 acenocoumarol（一种维生素 K 拮抗剂）相比，达比加群、利伐沙班和阿哌沙班均与较低的全因死亡率风险相关（RR 分别为 0.77、0.79、0.85），而华法林则显示较高的全因死亡率风险 [PMID:40822463]。然而，另一项针对房颤患者的 Meta 分析（证据强度较高）指出，DOACs 整体与华法林相比，在全因死亡率方面并没有显著差异（RR = 0.90, 95% CI: 0.72-1.11） [PMID:35615562]。此外，在特定观察性研究中，阿哌沙班甚至被报道与较高的新发全因死亡率相关（HR 1.12，对比高 TTR 华法林） [PMID:36607464]。\n* **依多沙班（Edoxaban）：** 一项全国性队列观察研究表明，60 mg 剂量的依多沙班与华法林相比，与较低的全因死亡率相关（HR 0.64, 95% CI 0.47 至 0.88） [PMID:34142600]。\n\n现有证据的局限性：纳入的文献多为观察性队列研究或基于特定人群（如特定地区、伴跌倒风险或特定剂量调整人群）的分析，且部分结果在不同研究设计和对照药物（如不同类型的维生素 K 拮抗剂）之间存在异质性，缺乏大规模、直接对比全因死亡率的随机对照试验（RCT）一致性结论。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   34142600,
+   35615562,
+   36607464,
+   40822463
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "warfarin",
+   "doac",
+   "all-cause mortality"
+  ],
+  "retrieved": [
+   {
+    "pmid": 40822463,
+    "score": 0.816,
+    "vector": 0.766,
+    "matched": [
+     "warfarin",
+     "doac",
+     "all-cause mortality"
+    ]
+   },
+   {
+    "pmid": 39221828,
+    "score": 0.791,
+    "vector": 0.7577,
+    "matched": [
+     "doac",
+     "all-cause mortality"
+    ]
+   },
+   {
+    "pmid": 35615562,
+    "score": 0.8027,
+    "vector": 0.7527,
+    "matched": [
+     "warfarin",
+     "doac",
+     "all-cause mortality"
+    ]
+   },
+   {
+    "pmid": 34142600,
+    "score": 0.8025,
+    "vector": 0.7525,
+    "matched": [
+     "warfarin",
+     "doac",
+     "all-cause mortality"
+    ]
+   },
+   {
+    "pmid": 36607464,
+    "score": 0.7988,
+    "vector": 0.7488,
+    "matched": [
+     "warfarin",
+     "doac",
+     "all-cause mortality"
+    ]
+   }
+  ],
+  "n_graph_facts": 0,
+  "seconds": 3.8
+ },
+ "Q21|hybrid": {
+  "id": "Q21",
+  "mode": "hybrid",
+  "question": "与华法林相比，哪些 DOAC 能降低全因死亡率？",
+  "answer": "现有检索到的文献表明，与华法林（warfarin）相比，部分 DOAC（直接口服抗凝药，包括达比加群 dabigatran、利伐沙班 rivaroxaban 和阿哌沙班 apixaban 等）在特定研究中显示出降低全因死亡率的作用，但不同研究的结果存在一定差异 [PMID:40822463, PMID:35615562, PMID:34142600, PMID:36607464, PMID:37996330]。\n\n* **达比加群 (dabigatran)**：在一项真实世界回顾性队列研究中，达比加群相比于对照可降低全因死亡率（RR: 0.77, 95%CI 0.72-0.82）[PMID:40822463]。一项基于真实世界研究的网络 Meta 分析指出，在各非维生素K拮抗剂口服抗凝药（NOACs）中，仅达比加群与华法林相比显示出更低的全因死亡风险 [PMID:37996330]。\n* **利伐沙班 (rivaroxaban)** 与 **阿哌沙班 (apixaban)**：在一项真实世界回顾性队列研究中，利伐沙班和阿哌沙班也显示出较低的全因死亡风险（RR分别为 0.79 和 0.85）[PMID:40822463]。但在另一项针对特定人群（如接受减量 DOAC 治疗且华法林治疗时间在治疗范围内比率高 TTR≥70% 的患者）的观察性研究中，阿哌沙班则与更高的全因死亡率相关（HR: 1.12, 95%CI 1.03-1.21）[PMID:36607464]。\n* **依度沙班 (edoxaban)**：在一项全国性队列研究中，依度沙班 60 mg 治疗组的全因死亡率较华法林更低（HR: 0.64, 95%CI 0.47-0.88）[PMID:34142600]。而在另一项针对跌倒风险患者的 Meta 分析中，DOACs 总体与华法林在全因死亡率上无显著差异（RR: 0.90, 95%CI 0.72-1.11）[PMID:35615562]。\n* 知识图谱统计显示，多篇文献（包括多项观察性研究和 Meta 分析）支持 DOACs 总体以及特定药物（如 apixaban、dabigatran、edoxaban、rivaroxaban）能够降低全因死亡风险 [图谱]。\n\n现有证据的局限性：纳入的文献多为观察性研究或基于真实世界数据的队列研究和网络 Meta 分析，部分研究存在患者基线特征差异、不同剂量设定及对照组治疗质量（如 TTR 水平）的不同，可能对全因死亡率的评估产生混杂影响。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   34142600,
+   35615562,
+   36607464,
+   37996330,
+   40822463
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "warfarin",
+   "doac",
+   "all-cause mortality"
+  ],
+  "retrieved": [
+   {
+    "pmid": 40822463,
+    "score": 0.816,
+    "vector": 0.766,
+    "matched": [
+     "warfarin",
+     "doac",
+     "all-cause mortality"
+    ]
+   },
+   {
+    "pmid": 35615562,
+    "score": 0.8027,
+    "vector": 0.7527,
+    "matched": [
+     "warfarin",
+     "doac",
+     "all-cause mortality"
+    ]
+   },
+   {
+    "pmid": 34142600,
+    "score": 0.8025,
+    "vector": 0.7525,
+    "matched": [
+     "warfarin",
+     "doac",
+     "all-cause mortality"
+    ]
+   },
+   {
+    "pmid": 36607464,
+    "score": 0.7988,
+    "vector": 0.7488,
+    "matched": [
+     "warfarin",
+     "doac",
+     "all-cause mortality"
+    ]
+   },
+   {
+    "pmid": 37996330,
+    "score": 0.7978,
+    "vector": 0.7478,
+    "matched": [
+     "warfarin",
+     "doac",
+     "all-cause mortality"
+    ]
+   }
+  ],
+  "n_graph_facts": 15,
+  "seconds": 8.2
+ },
+ "Q22|llm_only": {
+  "id": "Q22",
+  "mode": "llm_only",
+  "question": "与华法林相比，哪些 DOAC 能降低卒中或体循环栓塞风险？",
+  "answer": "与传统抗凝药物华法林（Warfarin）相比，新型口服抗凝药（DOACs，包括达比加群酯 Dabigatran、利伐沙班 Rivaroxaban、阿哌沙班 Apixaban 和依度沙班 Edoxaban）在降低非瓣膜性房颤患者的卒中或体循环栓塞风险方面，疗效均不逊于甚至优于华法林。\n\n* **达比加群酯（Dabigatran）：** \n  * 证据强度与结论：基于大规模随机对照试验（RCT，如RE-LY研究）及多项大型Meta分析。结果显示，高剂量达比加群酯（150 mg每日两次）在降低卒中和体循环栓塞风险方面显著优于华法林。\n* **阿哌沙班（Apixaban）：** \n  * 证据强度与结论：基于高质量随机对照试验（RCT，如ARISTOTLE研究）及Meta分析。结果表明，标准剂量阿哌沙班（5 mg每日两次）在降低卒中或体循环栓塞风险方面显著优于华法林，且大出血风险更低。\n* **依度沙班（Edoxaban）：** \n  * 证据强度与结论：基于大型随机对照试验（RCT，如ENGAGE AF-TIMI 48研究）及Meta分析。高剂量依度沙班（60 mg每日一次）在预防卒中或体循环栓塞方面非劣效于华法林。\n* **利伐沙班（Rivaroxaban）：** \n  * 证据强度与结论：基于随机对照试验（RCT，如ROCKET AF研究）及Meta分析。结果显示，利伐沙班（20 mg每日一次）在预防卒中或体循环栓塞方面达到非劣效于华法林的终点。\n\n现有证据的局限性在于，上述结论主要来源于高度选择性的随机对照试验，真实世界中合并多种基础疾病、高龄及复杂用药患者的数据仍需更多长期观察性研究验证。\n\n以上内容不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [],
+  "retrieved": [],
+  "n_graph_facts": 0,
+  "seconds": 7.8
+ },
+ "Q22|vector": {
+  "id": "Q22",
+  "mode": "vector",
+  "question": "与华法林相比，哪些 DOAC 能降低卒中或体循环栓塞风险？",
+  "answer": "与华法林（warfarin）相比，多项研究显示多种直接口服抗凝药（DOACs，包括达比加群酯 dabigatran、利伐沙班 rivaroxaban、阿哌沙班 apixaban 和依度沙班 edoxaban）在降低卒中或体循环栓塞（或缺血性卒中/体循环栓塞）风险方面表现出优势或非劣效性，但具体结果因研究类型及药物而异 [PMID:42415975, 34722686, 39950313, 34244745]。\n\n* **系统评价与Meta分析证据**：\n  * 一项纳入随机对照试验（RCT）的Meta分析显示，高剂量DOACs（包括达比加群、利伐沙班、阿哌沙班和依度沙班）与华法林相比，能显著降低卒中风险（相对风险RR = 0.81），其主要的相对风险下降主要归因于出血性卒中的显著减少 [PMID:42415975]。\n  * 基于观察性研究和RCT的Meta分析表明，与华法林相比，达比加群（HR = 0.82）、利伐沙班（HR = 0.80）、阿哌沙班（HR = 0.75）和依度沙班（HR = 0.71）均与卒中或体循环栓塞风险降低相关 [PMID:34722686]。\n\n* **观察性研究证据**：\n  * 在伴有瓣膜性心脏病（无机械瓣膜）的心房颤动患者回顾性队列研究中，DOAC整体使用与较低的缺血性卒中或体循环栓塞风险相关（HR = 0.70）；其中利伐沙班（HR = 0.74）和阿哌沙班（HR = 0.62）显示出较低的风险，而达比加群未达显著性差异（HR = 0.89），依度沙班因事件数少未获得有效估计 [PMID:39950313]。\n  * 一项斯堪的纳维亚人群队列研究表明，初治房颤患者使用达比加群、阿哌沙班和利伐沙班的卒中/体循环栓塞发生率与华法林相似（调整后HR分别为：达比加群 0.89、阿哌沙班 0.96、利伐沙班 1.03） [PMID:34244745]。\n\n现有证据的局限性在于：纳入的研究在设计类型（RCT与观察性研究）、患者人群特征（如合并瓣膜病或跌倒风险）、药物剂量选择以及随访时间上存在差异，且部分亚组事件数较少，可能对特定DOACs的疗效评估造成影响。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   34244745,
+   34722686,
+   39950313,
+   42415975
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "warfarin",
+   "doac",
+   "stroke",
+   "systemic embolism"
+  ],
+  "retrieved": [
+   {
+    "pmid": 42415975,
+    "score": 0.8292,
+    "vector": 0.7792,
+    "matched": [
+     "warfarin",
+     "doac",
+     "stroke",
+     "systemic embolism"
+    ]
+   },
+   {
+    "pmid": 34722686,
+    "score": 0.8015,
+    "vector": 0.7765,
+    "matched": [
+     "warfarin",
+     "doac"
+    ]
+   },
+   {
+    "pmid": 35615562,
+    "score": 0.8124,
+    "vector": 0.7749,
+    "matched": [
+     "warfarin",
+     "doac",
+     "stroke"
+    ]
+   },
+   {
+    "pmid": 39950313,
+    "score": 0.8244,
+    "vector": 0.7744,
+    "matched": [
+     "warfarin",
+     "doac",
+     "stroke",
+     "systemic embolism"
+    ]
+   },
+   {
+    "pmid": 34244745,
+    "score": 0.7993,
+    "vector": 0.7743,
+    "matched": [
+     "warfarin",
+     "doac"
+    ]
+   }
+  ],
+  "n_graph_facts": 0,
+  "seconds": 21.6
+ },
+ "Q22|hybrid": {
+  "id": "Q22",
+  "mode": "hybrid",
+  "question": "与华法林相比，哪些 DOAC 能降低卒中或体循环栓塞风险？",
+  "answer": "与华法林（Warfarin）相比，多种直接口服抗凝药物（DOACs）在降低卒中或体循环栓塞（stroke or systemic embolism）风险方面表现出优势，其中阿哌沙班（apixaban）和利伐沙班（rivaroxaban）的证据较为充分。\n\n* **阿哌沙班（Apixaban）：** 多项研究显示其能显著降低卒中或体循环栓塞风险或延长无事件生存时间 [PMID:39950313, PMID:36456387]；在瓣膜性房颤患者中其 HR 为 0.62（95% CI, 0.52-0.74）[PMID:39950313] 及 0.54（95% CI, 0.47-0.61）[PMID:33780291]（观察性研究）。\n* **利伐沙班（Rivaroxaban）：** 研究表明其能降低卒中或体循环栓塞风险 [PMID:39950313, PMID:36456387]；在瓣膜性房颤患者中的 HR 为 0.74（95% CI, 0.62-0.89）[PMID:39950313] 及 0.74（95% CI, 0.64-0.86）[PMID:33780291]（观察性研究）。\n* **达比加群（Dabigatran）：** 部分观察性研究显示其能延长无事件时间 [PMID:36456387]，但也有研究在特定人群（如瓣膜性房颤）中未显示出统计学显著差异（HR, 1.03 [95% CI, 0.81-1.31]）[PMID:33780291] 或未达统计学显著性（HR, 0.89 [95% CI, 0.63-1.26]）[PMID:39950313]（观察性研究）。\n* **高剂量 DOACs 总体：** 一项 Meta 分析（基于随机对照试验）显示，高剂量 DOACs 可显著降低卒中风险（相对风险 0.81, p < 0.00001），这主要归因于出血性卒中的显著减少 [PMID:42415975]。\n* **图谱补充：** 知识图谱统计显示 DOACs 总体降低卒中或体循环栓塞风险有 6 篇文献支持（含 4 篇 Meta 分析和 2 篇观察性研究）[图谱]。\n\n现有证据的局限性在于部分研究随访时间相对较短、无法完全明确疾病严重程度、各类 DOACs 间出血及有效性风险存在差异，且部分亚组事件数较少。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   33780291,
+   36456387,
+   39950313,
+   42415975
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "warfarin",
+   "doac",
+   "stroke",
+   "systemic embolism"
+  ],
+  "retrieved": [
+   {
+    "pmid": 42415975,
+    "score": 0.8292,
+    "vector": 0.7792,
+    "matched": [
+     "warfarin",
+     "doac",
+     "stroke",
+     "systemic embolism"
+    ]
+   },
+   {
+    "pmid": 39950313,
+    "score": 0.8244,
+    "vector": 0.7744,
+    "matched": [
+     "warfarin",
+     "doac",
+     "stroke",
+     "systemic embolism"
+    ]
+   },
+   {
+    "pmid": 33780291,
+    "score": 0.8233,
+    "vector": 0.7733,
+    "matched": [
+     "warfarin",
+     "doac",
+     "stroke",
+     "systemic embolism"
+    ]
+   },
+   {
+    "pmid": 36456387,
+    "score": 0.8139,
+    "vector": 0.7639,
+    "matched": [
+     "warfarin",
+     "doac",
+     "stroke",
+     "systemic embolism"
+    ]
+   },
+   {
+    "pmid": 35615562,
+    "score": 0.8124,
+    "vector": 0.7749,
+    "matched": [
+     "warfarin",
+     "doac",
+     "stroke"
+    ]
+   }
+  ],
+  "n_graph_facts": 15,
+  "seconds": 9.7
+ },
+ "Q23|llm_only": {
+  "id": "Q23",
+  "mode": "llm_only",
+  "question": "哪些合用药物会通过抑制 CYP3A4 或 P-gp 增加 DOAC 的出血风险？",
+  "answer": "强效抑制细胞色素P450 3A4（CYP3A4）或P-糖蛋白（P-gp）的药物合用，会显著减少直接口服抗凝药（DOACs，如阿哌沙班 apixaban、利伐沙班 rivaroxaban、达比加群酯 dabigatran etexilate）的代谢与排出，从而显著增加患者的出血风险。\n\n*   **Meta 分析与系统评价**：多项大规模 Meta 分析和真实世界研究一致表明，DOACs（特别是阿哌沙班、利伐沙班和 edoxaban艾多沙班）与强效 CYP3A4 和/或 P-gp 抑制剂（如酮康唑 ketoconazole、伊曲康唑 itraconazole、克拉霉素 clarithromycin、利托那韦 ritonavir）合用时，大出血和胃肠道出血风险显著升高（通常增加 1.5 到 2 倍以上）。\n*   **随机对照试验（RCT）与药代动力学研究**：Ⅲ期临床试验（如 ARISTOTLE、ROCKET AF）及药代动力学/药效动力学（PK/PD）研究证实，合用强效抑制剂会使 DOACs 的血药浓度峰值（$C_{max}$）和曲线下面积（AUC）大幅上升。例如，达比加群酯作为 P-gp 底物，与 P-gp 强效抑制剂（如决奈达隆 dronedarone 或酮康唑）合用时，其血药浓度显著增加，导致出血发生率上升。\n*   **观察性研究与真实世界数据**：多项基于大型医保数据库的真实世界观察性研究指出，在老年患者或肾功能不全患者中，DOACs 与大环内酯类抗生素（如红霉素 erythromycin，中/强效抑制剂）或抗真菌药合用时，门急诊就诊的出血事件风险明显增加。不同观察性研究在具体药物的风险增幅上略有差异，这与患者基线特征及合并用药剂量有关，但“增加出血风险”的总体结论高度一致。\n\n现有证据的局限性主要在于多数真实世界研究为回顾性观察设计，难以完全排除患者合并疾病及其他混杂因素对出血事件的干扰。\n\n以上内容不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [],
+  "retrieved": [],
+  "n_graph_facts": 0,
+  "seconds": 2.8
+ },
+ "Q23|vector": {
+  "id": "Q23",
+  "mode": "vector",
+  "question": "哪些合用药物会通过抑制 CYP3A4 或 P-gp 增加 DOAC 的出血风险？",
+  "answer": "合用 P-糖蛋白（P-glycoprotein, P-gp）或细胞色素 P450 3A4（CYP3A4）抑制剂会增加直接口服抗凝药物（DOACs）的出血风险，具体合用药物及风险因药物种类而异 [PMID:37791408]。\n\n* 合用 P-gp/CYP3A4 抑制剂显著增加了 DOAC 治疗患者的大出血风险（调整后风险比 aHR 为 1.24） [PMID:37791408]（观察性研究）。\n* 具体增加大出血风险的合用药物包括：胺碘酮（amiodarone）、地尔硫卓（diltiazem）、维拉帕米（verapamil）、替格瑞洛（ticagrelor）和克拉霉素（clarithromycin） [PMID:37791408]（观察性研究）。\n* 在不同 DOAC 品种中，依度沙班（edoxaban）、利伐沙班（rivaroxaban）和阿哌沙班（apixaban）的使用者合用该类抑制剂时大出血风险显著增加，而达比加群（dabigatran）使用者则未见显著增加 [PMID:37791408]（观察性研究）。网络 Meta 分析亦表明，在合用 P-gp/CYP3A4 抑制剂时，阿哌沙班和依度沙班的出血风险低于利伐沙班或华法林 [PMID:38523519]（Meta 分析）。\n* 所有 DOAC 均为 P-gp 的底物，利伐沙班及阿哌沙班也易受改变 CYP450 酶活性药物的影响 [PMID:35745692]（综述）。\n\n现有证据的局限性在于纳入的研究多为观察性研究和回顾性分析，且部分关于代谢酶和转运体影响的研究结论存在一定的不一致性。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   35745692,
+   37791408,
+   38523519
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "doac",
+   "cyp3a4",
+   "p-gp",
+   "bleeding"
+  ],
+  "retrieved": [
+   {
+    "pmid": 37791408,
+    "score": 0.8585,
+    "vector": 0.8085,
+    "matched": [
+     "doac",
+     "cyp3a4",
+     "p-gp",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 35745692,
+    "score": 0.8427,
+    "vector": 0.8052,
+    "matched": [
+     "doac",
+     "p-gp",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 36861431,
+    "score": 0.8494,
+    "vector": 0.7994,
+    "matched": [
+     "doac",
+     "cyp3a4",
+     "p-gp",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 35455642,
+    "score": 0.822,
+    "vector": 0.797,
+    "matched": [
+     "doac",
+     "p-gp"
+    ]
+   },
+   {
+    "pmid": 38523519,
+    "score": 0.8217,
+    "vector": 0.7967,
+    "matched": [
+     "doac",
+     "bleeding"
+    ]
+   }
+  ],
+  "n_graph_facts": 0,
+  "seconds": 12.4
+ },
+ "Q23|hybrid": {
+  "id": "Q23",
+  "mode": "hybrid",
+  "question": "哪些合用药物会通过抑制 CYP3A4 或 P-gp 增加 DOAC 的出血风险？",
+  "answer": "合用 P-gp（P-糖蛋白）或 CYP3A4 抑制剂会导致直接口服抗凝药物（DOAC，包括 dabigatran、rivaroxaban、apixaban 和 edoxaban）的出血风险显著增加 [PMID:37791408, PMID:35745692]。\n\n- **队列研究证据**：在一项全国性队列研究（观察性研究）中，同时使用 P-gp/CYP3A4 抑制剂与 NOAC（新型口服抗凝药）显著增加了大出血风险（调整后风险比 aHR = 1.24, 95% CI 1.18–1.30） [PMID:37791408]。具体导致大出血风险增加的合用药物包括：\n  - amiodarone（胺碘酮） [PMID:37791408]\n  - diltiazem（地尔硫卓） [PMID:37791408]\n  - verapamil（维拉帕米） [PMID:37791408]\n  - ticagrelor（替格瑞洛） [PMID:37791408]\n  - clarithromycin（克拉霉素） [PMID:37791408]\n- **药代动力学/药效学模拟研究证据**：基于生理学的药代动力学/药效学（PBPK/PD）模型研究（模拟研究）显示，中度 CYP3A4 和 P-gp 抑制剂 dronedarone（决奈达隆）与 apixaban（阿哌沙班）或 rivaroxaban（利伐沙班）合用时，会增加这两种 DOAC 的药物暴露量，并可能使 apixaban 的平均大出血风险增加 1.45 至 1.95 倍 [PMID:35985100]。\n- **药物特异性影响**：所有 DOAC 均为 P-gp 的底物，而 rivaroxaban 和（较小程度上）apixaban 也易受改变 CYP450 同工酶活性药物的影响 [PMID:35745692]。例如，在合用 P-gp/CYP3A4 抑制剂时，edoxaban（依多沙班）、rivaroxaban 和 apixaban 的使用者大出血风险显著升高，但 dabigatran（达比加群）使用者未见显著升高 [PMID:37791408]。同时，关于 P-gp、CYP3A4 和 CYP2C9 活性影响药物的文献证据在部分细节上可能存在模糊性 [PMID:36861431]。\n\n现有证据的局限性在于：大部分临床结局数据来自观察性队列研究或基于模型的药代动力学/药效学模拟，可能存在混杂因素及个体差异，且不同药物组合与特定 DOAC 之间的相互作用证据强度存在差异。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   35745692,
+   35985100,
+   36861431,
+   37791408
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "doac",
+   "cyp3a4",
+   "p-gp",
+   "bleeding"
+  ],
+  "retrieved": [
+   {
+    "pmid": 37791408,
+    "score": 0.8585,
+    "vector": 0.8085,
+    "matched": [
+     "doac",
+     "cyp3a4",
+     "p-gp",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 36861431,
+    "score": 0.8494,
+    "vector": 0.7994,
+    "matched": [
+     "doac",
+     "cyp3a4",
+     "p-gp",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 35745692,
+    "score": 0.8427,
+    "vector": 0.8052,
+    "matched": [
+     "doac",
+     "p-gp",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 35985100,
+    "score": 0.8355,
+    "vector": 0.7855,
+    "matched": [
+     "doac",
+     "cyp3a4",
+     "p-gp",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 35622425,
+    "score": 0.8305,
+    "vector": 0.793,
+    "matched": [
+     "doac",
+     "cyp3a4",
+     "bleeding"
+    ]
+   }
+  ],
+  "n_graph_facts": 15,
+  "seconds": 11.9
+ },
+ "Q24|llm_only": {
+  "id": "Q24",
+  "mode": "llm_only",
+  "question": "四种 DOAC 之间相比，哪一种的大出血风险最低？",
+  "answer": "在房颤或静脉血栓栓塞症患者中，阿哌沙班（Apixaban）的大出血风险在四种直接口服抗凝药（DOACs）中表现最低或处于最优水平。\n\n以下是相关证据的具体分析：\n\n*   **Meta 分析与网络 Meta 分析（最高证据强度）：** 多项高质量的网络 Meta 分析（整合了直接与间接比较的随机对照试验）显示，与华法林相比，四种 DOACs 均能显著降低颅内出血风险；但在**大出血（Major Bleeding）**这一终点上，阿哌沙班（Apixaban）和达比加群酯（Dabigatran，110mg每日两次）表现出最低的大出血风险，且阿哌沙班在消化道出血风险上也显著低于利伐沙班（Rivaroxaban）和达比加群酯。\n*   **随机对照试验（RCT，高质量证据）：** 在关键性 III 期临床试验中，ARISTOTLE 研究显示阿哌沙班在减少大出血方面优于华法林（HR 0.69）；而在 RE-LY、ROCKET AF 和 ARISTOTLE 的头对头对比及间接对比中，阿哌沙班的大出血发生率持续呈现数值上或统计学上的优势。\n*   **真实世界观察性研究（中等证据）：** 大量真实世界数据（如基于美国、欧洲大型医保数据库的队列研究）也普遍支持这一结论，显示阿哌沙班在大出血（尤其是胃肠道出血）风险上通常低于利伐沙班和依度沙班（Edoxaban）。不过，不同真实世界研究因患者基线特征（如年龄、肾功能、合并用药）差异，达比加群与阿哌沙班孰低偶有细微波动。\n\n现有证据的局限性在于，绝大多数直接对比依赖于网络 Meta 分析和观察性研究，缺乏头对头的随机对照试验直接全面比较所有四种 DOACs。\n\n以上内容不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [],
+  "retrieved": [],
+  "n_graph_facts": 0,
+  "seconds": 6.6
+ },
+ "Q24|vector": {
+  "id": "Q24",
+  "mode": "vector",
+  "question": "四种 DOAC 之间相比，哪一种的大出血风险最低？",
+  "answer": "在四种直接口服抗凝药（DOACs，包括阿哌沙班 apixaban、达比加群 dabigatran、利伐沙班 rivaroxaban 和依度沙班 edoxaban）中，哪一种大出血风险最低取决于具体的临床适应症和出血类型，其中**阿哌沙班（apixaban）**在多项研究中表现出相对较低的大出血或非大出血风险。\n\n* **房颤（Atrial Fibrillation, AF）患者的大出血及相关出血风险：**\n  * 在一项系统评价与 Meta 分析（观察性研究）中，阿哌沙班（apixaban）的大出血风险低于达比加群（dabigatran）、利伐沙班（rivaroxaban）和维生素K拮抗剂（VKA）；达比加群的大出血风险也低于利伐沙班 [PMID:39077138]。\n  * 在基于随机对照试验（RCTs）的网络 Meta 分析中，针对房颤患者的大出血和颅内出血，达比加群排序靠前（SUCRA 较高），而阿哌沙班在胃肠道出血和临床相关非大出血/轻微出血中风险最低 [PMID:34436708, PMID:37310479]。在致死性出血方面，依度沙班（edoxaban）排序最高（风险最低） [PMID:34436708]。\n* **静脉血栓栓塞症（VTE）患者的大出血风险：**\n  * 在针对 VTE 治疗和预防的网络 Meta 分析（基于 RCTs）中，阿哌沙班在主要出血风险上显著低于达比加群、依度沙班或利伐沙班，并且在 VTE 预防及 VTE 治疗的大出血、胃肠道出血等多种出血类型中，阿哌沙班的出血风险排序显示为 DOACs 中最低 [PMID:34973879]。不过，在致死性出血和颅内出血方面，依度沙班和利伐沙班分别在相应亚类中表现出最低风险 [PMID:34973879]。\n\n现有证据的局限性在于多数网络 Meta 分析依赖于间接比较，且纳入的真实世界观察性研究或随机对照试验在患者基线特征、药物剂量和随访时间上存在异质性，仍需更多高质量的头对头直接比较研究来最终确证。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   34436708,
+   34973879,
+   37310479,
+   39077138
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "doac",
+   "major bleeding"
+  ],
+  "retrieved": [
+   {
+    "pmid": 39077138,
+    "score": 0.8272,
+    "vector": 0.7772,
+    "matched": [
+     "doac",
+     "major bleeding"
+    ]
+   },
+   {
+    "pmid": 34436708,
+    "score": 0.8177,
+    "vector": 0.7677,
+    "matched": [
+     "doac",
+     "major bleeding"
+    ]
+   },
+   {
+    "pmid": 37310479,
+    "score": 0.7926,
+    "vector": 0.7676,
+    "matched": [
+     "doac"
+    ]
+   },
+   {
+    "pmid": 34973879,
+    "score": 0.816,
+    "vector": 0.766,
+    "matched": [
+     "doac",
+     "major bleeding"
+    ]
+   },
+   {
+    "pmid": 33690135,
+    "score": 0.816,
+    "vector": 0.766,
+    "matched": [
+     "doac",
+     "major bleeding"
+    ]
+   }
+  ],
+  "n_graph_facts": 0,
+  "seconds": 10.3
+ },
+ "Q24|hybrid": {
+  "id": "Q24",
+  "mode": "hybrid",
+  "question": "四种 DOAC 之间相比，哪一种的大出血风险最低？",
+  "answer": "现有证据表明，在四种直接口服抗凝药物（DOACs）中，阿哌沙班（apixaban）在大多数临床情境下表现出相对较低的大出血（major bleeding）风险，但具体结果因适应症和出血类型而异。\n\n* **房颤（Atrial Fibrillation, AF）患者：** \n  * 根据一项系统评价与 Meta 分析（研究类型：meta_analysis），在非瓣膜性房颤患者中，阿哌沙班的大出血风险低于达比加群（dabigatran）、利伐沙班（rivaroxaban）以及维生素K拮抗剂（VKAs） [PMID:39077138]。\n  * 根据一项基于随机对照试验的网络 Meta 分析（研究类型：meta_analysis），在严重出血排序中，达比加群在总体大出血和颅内出血方面排名较高（即风险较低），阿哌沙班在胃肠道出血方面排名最高（即风险最低），而依多沙班（edoxaban）在致死性出血方面风险最低 [PMID:34436708]。\n* **静脉血栓栓塞症（Venous Thromboembolism, VTE）患者：** \n  * 根据一项针对 VTE 防治的网络 Meta 分析（研究类型：meta_analysis），在 VTE 治疗中，阿哌沙班的大出血和胃肠道出血风险最低；利伐沙班的颅内出血风险最低；依多沙班的致死性出血风险最低 [PMID:34973879]。\n  * 在 VTE 预防中，阿哌沙班的大出血风险同样最低，显著低于利伐沙班 [PMID:34973879]。\n* **真实世界数据：** \n  * 一项前瞻性观察性研究（研究类型：observational）显示，阿哌沙班5毫克每日两次的总出血事件发生率低于其他 DOACs，且多因素分析表明仅利伐沙班20毫克每日一次与高出血风险相关 [PMID:33690135]。\n\n现有证据的局限性在于：多数结论基于间接比较的网络 Meta 分析或观察性研究，不同研究纳入的人群特征、剂量设定及随访时间存在差异，仍需更多高质量的头对头（head-to-head）随机对照试验予以证实。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   33690135,
+   34436708,
+   34973879,
+   39077138
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "doac",
+   "major bleeding"
+  ],
+  "retrieved": [
+   {
+    "pmid": 39077138,
+    "score": 0.8272,
+    "vector": 0.7772,
+    "matched": [
+     "doac",
+     "major bleeding"
+    ]
+   },
+   {
+    "pmid": 34436708,
+    "score": 0.8177,
+    "vector": 0.7677,
+    "matched": [
+     "doac",
+     "major bleeding"
+    ]
+   },
+   {
+    "pmid": 34973879,
+    "score": 0.816,
+    "vector": 0.766,
+    "matched": [
+     "doac",
+     "major bleeding"
+    ]
+   },
+   {
+    "pmid": 33690135,
+    "score": 0.816,
+    "vector": 0.766,
+    "matched": [
+     "doac",
+     "major bleeding"
+    ]
+   },
+   {
+    "pmid": 39817158,
+    "score": 0.8153,
+    "vector": 0.7653,
+    "matched": [
+     "doac",
+     "major bleeding"
+    ]
+   }
+  ],
+  "n_graph_facts": 15,
+  "seconds": 7.4
+ },
+ "Q25|llm_only": {
+  "id": "Q25",
+  "mode": "llm_only",
+  "question": "利伐沙班和圣约翰草（贯叶连翘）合用，会降低抗凝效果吗？",
+  "answer": "是的，利伐沙班（Rivaroxaban）与圣约翰草（St. John's wort，贯叶连翘）合用**会显著降低抗凝效果**，从而增加血栓形成的风险。\n\n以下是相关证据及机制：\n* **药物相互作用机制（药代动力学）**：圣约翰草是强效的细胞色素 P450 3A4（CYP3A4）酶诱导剂和 P-糖蛋白（P-gp）诱导剂。利伐沙班主要通过 CYP3A4 代谢并由 P-gp 转运排泄。圣约翰草会显著加速利伐沙班在体内的代谢和排出，导致利伐沙班血药浓度大幅下降。\n* **临床研究证据**：相关药物相互作用预测模型、药代动力学研究以及药品说明书（如 FDA、EMA 批准的产品说明书）均明确指出，诱导剂会使利伐沙班的暴露量（AUC）和峰浓度显著降低。\n* **观察性与指南证据**：各大权威心血管及临床药学指南（如美国心脏协会 AHA、欧洲心脏病学会 ESC 指南及相关药物相互作用数据库如 Lexicomp、Micromedex）均基于药代动力学原理和临床观察，明确将圣约翰草列为利伐沙班的**严重相互作用药物（禁忌合用）**。\n\n现有证据的局限性：由于伦理原因，缺乏直接评估该合用导致“临床硬终点”（如卒死、大面积栓塞）的大型随机对照试验（RCT），目前的禁忌建议主要基于强有力的药代动力学机制证据和专家共识。\n\n以上内容不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [],
+  "retrieved": [],
+  "n_graph_facts": 0,
+  "seconds": 2.7
+ },
+ "Q25|vector": {
+  "id": "Q25",
+  "mode": "vector",
+  "question": "利伐沙班和圣约翰草（贯叶连翘）合用，会降低抗凝效果吗？",
+  "answer": "现有检索到的文献未涉及这一点。\n\n现有证据的局限性：由于检索到的文献主要探讨直接口服抗凝药物（DOACs）与特定药物（如利托那韦、SSRIs等）及转运体/酶多态性的相互作用，并未包含利伐沙班与圣约翰草（贯叶连翘）合用的直接研究数据。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [
+   "rivaroxaban",
+   "st. john's wort",
+   "anticoagulant effect"
+  ],
+  "retrieved": [
+   {
+    "pmid": 35745692,
+    "score": 0.7624,
+    "vector": 0.7458,
+    "matched": [
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 35622425,
+    "score": 0.762,
+    "vector": 0.7453,
+    "matched": [
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 37778107,
+    "score": 0.7569,
+    "vector": 0.7402,
+    "matched": [
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 35455642,
+    "score": 0.7565,
+    "vector": 0.7398,
+    "matched": [
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 35379086,
+    "score": 0.7533,
+    "vector": 0.7366,
+    "matched": [
+     "rivaroxaban"
+    ]
+   }
+  ],
+  "n_graph_facts": 0,
+  "seconds": 3.8
+ },
+ "Q25|hybrid": {
+  "id": "Q25",
+  "mode": "hybrid",
+  "question": "利伐沙班和圣约翰草（贯叶连翘）合用，会降低抗凝效果吗？",
+  "answer": "现有检索到的文献未涉及这一点，材料中没有包含关于圣约翰草（贯叶连翘）与利伐沙班（rivaroxaban）合用是否会降低抗凝效果的具体研究。\n\n现有证据的局限性：现有文献主要关注部分药物对利伐沙班代谢酶（如 CYP3A4）及转运体（如 P-糖蛋白 P-gp）的抑制作用及出血风险，缺乏针对圣约翰草这类强诱导剂与利伐沙班相互作用的具体临床证据 [PMID:35745692, PMID:35622425]。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   35622425,
+   35745692
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "rivaroxaban",
+   "st. john's wort",
+   "anticoagulant effect"
+  ],
+  "retrieved": [
+   {
+    "pmid": 35745692,
+    "score": 0.7624,
+    "vector": 0.7458,
+    "matched": [
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 35622425,
+    "score": 0.762,
+    "vector": 0.7453,
+    "matched": [
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 37778107,
+    "score": 0.7569,
+    "vector": 0.7402,
+    "matched": [
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 35455642,
+    "score": 0.7565,
+    "vector": 0.7398,
+    "matched": [
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 35379086,
+    "score": 0.7533,
+    "vector": 0.7366,
+    "matched": [
+     "rivaroxaban"
+    ]
+   }
+  ],
+  "n_graph_facts": 15,
+  "seconds": 2.0
+ },
+ "Q26|llm_only": {
+  "id": "Q26",
+  "mode": "llm_only",
+  "question": "银杏叶提取物和华法林合用，会增加出血风险吗？",
+  "answer": "银杏叶提取物（Ginkgo biloba extract）与华法林（Warfarin）合用会显著增加出血风险，临床上应尽量避免两者的常规联用。\n\n* **药效学与药动学机制：** 银杏叶提取物具有抑制血小板聚集的作用（主要通过拮抗血小板活化因子，PAF），而华法林是通过抑制维生素K环氧化物还原酶来抗凝。两药合用会产生抗凝与抗血小板的协同药效学叠加，从而增加出血倾向；部分个案及体外研究还提示银杏成分可能影响肝脏细胞色素P450酶（如CYP2C9），潜在干扰华法林的代谢。\n* **观察性研究与个案报告证据：** 多项临床个案报告（Case Reports）及药物警戒数据库分析显示，服用华法林的患者同时使用银杏叶制剂后，出现了国际标准化比值（INR）异常升高、自发性出血（如鼻出血、消化道出血甚至颅内出血）的事件。\n* **临床研究的局限性：** 目前关于两者相互作用的高质量随机对照试验（RCT）或大型Meta分析相对较少，现有证据多来源于个案报道、药物监测系统以及基于药理学机制的推论。\n\n现有证据的局限性在于缺乏大规模、前瞻性的随机对照试验来精确量化不同剂量下的出血风险。\n\n以上内容不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [],
+  "retrieved": [],
+  "n_graph_facts": 0,
+  "seconds": 1.8
+ },
+ "Q26|vector": {
+  "id": "Q26",
+  "mode": "vector",
+  "question": "银杏叶提取物和华法林合用，会增加出血风险吗？",
+  "answer": "现有检索到的文献未涉及这一点。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [
+   "ginkgo biloba extract",
+   "warfarin",
+   "bleeding"
+  ],
+  "retrieved": [
+   {
+    "pmid": 35138605,
+    "score": 0.747,
+    "vector": 0.7303,
+    "matched": [
+     "warfarin"
+    ]
+   },
+   {
+    "pmid": 34107695,
+    "score": 0.7446,
+    "vector": 0.7113,
+    "matched": [
+     "warfarin",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 39263307,
+    "score": 0.7209,
+    "vector": 0.7043,
+    "matched": [
+     "warfarin"
+    ]
+   },
+   {
+    "pmid": 33952817,
+    "score": 0.7296,
+    "vector": 0.6962,
+    "matched": [
+     "warfarin",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 35622425,
+    "score": 0.7227,
+    "vector": 0.6894,
+    "matched": [
+     "warfarin",
+     "bleeding"
+    ]
+   }
+  ],
+  "n_graph_facts": 0,
+  "seconds": 7.9
+ },
+ "Q26|hybrid": {
+  "id": "Q26",
+  "mode": "hybrid",
+  "question": "银杏叶提取物和华法林合用，会增加出血风险吗？",
+  "answer": "现有检索到的文献未涉及这一点。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [
+   "ginkgo biloba extract",
+   "warfarin",
+   "bleeding"
+  ],
+  "retrieved": [
+   {
+    "pmid": 35138605,
+    "score": 0.747,
+    "vector": 0.7303,
+    "matched": [
+     "warfarin"
+    ]
+   },
+   {
+    "pmid": 34107695,
+    "score": 0.7446,
+    "vector": 0.7113,
+    "matched": [
+     "warfarin",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 33952817,
+    "score": 0.7296,
+    "vector": 0.6962,
+    "matched": [
+     "warfarin",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 35622425,
+    "score": 0.7227,
+    "vector": 0.6894,
+    "matched": [
+     "warfarin",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 42494112,
+    "score": 0.7214,
+    "vector": 0.6881,
+    "matched": [
+     "warfarin",
+     "bleeding"
+    ]
+   }
+  ],
+  "n_graph_facts": 15,
+  "seconds": 2.2
+ },
+ "Q27|llm_only": {
+  "id": "Q27",
+  "mode": "llm_only",
+  "question": "丹参制剂和华法林合用，会增加出血风险吗？",
+  "answer": "丹参制剂（Danshen preparations）与华法林（Warfarin）合用会显著增加出血风险，属于临床上需要高度警惕的药物相互作用。\n\n证据分析如下：\n\n* **机制与药代动力学研究**：多项体外和动物实验表明，丹参中的有效成分（如丹参酮、丹参素）可以抑制肝细胞色素 P450 酶（主要是 CYP2C9），而 CYP2C9 是代谢华法林 S-异构体（药效更强的一侧）的关键酶。这会导致华法林在体内的代谢减慢、血药浓度升高。\n* **药效学协同作用**：丹参本身具有抑制血小板聚集和扩张血管的作用，与华法林的抗凝作用叠加，进一步增强了抗栓效能，从而放大了出血倾向。\n* **临床观察性研究与个案报道**：多项回顾性观察性研究及上市后药物警戒（不良事件）报告显示，患者在服用华法林期间合用复方丹参滴丸、丹参注射液等中药制剂时，国际标准化比值（INR）往往会异常升高，并伴有皮肤瘀斑、牙龈出血、消化道出血甚至颅内出血等事件的发生风险增加。\n\n现有证据的局限性在于，目前关于此类中西药相互作用的随机对照试验（RCT）样本量通常较小，多数高质量证据来源于药代动力学机制研究、观察性研究和临床个案报道。\n\n以上内容不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [],
+  "retrieved": [],
+  "n_graph_facts": 0,
+  "seconds": 1.9
+ },
+ "Q27|vector": {
+  "id": "Q27",
+  "mode": "vector",
+  "question": "丹参制剂和华法林合用，会增加出血风险吗？",
+  "answer": "现有检索到的文献未涉及这一点。\n\n现有证据的局限性：由于纳入的文献未包含丹参制剂与华法林合用出血风险的直接临床研究，无法得出确切结论。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [
+   "danshen preparations",
+   "warfarin",
+   "bleeding"
+  ],
+  "retrieved": [
+   {
+    "pmid": 35138605,
+    "score": 0.789,
+    "vector": 0.7724,
+    "matched": [
+     "warfarin"
+    ]
+   },
+   {
+    "pmid": 39263307,
+    "score": 0.7503,
+    "vector": 0.7336,
+    "matched": [
+     "warfarin"
+    ]
+   },
+   {
+    "pmid": 34107695,
+    "score": 0.7512,
+    "vector": 0.7178,
+    "matched": [
+     "warfarin",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 35622425,
+    "score": 0.7447,
+    "vector": 0.7113,
+    "matched": [
+     "warfarin",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 35567727,
+    "score": 0.7195,
+    "vector": 0.7028,
+    "matched": [
+     "bleeding"
+    ]
+   }
+  ],
+  "n_graph_facts": 0,
+  "seconds": 6.4
+ },
+ "Q27|hybrid": {
+  "id": "Q27",
+  "mode": "hybrid",
+  "question": "丹参制剂和华法林合用，会增加出血风险吗？",
+  "answer": "现有检索到的文献中，关于丹参制剂（Panax notoginseng saponins，三七/丹参总皂苷相关成分）与华法林（warfarin）合用是否会增加出血风险的结论存在不一致。\n\n* 有临床前研究表明，三七总皂苷（Panax notoginseng saponins, PNS）通过抑制肝药酶CYP3A4等机制，可增加华法林的血药浓度并延长暴露时间，从而增强华法林的抗凝作用，合用时凝血酶原时间（PT）和国际标准化比值（INR）显著增加 [PMID:35138605]。\n* 另有临床前研究得出相反结论，认为三七总皂苷会通过上调NR1I3和CYP2C9表达来加速华法林代谢并降低其药效，表现出拮抗作用 [PMID:39263307]。\n\n现有证据的局限性在于：缺乏大型临床随机对照试验或临床观察性研究直接评估丹参制剂与华法林合用的出血风险，现有的相关证据主要来源于动物实验或细胞学等临床前研究，且不同文献关于其药动学及药效学相互作用方向的结论存在矛盾。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   35138605,
+   39263307
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "danshen preparations",
+   "warfarin",
+   "bleeding"
+  ],
+  "retrieved": [
+   {
+    "pmid": 35138605,
+    "score": 0.789,
+    "vector": 0.7724,
+    "matched": [
+     "warfarin"
+    ]
+   },
+   {
+    "pmid": 34107695,
+    "score": 0.7512,
+    "vector": 0.7178,
+    "matched": [
+     "warfarin",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 39263307,
+    "score": 0.7503,
+    "vector": 0.7336,
+    "matched": [
+     "warfarin"
+    ]
+   },
+   {
+    "pmid": 35622425,
+    "score": 0.7447,
+    "vector": 0.7113,
+    "matched": [
+     "warfarin",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 38470454,
+    "score": 0.7306,
+    "vector": 0.6973,
+    "matched": [
+     "warfarin",
+     "bleeding"
+    ]
+   }
+  ],
+  "n_graph_facts": 15,
+  "seconds": 7.1
+ },
+ "Q28|llm_only": {
+  "id": "Q28",
+  "mode": "llm_only",
+  "question": "沃拉帕沙（vorapaxar）和氯吡格雷合用，出血风险如何？",
+  "answer": "沃拉帕沙（vorapaxar，蛋白酶激活受体-1 拮抗剂）与氯吡格雷（clopidogrel）合用会显著增加中重度出血风险，尤其是颅内出血等严重出血事件。\n\n以下是相关证据及强度：\n* **随机对照试验（RCT）证据：** 关键性大型三期临床试验（如 TRA 2P-TIMI 50 研究，评估沃拉帕沙在稳定型动脉粥样硬化患者中的应用）表明，在阿司匹林（aspirin）和/或氯吡格雷等标准抗血小板治疗的基础上加用沃拉帕沙，显著增加了整体出血发生率，特别是 GUSTO 标准定义的严重出血和中度出血，且颅内出血风险明显升高。\n* **亚组分析与一致性：** 多项事后分析和相关 Meta 分析均证实，双联（如氯吡格雷+阿司匹林）或三联抗血小板治疗（加入沃拉帕沙）会产生累加的抗血栓效应，导致出血风险呈阶梯式上升，且在有卒中病史的患者中颅内出血风险尤为突出。\n* **结论一致性：** 目前各大临床研究及相关系统评价在“沃拉帕沙联合氯吡格雷会显著增加出血风险”这一结论上高度一致，尚无相反的高级别证据。\n\n现有证据的局限性在于多基于特定高危心血管疾病人群，对于合并复杂基础疾病或亚洲人群的长期联合用药安全性数据仍相对有限。\n\n以上内容不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [],
+  "retrieved": [],
+  "n_graph_facts": 0,
+  "seconds": 9.3
+ },
+ "Q28|vector": {
+  "id": "Q28",
+  "mode": "vector",
+  "question": "沃拉帕沙（vorapaxar）和氯吡格雷合用，出血风险如何？",
+  "answer": "现有检索到的文献未涉及这一点。\n\n现有证据的局限性在于所检索到的文献均未包含关于沃拉帕沙（vorapaxar）与氯吡格雷（clopidogrel）合用安全性的研究数据。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [
+   "vorapaxar",
+   "clopidogrel",
+   "bleeding"
+  ],
+  "retrieved": [
+   {
+    "pmid": 38141156,
+    "score": 0.7531,
+    "vector": 0.7198,
+    "matched": [
+     "clopidogrel",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 38557855,
+    "score": 0.7322,
+    "vector": 0.7155,
+    "matched": [
+     "clopidogrel"
+    ]
+   },
+   {
+    "pmid": 39872046,
+    "score": 0.7462,
+    "vector": 0.7129,
+    "matched": [
+     "clopidogrel",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 35601720,
+    "score": 0.7436,
+    "vector": 0.7102,
+    "matched": [
+     "clopidogrel",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 35961855,
+    "score": 0.7256,
+    "vector": 0.709,
+    "matched": [
+     "clopidogrel"
+    ]
+   }
+  ],
+  "n_graph_facts": 0,
+  "seconds": 12.7
+ },
+ "Q28|hybrid": {
+  "id": "Q28",
+  "mode": "hybrid",
+  "question": "沃拉帕沙（vorapaxar）和氯吡格雷合用，出血风险如何？",
+  "answer": "现有检索到的文献未涉及这一点。\n\n现有证据的局限性：提供的材料中完全未包含沃拉帕沙（vorapaxar）的相关研究数据或其与氯吡格雷（clopidogrel）合用的出血风险评估。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [
+   "vorapaxar",
+   "clopidogrel",
+   "bleeding"
+  ],
+  "retrieved": [
+   {
+    "pmid": 38141156,
+    "score": 0.7531,
+    "vector": 0.7198,
+    "matched": [
+     "clopidogrel",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 39872046,
+    "score": 0.7462,
+    "vector": 0.7129,
+    "matched": [
+     "clopidogrel",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 35601720,
+    "score": 0.7436,
+    "vector": 0.7102,
+    "matched": [
+     "clopidogrel",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 37435838,
+    "score": 0.7409,
+    "vector": 0.7076,
+    "matched": [
+     "clopidogrel",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 32557093,
+    "score": 0.7406,
+    "vector": 0.7073,
+    "matched": [
+     "clopidogrel",
+     "bleeding"
+    ]
+   }
+  ],
+  "n_graph_facts": 15,
+  "seconds": 3.8
+ },
+ "Q29|llm_only": {
+  "id": "Q29",
+  "mode": "llm_only",
+  "question": "鱼油（omega-3 脂肪酸）会增加阿哌沙班的出血风险吗？",
+  "answer": "鱼油（Omega-3脂肪酸）与阿哌沙班（Apixaban）联合使用可能会增加出血风险，主要是由于两者的抗血小板或抗凝机制可能存在叠加效应。\n\n*   **药效学机制与观察性研究：** Omega-3 脂肪酸在高剂量（通常 >3克/天）时具有轻度的抗血小板聚集和抑制凝血功能的作用。多项回顾性观察性研究和药理学分析表明，将鱼油与直接口服抗凝药（DOACs，如阿哌沙班 Apixaban）联用，理论上会增加胃肠道出血或皮肤瘀斑等出血事件的发生率。\n*   **随机对照试验（RCT）与安全评估：** 目前专门针对“阿哌沙班联合鱼油”的大型前瞻性随机对照试验（RCT）较少。不过，针对整体 omega-3 脂肪酸与抗凝药/抗血小板药联用的安全评估（如 STRENGTH 研究及部分针对心血管事件的 Meta 分析）提示，日常饮食剂量的鱼油（如 1g/天）通常出血风险增幅较小且多为轻度，但高剂量补充剂显著增加了出血倾向。\n*   **结论不一致性：** 尽管药理学机制明确，但临床研究结果存在一定异质性：部分小型观察性研究未观察到低剂量鱼油显著增加阿哌沙班患者的大出血风险，而另一些回顾性数据库分析则支持存在潜在的协同出血风险。\n\n现有证据多基于药理学推论、小样本观察性研究及亚组分析，缺乏针对该特定联合用药的大型高质量前瞻性随机对照试验。\n\n以上内容不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [],
+  "retrieved": [],
+  "n_graph_facts": 0,
+  "seconds": 8.3
+ },
+ "Q29|vector": {
+  "id": "Q29",
+  "mode": "vector",
+  "question": "鱼油（omega-3 脂肪酸）会增加阿哌沙班的出血风险吗？",
+  "answer": "现有检索到的文献未涉及这一点 [图谱]。\n\n* 现有证据的局限性：由于检索到的文献均未评估鱼油（omega-3 脂肪酸）与阿哌沙班（apixaban）合用的安全性，无法得出相关结论 [PMID:40530373, PMID:41153396, PMID:33029651, PMID:42097327, PMID:35567727]。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [
+   33029651,
+   35567727,
+   40530373,
+   41153396,
+   42097327
+  ],
+  "invalid_citations": [],
+  "entities": [
+   "fish oil",
+   "omega-3 fatty acids",
+   "apixaban",
+   "bleeding"
+  ],
+  "retrieved": [
+   {
+    "pmid": 40530373,
+    "score": 0.7572,
+    "vector": 0.7322,
+    "matched": [
+     "apixaban",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 41153396,
+    "score": 0.7552,
+    "vector": 0.7302,
+    "matched": [
+     "apixaban",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 33029651,
+    "score": 0.7418,
+    "vector": 0.7293,
+    "matched": [
+     "apixaban"
+    ]
+   },
+   {
+    "pmid": 42097327,
+    "score": 0.7469,
+    "vector": 0.7219,
+    "matched": [
+     "apixaban",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 35567727,
+    "score": 0.7459,
+    "vector": 0.7209,
+    "matched": [
+     "apixaban",
+     "bleeding"
+    ]
+   }
+  ],
+  "n_graph_facts": 0,
+  "seconds": 2.4
+ },
+ "Q29|hybrid": {
+  "id": "Q29",
+  "mode": "hybrid",
+  "question": "鱼油（omega-3 脂肪酸）会增加阿哌沙班的出血风险吗？",
+  "answer": "现有检索到的文献未涉及这一点。\n\n- 现有检索到的文献和知识图谱数据均未评估鱼油（omega-3脂肪酸）对阿哌沙班（apixaban）出血风险的影响。\n\n现有证据的局限性在于所检索的文献主要关注非甾体抗炎药（NSAIDs）、他汀类药物及基因多态性对直接口服抗凝药安全性的影响，缺乏关于omega-3脂肪酸合并用药的直接临床证据。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [
+   "fish oil",
+   "omega-3 fatty acids",
+   "apixaban",
+   "bleeding"
+  ],
+  "retrieved": [
+   {
+    "pmid": 40530373,
+    "score": 0.7572,
+    "vector": 0.7322,
+    "matched": [
+     "apixaban",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 41153396,
+    "score": 0.7552,
+    "vector": 0.7302,
+    "matched": [
+     "apixaban",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 42097327,
+    "score": 0.7469,
+    "vector": 0.7219,
+    "matched": [
+     "apixaban",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 35567727,
+    "score": 0.7459,
+    "vector": 0.7209,
+    "matched": [
+     "apixaban",
+     "bleeding"
+    ]
+   },
+   {
+    "pmid": 38943286,
+    "score": 0.7452,
+    "vector": 0.7202,
+    "matched": [
+     "apixaban",
+     "bleeding"
+    ]
+   }
+  ],
+  "n_graph_facts": 15,
+  "seconds": 9.4
+ },
+ "Q30|llm_only": {
+  "id": "Q30",
+  "mode": "llm_only",
+  "question": "姜黄素和利伐沙班合用安全吗？",
+  "answer": "姜黄素（Curcumin）与利伐沙班（Rivaroxaban）合用可能存在潜在的出血风险增加，通常不推荐常规联合使用。\n\n*   **药代动力学机制（基础研究与动物实验）**：体外及动物研究表明，姜黄素能够抑制肝脏和小肠中的细胞色素P450酶（主要为 CYP3A4）以及 P-糖蛋白（P-gp）。利伐沙班主要通过 CYP3A4 代谢并由 P-gp 转运，姜黄素可能会抑制利伐沙班的代谢和排出，从而导致利伐沙班血药浓度升高。\n*   **药效学相互作用（观察性研究与药理学推论）**：姜黄素本身具有一定的抗血小板聚集和抗凝作用。基于其药理特性，多项药学综述和观察性研究推论，姜黄素与新型口服抗凝药（NOACs，如利伐沙班）合用可能会产生协同抗凝效应，显著增加出血风险（如胃肠道出血、瘀斑等）。\n*   **缺乏高质量临床证据**：目前关于姜黄素与利伐沙班直接相互作用的随机对照试验（RCT）或大型 Meta 分析极度缺乏，现有警告主要基于体外实验、动物模型及药物代谢动力学机制的推测。\n\n现有证据的局限性在于缺乏针对人体的、高质量的大型随机对照临床试验数据，多基于体外实验和理论推导。\n\n以上内容不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [],
+  "retrieved": [],
+  "n_graph_facts": 0,
+  "seconds": 10.9
+ },
+ "Q30|vector": {
+  "id": "Q30",
+  "mode": "vector",
+  "question": "姜黄素和利伐沙班合用安全吗？",
+  "answer": "现有检索到的文献未涉及这一点。\n\n现有证据的局限性：纳入的文献主要探讨了直接口服抗凝药（DOACs）与常见药物（如P-gp和CYP3A4抑制剂/诱导剂、抗血小板药物等）的相互作用及多药联用的出血风险，但未直接提及姜黄素与利伐沙班合用的安全性和药动学/药效学相互作用。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [
+   "curcumin",
+   "rivaroxaban"
+  ],
+  "retrieved": [
+   {
+    "pmid": 35745692,
+    "score": 0.7637,
+    "vector": 0.7387,
+    "matched": [
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 35622425,
+    "score": 0.7577,
+    "vector": 0.7327,
+    "matched": [
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 36446994,
+    "score": 0.755,
+    "vector": 0.73,
+    "matched": [
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 36861431,
+    "score": 0.7541,
+    "vector": 0.7291,
+    "matched": [
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 35253983,
+    "score": 0.7517,
+    "vector": 0.7267,
+    "matched": [
+     "rivaroxaban"
+    ]
+   }
+  ],
+  "n_graph_facts": 0,
+  "seconds": 19.4
+ },
+ "Q30|hybrid": {
+  "id": "Q30",
+  "mode": "hybrid",
+  "question": "姜黄素和利伐沙班合用安全吗？",
+  "answer": "现有检索到的文献未涉及姜黄素与利伐沙班合用的安全性。\n\n现有证据的局限性在于所检索文献主要探讨直接口服抗栓药物（DOACs）与常见药物或特定酶抑制剂/诱导剂的相互作用，未包含姜黄素的相关研究。\n\n以上内容基于文献自动检索，不构成用药建议。",
+  "cited": [],
+  "invalid_citations": [],
+  "entities": [
+   "curcumin",
+   "rivaroxaban"
+  ],
+  "retrieved": [
+   {
+    "pmid": 35745692,
+    "score": 0.7637,
+    "vector": 0.7387,
+    "matched": [
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 35622425,
+    "score": 0.7577,
+    "vector": 0.7327,
+    "matched": [
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 36446994,
+    "score": 0.755,
+    "vector": 0.73,
+    "matched": [
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 36861431,
+    "score": 0.7541,
+    "vector": 0.7291,
+    "matched": [
+     "rivaroxaban"
+    ]
+   },
+   {
+    "pmid": 35253983,
+    "score": 0.7517,
+    "vector": 0.7267,
+    "matched": [
+     "rivaroxaban"
+    ]
+   }
+  ],
+  "n_graph_facts": 15,
+  "seconds": 8.7
+ }
+}
