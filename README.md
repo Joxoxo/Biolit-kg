@@ -36,6 +36,9 @@ v5 在 60 篇人工标注文献上：**Precision 98.8% / Recall 73.4% / F1 0.84*
 检索增强明显减少了编造；加入知识图谱没有进一步提升问答效果。自动阅卷经人工复核，κ = 0.85。
 详见 [docs/问答评估报告.md](docs/问答评估报告.md)。
 
+**FDA 说明书交叉验证**：至少 2 篇文献支持的不良反应和药代结论全部能在说明书中找到对应；人工确认 3 处说明书与文献的实质冲突（如阿哌沙班说明书称与克拉霉素合用无需调整剂量，文献显示出血信号升高），以及 61 项说明书未涵盖的潜在信号（集中在抗肿瘤靶向药、抗菌药和药物基因组学）。
+详见 [docs/说明书交叉验证报告.md](docs/说明书交叉验证报告.md)。
+
 ## 快速开始
 
 ```bash
@@ -52,6 +55,9 @@ python -m biolit.extract.run                      # 大模型抽取
 python -m biolit.normalize.run                    # 标准化 + 证据核验
 python -m biolit.graph.build                      # 构建知识图谱
 python -m biolit.rag.index                        # 建立向量索引
+python -m biolit.ingest.druglabel                 # 下载 FDA 说明书
+python -m biolit.label.extract                    # 抽取说明书信息
+python -m biolit.label.compare                    # 与文献图谱比对
 
 # 启动网页演示（需两个终端）
 uvicorn biolit.api.main:app --reload --port 8000  # 后端 API
