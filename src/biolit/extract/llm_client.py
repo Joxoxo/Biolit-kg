@@ -10,6 +10,7 @@
 import json
 import os
 import time
+from contextvars import ContextVar
 from dataclasses import dataclass
 
 from dotenv import load_dotenv
@@ -31,6 +32,14 @@ MAX_RETRIES = 5
 
 class DailyQuotaExceeded(Exception):
     """每日免费额度已用完：重试没有意义，需要等第二天。"""
+
+
+class CacheMiss(Exception):
+    """只读缓存模式下没有命中缓存（公开演示的额度用完后，只回答已缓存的问题）。"""
+
+
+# 只读缓存开关。用 ContextVar 而不是普通变量：网页后端同时处理多个请求，每个请求的开关互不影响
+CACHE_ONLY: ContextVar[bool] = ContextVar("cache_only", default=False)
 
 
 @dataclass
@@ -71,8 +80,22 @@ class GeminiClient:
                 time.sleep(wait)
 
     def extract(self, title: str, abstract: str) -> LLMResponse:
-        """从一篇摘要中抽取实体和关系。"""
-        return self._retry(lambda: self._call(title, abstract))
+        """从一篇摘要中抽取实体和关系。同一篇摘要（同模型、同提示词）只真正调用一次，之后读缓存。"""
+        key = LLMCache.make_key(self.model, SYSTEM_PROMPT, build_user_prompt(title, abstract), "extract")
+        hit = self.cache.get(key)
+        if hit is not None:
+            self.cache_hits += 1
+            d = json.loads(hit)
+            return LLMResponse(result=ExtractionResult.model_validate(d["result"]), model=d["model"],
+                               input_tokens=d["input_tokens"], output_tokens=d["output_tokens"], seconds=0.0)
+        if CACHE_ONLY.get():
+            raise CacheMiss()
+        resp = self._retry(lambda: self._call(title, abstract))
+        self.calls += 1
+        self.cache.set(key, self.model, json.dumps({
+            "result": resp.result.model_dump(mode="json"), "model": resp.model,
+            "input_tokens": resp.input_tokens, "output_tokens": resp.output_tokens}))
+        return resp
 
     def generate(self, contents: str, system: str, schema=None, use_cache: bool = True):
         """通用调用：给定系统提示词和内容，返回文本；若给了 schema（Pydantic 类），返回校验后的对象。
@@ -85,6 +108,8 @@ class GeminiClient:
             if hit is not None:
                 self.cache_hits += 1
                 return schema.model_validate_json(hit) if schema else hit
+        if CACHE_ONLY.get():
+            raise CacheMiss()
 
         def call():
             config = types.GenerateContentConfig(system_instruction=system)

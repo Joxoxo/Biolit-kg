@@ -33,15 +33,11 @@ export default function QaPage() {
     <div className="flex-1 overflow-y-auto pv-scroll">
       <div className="max-w-5xl mx-auto px-8 py-10 space-y-8">
         <div>
-          <h2 className="text-[22px] font-bold">智能问答 · RAG Q&A</h2>
-          <p className="text-[14px] text-black/60 mt-2">
-            混合检索（向量 + 实体匹配 + 知识图谱）后交由大模型生成回答，每个结论附 PMID 引用。
-          </p>
+          <h2 className="text-[22px] font-bold">智能问答</h2>
         </div>
 
         <form onSubmit={handleSubmit} className="pv-border p-6 space-y-4 bg-white">
           <div>
-            <label className="pv-label mb-2 block">问题 · Question</label>
             <textarea
               value={question}
               onChange={(e) => setQuestion(e.target.value)}
@@ -95,7 +91,7 @@ export default function QaPage() {
         {result && (
           <div className="space-y-6">
             <section className="pv-border p-6 bg-white">
-              <h3 className="font-bold text-[15.5px] mb-4">回答 · Answer</h3>
+              <h3 className="font-bold text-[15.5px] mb-4">回答</h3>
               <div className="text-[15.5px] leading-relaxed whitespace-pre-wrap text-black/85">
                 {result.answer}
               </div>
@@ -108,7 +104,7 @@ export default function QaPage() {
 
             {result.graph_facts.length > 0 && (
               <section className="pv-border p-6 bg-white">
-                <h3 className="font-bold text-[15.5px] mb-4">知识图谱结论 · Graph Facts</h3>
+                <h3 className="font-bold text-[15.5px] mb-4">知识图谱结论</h3>
                 <ul className="space-y-2.5 text-[14px]">
                   {result.graph_facts.map((f, i) => (
                     <li key={i} className="flex items-start gap-2">
@@ -125,7 +121,7 @@ export default function QaPage() {
             )}
 
             <section className="pv-border p-6 bg-white">
-              <h3 className="font-bold text-[15.5px] mb-4">引用文献 · Citations</h3>
+              <h3 className="font-bold text-[15.5px] mb-4">引用文献</h3>
               <div className="space-y-4">
                 {result.papers.map((p) => (
                   <div key={p.pmid} className="text-[13.5px] leading-relaxed border-l-2 border-black/10 pl-4">

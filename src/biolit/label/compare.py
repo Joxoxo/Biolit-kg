@@ -32,6 +32,7 @@ LABEL_DIR = ROOT / "data" / "raw" / "labels"
 OUT_JSON = ROOT / "data" / "processed" / "label_crosscheck.json"
 OUT_MD = ROOT / "data" / "annotations" / "label_crosscheck.md"
 REVIEW = ROOT / "data" / "annotations" / "label_review_待审核.xlsx"
+REVIEW_DONE = ROOT / "data" / "annotations" / "label_review_已审核.xlsx"
 
 DRUGS = ["apixaban", "rivaroxaban", "dabigatran", "edoxaban", "warfarin", "clopidogrel", "ticagrelor"]
 AE_RELATIONS = {"increases_risk"}
@@ -172,6 +173,18 @@ def main():
             seen.add(e["target"])
             if not any((drug, cat, x) in covered for x in [e["target"], *e["examples"]]):
                 label_only.append({"drug": drug, "category": cat, "item": e["target"], "effect": e["effect"]})
+
+    # 有人工审核结果时，附到每一行上（网页上显示"真信号 / 说明书其实有 / 抽取错误"）
+    if REVIEW_DONE.exists():
+        from openpyxl import load_workbook
+        verdicts = {}
+        for v in load_workbook(REVIEW_DONE, read_only=True)["审核"].iter_rows(min_row=2, values_only=True):
+            if v[0] and v[8]:
+                verdicts[(v[0], v[2])] = (str(v[8]).strip(), v[9])
+        for r in rows:
+            if (r["drug"], r["item"]) in verdicts:
+                r["review"], r["review_note"] = verdicts[(r["drug"], r["item"])]
+        print(f"已附上人工审核判定 {sum('review' in r for r in rows)} 条")
 
     OUT_JSON.write_text(json.dumps({"literature": rows, "label_only": label_only}, ensure_ascii=False, indent=1),
                         encoding="utf-8")

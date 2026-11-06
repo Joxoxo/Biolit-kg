@@ -1,0 +1,5 @@
+# 开发和测试用的依赖（部署时不需要）
+-r requirements.txt
+pytest==9.2.0               # 单元测试
+httpx==0.28.1               # FastAPI 的 TestClient 需要
+huggingface_hub             # 上传到 Hugging Face Spaces（scripts/deploy_space.py）

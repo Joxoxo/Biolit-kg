@@ -1,5 +1,7 @@
 import { useState } from "react";
-import { extractText, type ExtractResult } from "@/lib/api";
+import { extractText, getExtractExample, type ExtractResult } from "@/lib/api";
+
+const MAX_ABSTRACT = 6500; // 与后端限制一致
 
 const TYPE_ZH: Record<string, string> = {
   drug: "药物",
@@ -28,6 +30,17 @@ export default function ExtractPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
+  const fillExample = async () => {
+    try {
+      const ex = await getExtractExample();
+      setTitle(ex.title);
+      setAbstract(ex.abstract);
+      setError(null);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : String(err));
+    }
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!title.trim() || !abstract.trim()) return;
@@ -47,16 +60,12 @@ export default function ExtractPage() {
     <div className="flex-1 overflow-y-auto pv-scroll">
       <div className="max-w-[1600px] mx-auto px-8 py-10">
         <div className="mb-8">
-          <h2 className="text-[22px] font-bold">在线抽取 · Online Extraction</h2>
-          <p className="text-[14px] text-black/60 mt-2">
-            输入一篇文献的标题与摘要，调用 Gemini 抽取实体、关系与研究类型（消耗 API 额度）。
-          </p>
+          <h2 className="text-[22px] font-bold">在线抽取</h2>
         </div>
 
         <div className="flex flex-col lg:flex-row gap-6 items-start">
           <form onSubmit={handleSubmit} className="pv-border p-6 space-y-4 bg-white w-full lg:w-[440px] shrink-0 lg:sticky lg:top-10">
             <div>
-              <label className="pv-label mb-2 block">标题 · Title</label>
               <input
                 type="text"
                 value={title}
@@ -66,16 +75,20 @@ export default function ExtractPage() {
               />
             </div>
             <div>
-              <label className="pv-label mb-2 block">摘要 · Abstract</label>
               <textarea
                 value={abstract}
                 onChange={(e) => setAbstract(e.target.value)}
                 placeholder="文献摘要"
+                maxLength={MAX_ABSTRACT}
                 rows={10}
                 className="w-full px-3 py-2 pv-border bg-white text-[14px] leading-relaxed focus:outline-none focus:ring-2 focus:ring-[var(--pv-accent)] resize-y"
               />
             </div>
-            <div className="flex justify-end">
+            <div className="text-[12px] text-black/45 text-right -mt-2">{abstract.length} / {MAX_ABSTRACT} 字符</div>
+            <div className="flex justify-between items-center gap-3">
+              <button type="button" onClick={fillExample} className="text-[13px] text-[var(--pv-accent)] font-bold hover:underline">
+                填入示例摘要
+              </button>
               <button
                 type="submit"
                 disabled={loading || !title.trim() || !abstract.trim()}
@@ -84,6 +97,9 @@ export default function ExtractPage() {
                 {loading ? "抽取中…" : "执行抽取"}
               </button>
             </div>
+            <p className="text-[12px] text-black/50 leading-relaxed">
+              公开演示限制：每人每天 3 次，摘要不超过 6500 字符。示例摘要和已抽取过的摘要读缓存，不计次数。
+            </p>
           </form>
 
           <div className="flex-1 min-w-0 w-full space-y-6">
@@ -115,7 +131,7 @@ export default function ExtractPage() {
                 </div>
 
                 <section className="pv-border p-6 bg-white">
-                  <h3 className="font-bold text-[15.5px] mb-4">实体 · Entities（{result.entities.length}）</h3>
+                  <h3 className="font-bold text-[15.5px] mb-4">实体（{result.entities.length}）</h3>
                   <div className="flex flex-wrap gap-2">
                     {result.entities.map((e, i) => (
                       <span key={i} className="pv-chip">
@@ -127,7 +143,7 @@ export default function ExtractPage() {
                 </section>
 
                 <section className="pv-border p-6 bg-white">
-                  <h3 className="font-bold text-[15.5px] mb-4">关系 · Relations（{result.relations.length}）</h3>
+                  <h3 className="font-bold text-[15.5px] mb-4">关系（{result.relations.length}）</h3>
                   <div className="space-y-3">
                     {result.relations.map((r, i) => (
                       <div key={i} className="pv-border p-4 text-[14px]">

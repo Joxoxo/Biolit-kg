@@ -23,10 +23,9 @@ React 19 + TypeScript + Vite 7 + Tailwind CSS 3 + shadcn/ui + vis-network。
 ## 页面
 
 1. **概览**（`src/pages/Home.tsx`）：工作台入口，展示各模块导航卡片与使用说明。
-2. **关系索引**（`src/pages/RelationPage.tsx`）：药物对比查询与全部关系索引，数据源为 `src/data/relations.json`（60 篇人工标注结果的静态快照，2026-11 导出；标注更新后需要重新导出）。
-3. **知识图谱**（`src/pages/GraphPage.tsx`）：调用 `/api/graph` 加载 `data/processed/graph.json`，使用 vis-network 渲染可拖拽、可缩放的交互图；支持按实体聚焦、按最小文献数过滤，点击边查看证据与 PMID。
-4. **智能问答**（`src/pages/QaPage.tsx`）：调用 `/api/ask` 进行 RAG 问答，展示回答、知识图谱结论与引用文献。
-5. **在线抽取**（`src/pages/ExtractPage.tsx`）：调用 `/api/extract` 对输入的标题与摘要执行大模型抽取，展示研究类型、实体与关系。
+2. **药物安全档案**（`src/pages/DrugProfilePage.tsx`）：下拉选择药物；① 按对照药分组的疗效与安全性结论，自动标出结论不一致；② 以该药为中心的相互作用与代谢小网络图（`src/sections/EgoGraph.tsx`），附 FDA 说明书比对和人工审核结果。数据来自 `/api/profile/{drug}`，展开证据来自 `/api/evidence`。
+3. **智能问答**（`src/pages/QaPage.tsx`）：调用 `/api/ask` 进行 RAG 问答，展示回答、知识图谱结论与引用文献。
+4. **在线抽取**（`src/pages/ExtractPage.tsx`）：调用 `/api/extract` 对输入的标题与摘要执行大模型抽取，展示研究类型、实体与关系。
 
 评估结果不在网页中展示，见 [`docs/评估报告.md`](../docs/评估报告.md)。
 

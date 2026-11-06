@@ -1,12 +1,13 @@
-# 第 1–2 天需要的依赖；后面每用到新库再往下加
-google-genai        # 调用 Gemini
-python-dotenv       # 从 .env 读取 API Key
-requests            # 调用 PubMed 接口
-pydantic            # 定义并校验抽取结果的格式
-pandas              # 表格数据处理
-pyyaml              # 读取 configs/ 里的配置文件
-networkx            # 构建和分析知识图谱
-scipy               # networkx 计算 PageRank 时需要
-openpyxl            # 生成 / 读取 Excel 标注表
-fastapi             # M7 REST API 后端
-uvicorn             # M7 ASGI 服务器
+# 运行依赖。版本号锁定为开发时实际使用的版本（Python 3.14），保证换电脑、部署时装出来一模一样
+google-genai==2.33.0        # 调用 Gemini
+python-dotenv==1.2.4        # 从 .env 读取 API Key
+requests==2.34.2            # 调用 PubMed / openFDA 接口
+pydantic==2.14.1            # 定义并校验抽取结果的格式
+numpy==2.5.4                # 向量检索（余弦相似度）
+pandas==3.1.0               # 表格数据处理
+pyyaml==6.0.3               # 读取 configs/ 里的配置文件
+networkx==3.7               # 构建和分析知识图谱
+scipy==1.18.1               # networkx 计算 PageRank 时需要
+openpyxl==3.1.5             # 生成 / 读取 Excel 标注表
+fastapi==0.162.0            # 网页后端接口
+uvicorn==0.54.0             # 运行 FastAPI 的服务器

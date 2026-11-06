@@ -1,8 +1,7 @@
-import { Database, MessageCircle, Network, Microscope } from "lucide-react";
+import { MessageCircle, Microscope, ShieldCheck } from "lucide-react";
 
 const SECTIONS = [
-  { id: "relations", label: "关系索引", icon: Database, desc: "浏览 60 篇人工标注文献中的药物–结局关系" },
-  { id: "graph", label: "知识图谱", icon: Network, desc: "交互式查看 648 个实体、1538 条关系" },
+  { id: "profile", label: "药物安全档案", icon: ShieldCheck, desc: "选一个药，查看它的疗效与安全性结论、相互作用，以及与 FDA 说明书的比对" },
   { id: "qa", label: "智能问答", icon: MessageCircle, desc: "基于向量检索 + 图谱的 RAG 问答，带 PMID 引用" },
   { id: "extract", label: "在线抽取", icon: Microscope, desc: "输入标题与摘要，调用大模型抽取实体和关系" },
 ];
@@ -18,7 +17,7 @@ export default function Home({ onNavigate }: { onNavigate: (id: string) => void 
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {SECTIONS.map((s) => {
             const Icon = s.icon;
             return (
@@ -53,8 +52,8 @@ export default function Home({ onNavigate }: { onNavigate: (id: string) => void 
             所有结论仅反映文献所报告的研究结果，效应量（HR/RR/CI）为摘要报告值，未经统一校正。
           </div>
           <div>
-            <strong>结果解读</strong>：关系索引的对比视图将同一药物对的证据按结局归并——降低风险记为优势、增加风险记为劣势，
-            机制类关系不参与优劣判定；智能问答的每个结论附 PMID 引用，且引用已经过程序校验，确保来自本次检索结果。
+            <strong>结果解读</strong>：药物安全档案按"对照药 × 结局"汇总文献结论，同一组里相反方向的文献 ≥ 2 篇时标为"结论不一致"；
+            相互作用与说明书逐项比对，"潜在信号"指文献报道、说明书未涵盖，且经人工确认的项目。智能问答的每个结论附 PMID 引用，引用已经过程序校验，确保来自本次检索结果。
           </div>
           <div>
             <strong>重要提示</strong>：本系统为方法学研究演示，

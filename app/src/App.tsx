@@ -1,17 +1,15 @@
 import { useState } from "react";
-import { Database, MessageCircle, Network, Microscope, Home, Menu, X } from "lucide-react";
+import { MessageCircle, Microscope, Home, Menu, X, ShieldCheck } from "lucide-react";
 import HomePage from "@/pages/Home";
-import RelationPage from "@/pages/RelationPage";
-import GraphPage from "@/pages/GraphPage";
+import DrugProfilePage from "@/pages/DrugProfilePage";
 import QaPage from "@/pages/QaPage";
 import ExtractPage from "@/pages/ExtractPage";
 
-type TabId = "home" | "relations" | "graph" | "qa" | "extract";
+type TabId = "home" | "profile" | "qa" | "extract";
 
 const TABS: { id: TabId; label: string; icon: React.ElementType }[] = [
   { id: "home", label: "概览", icon: Home },
-  { id: "relations", label: "关系索引", icon: Database },
-  { id: "graph", label: "知识图谱", icon: Network },
+  { id: "profile", label: "药物安全档案", icon: ShieldCheck },
   { id: "qa", label: "智能问答", icon: MessageCircle },
   { id: "extract", label: "在线抽取", icon: Microscope },
 ];
@@ -100,8 +98,7 @@ export default function App() {
 
       <main className="flex-1 min-h-0 flex flex-col">
         {tab === "home" && <HomePage onNavigate={(id) => setTab(id as TabId)} />}
-        {tab === "relations" && <RelationPage />}
-        {tab === "graph" && <GraphPage />}
+        {tab === "profile" && <DrugProfilePage />}
         {tab === "qa" && <QaPage />}
         {tab === "extract" && <ExtractPage />}
       </main>
